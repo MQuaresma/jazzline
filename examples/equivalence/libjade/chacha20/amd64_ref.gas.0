@@ -1,0 +1,2171 @@
+
+Breakpoint 1, 0x00005555555551c0 in rounds_inline_ref ()
+rounds_inline_ref:
+# %rdi = 0x7fffffffd820
+# %rsi = 0x7fffffffdb88
+# %rdx = 0x7fffffffdb98
+# %rcx = 0x55555555adc0
+# %r8  = 0x7ffff7e1af10
+# %r9  = 0x7ffff7fc9040
+	#! -> SP = 0x7fffffffd818
+	mov    %rsp,%rax                                #! PC = 0x5555555551c0
+0x00005555555551c3 in rounds_inline_ref ()
+	lea    -0x48(%rsp),%rsp                         #! PC = 0x5555555551c3
+0x00005555555551c8 in rounds_inline_ref ()
+	and    $0xfffffffffffffff8,%rsp                 #! PC = 0x5555555551c8
+0x00005555555551cc in rounds_inline_ref ()
+	mov    %rax,0x40(%rsp)                          #! EA = L0x7fffffffd810; PC = 0x5555555551cc
+0x00005555555551d1 in rounds_inline_ref ()
+	mov    %rbx,0x10(%rsp)                          #! EA = L0x7fffffffd7e0; PC = 0x5555555551d1
+0x00005555555551d6 in rounds_inline_ref ()
+	mov    %rbp,0x18(%rsp)                          #! EA = L0x7fffffffd7e8; PC = 0x5555555551d6
+0x00005555555551db in rounds_inline_ref ()
+	mov    %r12,0x20(%rsp)                          #! EA = L0x7fffffffd7f0; PC = 0x5555555551db
+0x00005555555551e0 in rounds_inline_ref ()
+	mov    %r13,0x28(%rsp)                          #! EA = L0x7fffffffd7f8; PC = 0x5555555551e0
+0x00005555555551e5 in rounds_inline_ref ()
+	mov    %r14,0x30(%rsp)                          #! EA = L0x7fffffffd800; PC = 0x5555555551e5
+0x00005555555551ea in rounds_inline_ref ()
+	mov    %r15,0x38(%rsp)                          #! EA = L0x7fffffffd808; PC = 0x5555555551ea
+0x00005555555551ef in rounds_inline_ref ()
+	mov    %rdi,(%rsp)                              #! EA = L0x7fffffffd7d0; PC = 0x5555555551ef
+0x00005555555551f3 in rounds_inline_ref ()
+	mov    0x38(%rdi),%eax                          #! EA = L0x7fffffffd858; Value = 0x0000000000000100; PC = 0x5555555551f3
+0x00005555555551f6 in rounds_inline_ref ()
+	mov    %eax,0x8(%rsp)                           #! EA = L0x7fffffffd7d8; PC = 0x5555555551f6
+0x00005555555551fa in rounds_inline_ref ()
+	mov    0x3c(%rdi),%eax                          #! EA = L0x7fffffffd85c; Value = 0x0000000000000000; PC = 0x5555555551fa
+0x00005555555551fd in rounds_inline_ref ()
+	mov    %eax,0xc(%rsp)                           #! EA = L0x7fffffffd7dc; PC = 0x5555555551fd
+0x0000555555555201 in rounds_inline_ref ()
+	mov    (%rdi),%eax                              #! EA = L0x7fffffffd820; Value = 0x0000034000000340; PC = 0x555555555201
+0x0000555555555203 in rounds_inline_ref ()
+	mov    0x4(%rdi),%ecx                           #! EA = L0x7fffffffd824; Value = 0x0000034000000340; PC = 0x555555555203
+0x0000555555555206 in rounds_inline_ref ()
+	mov    0x8(%rdi),%edx                           #! EA = L0x7fffffffd828; Value = 0x0000034000000340; PC = 0x555555555206
+0x0000555555555209 in rounds_inline_ref ()
+	mov    0xc(%rdi),%esi                           #! EA = L0x7fffffffd82c; Value = 0x0000034000000340; PC = 0x555555555209
+0x000055555555520c in rounds_inline_ref ()
+	mov    0x10(%rdi),%r8d                          #! EA = L0x7fffffffd830; Value = 0x0000034000000340; PC = 0x55555555520c
+0x0000555555555210 in rounds_inline_ref ()
+	mov    0x14(%rdi),%r9d                          #! EA = L0x7fffffffd834; Value = 0x0000034000000340; PC = 0x555555555210
+0x0000555555555214 in rounds_inline_ref ()
+	mov    0x18(%rdi),%r10d                         #! EA = L0x7fffffffd838; Value = 0x0000034000000340; PC = 0x555555555214
+0x0000555555555218 in rounds_inline_ref ()
+	mov    0x1c(%rdi),%r11d                         #! EA = L0x7fffffffd83c; Value = 0x0000034000000340; PC = 0x555555555218
+0x000055555555521c in rounds_inline_ref ()
+	mov    0x20(%rdi),%ebx                          #! EA = L0x7fffffffd840; Value = 0x0000034000000340; PC = 0x55555555521c
+0x000055555555521f in rounds_inline_ref ()
+	mov    0x24(%rdi),%ebp                          #! EA = L0x7fffffffd844; Value = 0x0000034000000340; PC = 0x55555555521f
+0x0000555555555222 in rounds_inline_ref ()
+	mov    0x28(%rdi),%r12d                         #! EA = L0x7fffffffd848; Value = 0x0000034000000340; PC = 0x555555555222
+0x0000555555555226 in rounds_inline_ref ()
+	mov    0x2c(%rdi),%r13d                         #! EA = L0x7fffffffd84c; Value = 0x0000000000000340; PC = 0x555555555226
+0x000055555555522a in rounds_inline_ref ()
+	mov    0x30(%rdi),%r14d                         #! EA = L0x7fffffffd850; Value = 0x0000000000000000; PC = 0x55555555522a
+0x000055555555522e in rounds_inline_ref ()
+	mov    0x34(%rdi),%edi                          #! EA = L0x7fffffffd854; Value = 0x0000010000000000; PC = 0x55555555522e
+0x0000555555555231 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x0000000000000100; PC = 0x555555555231
+0x0000555555555236 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555236
+0x000055555555523b in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x0000000000000100; PC = 0x55555555523b
+0x0000555555555240 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555240
+0x0000555555555243 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555243
+0x0000555555555246 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555246
+0x0000555555555249 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555249
+0x000055555555524c in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x55555555524c
+0x0000555555555250 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555250
+0x0000555555555254 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555254
+0x0000555555555257 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555257
+0x000055555555525a in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x55555555525a
+0x000055555555525d in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x55555555525d
+0x0000555555555260 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555260
+0x0000555555555264 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555264
+0x0000555555555268 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555268
+0x000055555555526b in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x55555555526b
+0x000055555555526e in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x55555555526e
+0x0000555555555271 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555271
+0x0000555555555274 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555274
+0x0000555555555278 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555278
+0x000055555555527c in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x55555555527c
+0x000055555555527f in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555527f
+0x0000555555555282 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555282
+0x0000555555555285 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555285
+0x0000555555555288 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555288
+0x000055555555528c in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x55555555528c
+0x0000555555555290 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555290
+0x0000555555555295 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x0000000000000000; PC = 0x555555555295
+0x000055555555529a in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x55555555529a
+0x000055555555529d in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x55555555529d
+0x00005555555552a0 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x5555555552a0
+0x00005555555552a2 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555552a2
+0x00005555555552a5 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x5555555552a5
+0x00005555555552a8 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555552a8
+0x00005555555552ac in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555552ac
+0x00005555555552ae in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x5555555552ae
+0x00005555555552b1 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x5555555552b1
+0x00005555555552b4 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x5555555552b4
+0x00005555555552b7 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555552b7
+0x00005555555552bb in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555552bb
+0x00005555555552bf in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x5555555552bf
+0x00005555555552c2 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x5555555552c2
+0x00005555555552c5 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x5555555552c5
+0x00005555555552c7 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555552c7
+0x00005555555552ca in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x5555555552ca
+0x00005555555552cd in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555552cd
+0x00005555555552d1 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555552d1
+0x00005555555552d3 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x5555555552d3
+0x00005555555552d6 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x5555555552d6
+0x00005555555552d9 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x5555555552d9
+0x00005555555552dc in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x5555555552dc
+0x00005555555552e0 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x5555555552e0
+0x00005555555552e4 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x5555555552e4
+0x00005555555552e7 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x5555555552e7
+0x00005555555552ea in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x5555555552ea
+0x00005555555552ed in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x5555555552ed
+0x00005555555552f0 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x5555555552f0
+0x00005555555552f4 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555552f4
+0x00005555555552f8 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x5555555552f8
+0x00005555555552fb in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555552fb
+0x00005555555552fe in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x5555555552fe
+0x0000555555555301 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555301
+0x0000555555555304 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555304
+0x0000555555555308 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555308
+0x000055555555530c in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x55555555530c
+0x000055555555530f in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x55555555530f
+0x0000555555555312 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555312
+0x0000555555555315 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555315
+0x0000555555555318 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555318
+0x000055555555531c in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x55555555531c
+0x0000555555555320 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555320
+0x0000555555555323 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555323
+0x0000555555555326 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555326
+0x0000555555555329 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555329
+0x000055555555532c in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x55555555532c
+0x0000555555555330 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555330
+0x0000555555555334 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555334
+0x0000555555555339 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x38f964208006f807; PC = 0x555555555339
+0x000055555555533e in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x55555555533e
+0x0000555555555341 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555341
+0x0000555555555344 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555344
+0x0000555555555346 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555346
+0x0000555555555349 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555349
+0x000055555555534c in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555534c
+0x0000555555555350 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555350
+0x0000555555555352 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555352
+0x0000555555555355 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555355
+0x0000555555555358 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555358
+0x000055555555535b in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x55555555535b
+0x000055555555535f in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x55555555535f
+0x0000555555555363 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555363
+0x0000555555555366 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555366
+0x0000555555555369 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555369
+0x000055555555536b in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555536b
+0x000055555555536e in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x55555555536e
+0x0000555555555371 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555371
+0x0000555555555375 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555375
+0x0000555555555377 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555377
+0x000055555555537a in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x55555555537a
+0x000055555555537d in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x55555555537d
+0x0000555555555380 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555380
+0x0000555555555384 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555384
+0x0000555555555388 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555388
+0x000055555555538d in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x38f96420398a54c1; PC = 0x55555555538d
+0x0000555555555392 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555392
+0x0000555555555395 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555395
+0x0000555555555398 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555398
+0x000055555555539b in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x55555555539b
+0x000055555555539e in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x55555555539e
+0x00005555555553a2 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555553a2
+0x00005555555553a6 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x5555555553a6
+0x00005555555553a9 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555553a9
+0x00005555555553ac in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555553ac
+0x00005555555553af in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x5555555553af
+0x00005555555553b2 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555553b2
+0x00005555555553b6 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x5555555553b6
+0x00005555555553ba in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x5555555553ba
+0x00005555555553bd in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x5555555553bd
+0x00005555555553c0 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x5555555553c0
+0x00005555555553c3 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x5555555553c3
+0x00005555555553c6 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x5555555553c6
+0x00005555555553ca in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555553ca
+0x00005555555553ce in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x5555555553ce
+0x00005555555553d1 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555553d1
+0x00005555555553d4 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555553d4
+0x00005555555553d7 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x5555555553d7
+0x00005555555553da in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x5555555553da
+0x00005555555553de in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x5555555553de
+0x00005555555553e2 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x5555555553e2
+0x00005555555553e7 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x0000000038f96420; PC = 0x5555555553e7
+0x00005555555553ec in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x5555555553ec
+0x00005555555553ef in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x5555555553ef
+0x00005555555553f2 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x5555555553f2
+0x00005555555553f4 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555553f4
+0x00005555555553f7 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x5555555553f7
+0x00005555555553fa in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555553fa
+0x00005555555553fe in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555553fe
+0x0000555555555400 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555400
+0x0000555555555403 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555403
+0x0000555555555406 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555406
+0x0000555555555409 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555409
+0x000055555555540d in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x55555555540d
+0x0000555555555411 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555411
+0x0000555555555414 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555414
+0x0000555555555417 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555417
+0x0000555555555419 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555419
+0x000055555555541c in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x55555555541c
+0x000055555555541f in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x55555555541f
+0x0000555555555423 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555423
+0x0000555555555425 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555425
+0x0000555555555428 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555428
+0x000055555555542b in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x55555555542b
+0x000055555555542e in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x55555555542e
+0x0000555555555432 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555432
+0x0000555555555436 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555436
+0x0000555555555439 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555439
+0x000055555555543c in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x55555555543c
+0x000055555555543f in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x55555555543f
+0x0000555555555442 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555442
+0x0000555555555446 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555446
+0x000055555555544a in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x55555555544a
+0x000055555555544d in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555544d
+0x0000555555555450 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555450
+0x0000555555555453 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555453
+0x0000555555555456 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555456
+0x000055555555545a in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x55555555545a
+0x000055555555545e in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x55555555545e
+0x0000555555555461 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555461
+0x0000555555555464 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555464
+0x0000555555555467 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555467
+0x000055555555546a in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x55555555546a
+0x000055555555546e in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x55555555546e
+0x0000555555555472 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555472
+0x0000555555555475 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555475
+0x0000555555555478 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555478
+0x000055555555547b in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x55555555547b
+0x000055555555547e in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x55555555547e
+0x0000555555555482 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555482
+0x0000555555555486 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555486
+0x000055555555548b in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x66d54a4cf3a4a314; PC = 0x55555555548b
+0x0000555555555490 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555490
+0x0000555555555493 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555493
+0x0000555555555496 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555496
+0x0000555555555498 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555498
+0x000055555555549b in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x55555555549b
+0x000055555555549e in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555549e
+0x00005555555554a2 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x5555555554a2
+0x00005555555554a4 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x5555555554a4
+0x00005555555554a7 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x5555555554a7
+0x00005555555554aa in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555554aa
+0x00005555555554ad in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555554ad
+0x00005555555554b1 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555554b1
+0x00005555555554b5 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x5555555554b5
+0x00005555555554b8 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x5555555554b8
+0x00005555555554bb in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x5555555554bb
+0x00005555555554bd in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555554bd
+0x00005555555554c0 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x5555555554c0
+0x00005555555554c3 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555554c3
+0x00005555555554c7 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x5555555554c7
+0x00005555555554c9 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x5555555554c9
+0x00005555555554cc in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x5555555554cc
+0x00005555555554cf in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555554cf
+0x00005555555554d2 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x5555555554d2
+0x00005555555554d6 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x5555555554d6
+0x00005555555554da in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x5555555554da
+0x00005555555554df in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x66d54a4c642a7c27; PC = 0x5555555554df
+0x00005555555554e4 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x5555555554e4
+0x00005555555554e7 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x5555555554e7
+0x00005555555554ea in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x5555555554ea
+0x00005555555554ed in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x5555555554ed
+0x00005555555554f0 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x5555555554f0
+0x00005555555554f4 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555554f4
+0x00005555555554f8 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x5555555554f8
+0x00005555555554fb in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555554fb
+0x00005555555554fe in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555554fe
+0x0000555555555501 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555501
+0x0000555555555504 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555504
+0x0000555555555508 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555508
+0x000055555555550c in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x55555555550c
+0x000055555555550f in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x55555555550f
+0x0000555555555512 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555512
+0x0000555555555515 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555515
+0x0000555555555518 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555518
+0x000055555555551c in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x55555555551c
+0x0000555555555520 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555520
+0x0000555555555523 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555523
+0x0000555555555526 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555526
+0x0000555555555529 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555529
+0x000055555555552c in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x55555555552c
+0x0000555555555530 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555530
+0x0000555555555534 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555534
+0x0000555555555539 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x0000000066d54a4c; PC = 0x555555555539
+0x000055555555553e in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x55555555553e
+0x0000555555555541 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555541
+0x0000555555555544 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555544
+0x0000555555555546 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555546
+0x0000555555555549 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555549
+0x000055555555554c in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555554c
+0x0000555555555550 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555550
+0x0000555555555552 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555552
+0x0000555555555555 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555555
+0x0000555555555558 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555558
+0x000055555555555b in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x55555555555b
+0x000055555555555f in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x55555555555f
+0x0000555555555563 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555563
+0x0000555555555566 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555566
+0x0000555555555569 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555569
+0x000055555555556b in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555556b
+0x000055555555556e in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x55555555556e
+0x0000555555555571 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555571
+0x0000555555555575 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555575
+0x0000555555555577 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555577
+0x000055555555557a in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x55555555557a
+0x000055555555557d in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x55555555557d
+0x0000555555555580 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555580
+0x0000555555555584 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555584
+0x0000555555555588 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555588
+0x000055555555558b in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x55555555558b
+0x000055555555558e in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x55555555558e
+0x0000555555555591 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555591
+0x0000555555555594 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555594
+0x0000555555555598 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555598
+0x000055555555559c in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x55555555559c
+0x000055555555559f in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555559f
+0x00005555555555a2 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x5555555555a2
+0x00005555555555a5 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x5555555555a5
+0x00005555555555a8 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x5555555555a8
+0x00005555555555ac in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555555ac
+0x00005555555555b0 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x5555555555b0
+0x00005555555555b3 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x5555555555b3
+0x00005555555555b6 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x5555555555b6
+0x00005555555555b9 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x5555555555b9
+0x00005555555555bc in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x5555555555bc
+0x00005555555555c0 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555555c0
+0x00005555555555c4 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x5555555555c4
+0x00005555555555c7 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555555c7
+0x00005555555555ca in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x5555555555ca
+0x00005555555555cd in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x5555555555cd
+0x00005555555555d0 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x5555555555d0
+0x00005555555555d4 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x5555555555d4
+0x00005555555555d8 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x5555555555d8
+0x00005555555555dd in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x02bc87f366ed7d25; PC = 0x5555555555dd
+0x00005555555555e2 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x5555555555e2
+0x00005555555555e5 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x5555555555e5
+0x00005555555555e8 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x5555555555e8
+0x00005555555555ea in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555555ea
+0x00005555555555ed in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x5555555555ed
+0x00005555555555f0 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555555f0
+0x00005555555555f4 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x5555555555f4
+0x00005555555555f6 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x5555555555f6
+0x00005555555555f9 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x5555555555f9
+0x00005555555555fc in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555555fc
+0x00005555555555ff in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555555ff
+0x0000555555555603 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555603
+0x0000555555555607 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555607
+0x000055555555560a in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x55555555560a
+0x000055555555560d in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x55555555560d
+0x000055555555560f in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555560f
+0x0000555555555612 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555612
+0x0000555555555615 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555615
+0x0000555555555619 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555619
+0x000055555555561b in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x55555555561b
+0x000055555555561e in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x55555555561e
+0x0000555555555621 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555621
+0x0000555555555624 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555624
+0x0000555555555628 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555628
+0x000055555555562c in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x55555555562c
+0x0000555555555631 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x02bc87f3027d52a6; PC = 0x555555555631
+0x0000555555555636 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555636
+0x0000555555555639 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555639
+0x000055555555563c in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x55555555563c
+0x000055555555563f in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x55555555563f
+0x0000555555555642 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555642
+0x0000555555555646 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555646
+0x000055555555564a in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x55555555564a
+0x000055555555564d in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555564d
+0x0000555555555650 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555650
+0x0000555555555653 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555653
+0x0000555555555656 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555656
+0x000055555555565a in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x55555555565a
+0x000055555555565e in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x55555555565e
+0x0000555555555661 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555661
+0x0000555555555664 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555664
+0x0000555555555667 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555667
+0x000055555555566a in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x55555555566a
+0x000055555555566e in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x55555555566e
+0x0000555555555672 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555672
+0x0000555555555675 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555675
+0x0000555555555678 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555678
+0x000055555555567b in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x55555555567b
+0x000055555555567e in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x55555555567e
+0x0000555555555682 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555682
+0x0000555555555686 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555686
+0x000055555555568b in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x0000000002bc87f3; PC = 0x55555555568b
+0x0000555555555690 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555690
+0x0000555555555693 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555693
+0x0000555555555696 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555696
+0x0000555555555698 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555698
+0x000055555555569b in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x55555555569b
+0x000055555555569e in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555569e
+0x00005555555556a2 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555556a2
+0x00005555555556a4 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x5555555556a4
+0x00005555555556a7 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x5555555556a7
+0x00005555555556aa in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x5555555556aa
+0x00005555555556ad in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555556ad
+0x00005555555556b1 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555556b1
+0x00005555555556b5 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x5555555556b5
+0x00005555555556b8 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x5555555556b8
+0x00005555555556bb in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x5555555556bb
+0x00005555555556bd in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555556bd
+0x00005555555556c0 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x5555555556c0
+0x00005555555556c3 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555556c3
+0x00005555555556c7 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555556c7
+0x00005555555556c9 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x5555555556c9
+0x00005555555556cc in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x5555555556cc
+0x00005555555556cf in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x5555555556cf
+0x00005555555556d2 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x5555555556d2
+0x00005555555556d6 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x5555555556d6
+0x00005555555556da in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x5555555556da
+0x00005555555556dd in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x5555555556dd
+0x00005555555556e0 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x5555555556e0
+0x00005555555556e3 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x5555555556e3
+0x00005555555556e6 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x5555555556e6
+0x00005555555556ea in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555556ea
+0x00005555555556ee in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x5555555556ee
+0x00005555555556f1 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555556f1
+0x00005555555556f4 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x5555555556f4
+0x00005555555556f7 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x5555555556f7
+0x00005555555556fa in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x5555555556fa
+0x00005555555556fe in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555556fe
+0x0000555555555702 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555702
+0x0000555555555705 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555705
+0x0000555555555708 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555708
+0x000055555555570b in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x55555555570b
+0x000055555555570e in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x55555555570e
+0x0000555555555712 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555712
+0x0000555555555716 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555716
+0x0000555555555719 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555719
+0x000055555555571c in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x55555555571c
+0x000055555555571f in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x55555555571f
+0x0000555555555722 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555722
+0x0000555555555726 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555726
+0x000055555555572a in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x55555555572a
+0x000055555555572f in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0xbbcd85121af6a7c6; PC = 0x55555555572f
+0x0000555555555734 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555734
+0x0000555555555737 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555737
+0x000055555555573a in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x55555555573a
+0x000055555555573c in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555573c
+0x000055555555573f in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x55555555573f
+0x0000555555555742 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555742
+0x0000555555555746 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555746
+0x0000555555555748 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555748
+0x000055555555574b in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x55555555574b
+0x000055555555574e in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x55555555574e
+0x0000555555555751 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555751
+0x0000555555555755 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555755
+0x0000555555555759 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555759
+0x000055555555575c in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x55555555575c
+0x000055555555575f in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x55555555575f
+0x0000555555555761 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555761
+0x0000555555555764 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555764
+0x0000555555555767 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555767
+0x000055555555576b in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x55555555576b
+0x000055555555576d in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x55555555576d
+0x0000555555555770 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555770
+0x0000555555555773 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555773
+0x0000555555555776 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555776
+0x000055555555577a in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x55555555577a
+0x000055555555577e in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x55555555577e
+0x0000555555555783 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0xbbcd8512e40d1b57; PC = 0x555555555783
+0x0000555555555788 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555788
+0x000055555555578b in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x55555555578b
+0x000055555555578e in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x55555555578e
+0x0000555555555791 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555791
+0x0000555555555794 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555794
+0x0000555555555798 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555798
+0x000055555555579c in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x55555555579c
+0x000055555555579f in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555579f
+0x00005555555557a2 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555557a2
+0x00005555555557a5 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x5555555557a5
+0x00005555555557a8 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555557a8
+0x00005555555557ac in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x5555555557ac
+0x00005555555557b0 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x5555555557b0
+0x00005555555557b3 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x5555555557b3
+0x00005555555557b6 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x5555555557b6
+0x00005555555557b9 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x5555555557b9
+0x00005555555557bc in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x5555555557bc
+0x00005555555557c0 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555557c0
+0x00005555555557c4 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x5555555557c4
+0x00005555555557c7 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555557c7
+0x00005555555557ca in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555557ca
+0x00005555555557cd in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x5555555557cd
+0x00005555555557d0 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x5555555557d0
+0x00005555555557d4 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x5555555557d4
+0x00005555555557d8 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x5555555557d8
+0x00005555555557dd in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x00000000bbcd8512; PC = 0x5555555557dd
+0x00005555555557e2 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x5555555557e2
+0x00005555555557e5 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x5555555557e5
+0x00005555555557e8 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x5555555557e8
+0x00005555555557ea in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555557ea
+0x00005555555557ed in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x5555555557ed
+0x00005555555557f0 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555557f0
+0x00005555555557f4 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x5555555557f4
+0x00005555555557f6 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x5555555557f6
+0x00005555555557f9 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x5555555557f9
+0x00005555555557fc in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x5555555557fc
+0x00005555555557ff in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555557ff
+0x0000555555555803 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555803
+0x0000555555555807 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555807
+0x000055555555580a in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x55555555580a
+0x000055555555580d in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x55555555580d
+0x000055555555580f in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555580f
+0x0000555555555812 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555812
+0x0000555555555815 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555815
+0x0000555555555819 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555819
+0x000055555555581b in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x55555555581b
+0x000055555555581e in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x55555555581e
+0x0000555555555821 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555821
+0x0000555555555824 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555824
+0x0000555555555828 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555828
+0x000055555555582c in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x55555555582c
+0x000055555555582f in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x55555555582f
+0x0000555555555832 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555832
+0x0000555555555835 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555835
+0x0000555555555838 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555838
+0x000055555555583c in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555583c
+0x0000555555555840 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555840
+0x0000555555555843 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555843
+0x0000555555555846 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555846
+0x0000555555555849 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555849
+0x000055555555584c in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x55555555584c
+0x0000555555555850 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555850
+0x0000555555555854 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555854
+0x0000555555555857 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555857
+0x000055555555585a in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x55555555585a
+0x000055555555585d in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x55555555585d
+0x0000555555555860 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555860
+0x0000555555555864 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555864
+0x0000555555555868 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555868
+0x000055555555586b in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x55555555586b
+0x000055555555586e in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x55555555586e
+0x0000555555555871 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555871
+0x0000555555555874 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555874
+0x0000555555555878 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555878
+0x000055555555587c in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x55555555587c
+0x0000555555555881 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x8cb924096a6be1d8; PC = 0x555555555881
+0x0000555555555886 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555886
+0x0000555555555889 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555889
+0x000055555555588c in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x55555555588c
+0x000055555555588e in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555588e
+0x0000555555555891 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555891
+0x0000555555555894 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555894
+0x0000555555555898 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555898
+0x000055555555589a in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x55555555589a
+0x000055555555589d in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x55555555589d
+0x00005555555558a0 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555558a0
+0x00005555555558a3 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555558a3
+0x00005555555558a7 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555558a7
+0x00005555555558ab in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x5555555558ab
+0x00005555555558ae in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x5555555558ae
+0x00005555555558b1 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x5555555558b1
+0x00005555555558b3 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555558b3
+0x00005555555558b6 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x5555555558b6
+0x00005555555558b9 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555558b9
+0x00005555555558bd in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x5555555558bd
+0x00005555555558bf in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x5555555558bf
+0x00005555555558c2 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x5555555558c2
+0x00005555555558c5 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555558c5
+0x00005555555558c8 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x5555555558c8
+0x00005555555558cc in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x5555555558cc
+0x00005555555558d0 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x5555555558d0
+0x00005555555558d5 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x8cb92409eac288cb; PC = 0x5555555558d5
+0x00005555555558da in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x5555555558da
+0x00005555555558dd in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x5555555558dd
+0x00005555555558e0 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x5555555558e0
+0x00005555555558e3 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x5555555558e3
+0x00005555555558e6 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x5555555558e6
+0x00005555555558ea in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555558ea
+0x00005555555558ee in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x5555555558ee
+0x00005555555558f1 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555558f1
+0x00005555555558f4 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x5555555558f4
+0x00005555555558f7 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x5555555558f7
+0x00005555555558fa in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555558fa
+0x00005555555558fe in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x5555555558fe
+0x0000555555555902 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555902
+0x0000555555555905 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555905
+0x0000555555555908 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555908
+0x000055555555590b in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x55555555590b
+0x000055555555590e in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x55555555590e
+0x0000555555555912 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555912
+0x0000555555555916 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555916
+0x0000555555555919 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555919
+0x000055555555591c in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x55555555591c
+0x000055555555591f in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x55555555591f
+0x0000555555555922 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555922
+0x0000555555555926 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555926
+0x000055555555592a in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x55555555592a
+0x000055555555592f in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x000000008cb92409; PC = 0x55555555592f
+0x0000555555555934 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555934
+0x0000555555555937 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555937
+0x000055555555593a in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x55555555593a
+0x000055555555593c in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x55555555593c
+0x000055555555593f in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x55555555593f
+0x0000555555555942 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555942
+0x0000555555555946 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555946
+0x0000555555555948 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555948
+0x000055555555594b in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x55555555594b
+0x000055555555594e in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x55555555594e
+0x0000555555555951 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555951
+0x0000555555555955 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555955
+0x0000555555555959 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555959
+0x000055555555595c in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x55555555595c
+0x000055555555595f in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x55555555595f
+0x0000555555555961 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555961
+0x0000555555555964 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555964
+0x0000555555555967 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555967
+0x000055555555596b in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x55555555596b
+0x000055555555596d in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x55555555596d
+0x0000555555555970 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555970
+0x0000555555555973 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555973
+0x0000555555555976 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555976
+0x000055555555597a in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x55555555597a
+0x000055555555597e in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x55555555597e
+0x0000555555555981 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555981
+0x0000555555555984 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555984
+0x0000555555555987 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555987
+0x000055555555598a in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x55555555598a
+0x000055555555598e in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x55555555598e
+0x0000555555555992 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555992
+0x0000555555555995 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555995
+0x0000555555555998 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555998
+0x000055555555599b in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x55555555599b
+0x000055555555599e in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x55555555599e
+0x00005555555559a2 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x5555555559a2
+0x00005555555559a6 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x5555555559a6
+0x00005555555559a9 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x5555555559a9
+0x00005555555559ac in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x5555555559ac
+0x00005555555559af in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x5555555559af
+0x00005555555559b2 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x5555555559b2
+0x00005555555559b6 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x5555555559b6
+0x00005555555559ba in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x5555555559ba
+0x00005555555559bd in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x5555555559bd
+0x00005555555559c0 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x5555555559c0
+0x00005555555559c3 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x5555555559c3
+0x00005555555559c6 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x5555555559c6
+0x00005555555559ca in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x5555555559ca
+0x00005555555559ce in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x5555555559ce
+0x00005555555559d3 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x152613a227aa3fb8; PC = 0x5555555559d3
+0x00005555555559d8 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x5555555559d8
+0x00005555555559db in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x5555555559db
+0x00005555555559de in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x5555555559de
+0x00005555555559e0 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x5555555559e0
+0x00005555555559e3 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x5555555559e3
+0x00005555555559e6 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x5555555559e6
+0x00005555555559ea in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x5555555559ea
+0x00005555555559ec in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x5555555559ec
+0x00005555555559ef in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x5555555559ef
+0x00005555555559f2 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x5555555559f2
+0x00005555555559f5 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x5555555559f5
+0x00005555555559f9 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x5555555559f9
+0x00005555555559fd in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x5555555559fd
+0x0000555555555a00 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555a00
+0x0000555555555a03 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555a03
+0x0000555555555a05 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555a05
+0x0000555555555a08 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555a08
+0x0000555555555a0b in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555a0b
+0x0000555555555a0f in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555a0f
+0x0000555555555a11 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555a11
+0x0000555555555a14 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555a14
+0x0000555555555a17 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555a17
+0x0000555555555a1a in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555a1a
+0x0000555555555a1e in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555a1e
+0x0000555555555a22 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555a22
+0x0000555555555a27 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x152613a2d08eec59; PC = 0x555555555a27
+0x0000555555555a2c in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555a2c
+0x0000555555555a2f in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555a2f
+0x0000555555555a32 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555a32
+0x0000555555555a35 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555a35
+0x0000555555555a38 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555a38
+0x0000555555555a3c in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555a3c
+0x0000555555555a40 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555a40
+0x0000555555555a43 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555a43
+0x0000555555555a46 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555a46
+0x0000555555555a49 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555a49
+0x0000555555555a4c in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555a4c
+0x0000555555555a50 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555a50
+0x0000555555555a54 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555a54
+0x0000555555555a57 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555a57
+0x0000555555555a5a in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555a5a
+0x0000555555555a5d in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555a5d
+0x0000555555555a60 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555a60
+0x0000555555555a64 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555a64
+0x0000555555555a68 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555a68
+0x0000555555555a6b in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555a6b
+0x0000555555555a6e in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555a6e
+0x0000555555555a71 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555a71
+0x0000555555555a74 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555a74
+0x0000555555555a78 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555a78
+0x0000555555555a7c in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555a7c
+0x0000555555555a81 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x00000000152613a2; PC = 0x555555555a81
+0x0000555555555a86 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555a86
+0x0000555555555a89 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555a89
+0x0000555555555a8c in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555a8c
+0x0000555555555a8e in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555a8e
+0x0000555555555a91 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555a91
+0x0000555555555a94 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555a94
+0x0000555555555a98 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555a98
+0x0000555555555a9a in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555a9a
+0x0000555555555a9d in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555a9d
+0x0000555555555aa0 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555aa0
+0x0000555555555aa3 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555aa3
+0x0000555555555aa7 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555aa7
+0x0000555555555aab in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555aab
+0x0000555555555aae in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555aae
+0x0000555555555ab1 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555ab1
+0x0000555555555ab3 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555ab3
+0x0000555555555ab6 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555ab6
+0x0000555555555ab9 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555ab9
+0x0000555555555abd in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555abd
+0x0000555555555abf in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555abf
+0x0000555555555ac2 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555ac2
+0x0000555555555ac5 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555ac5
+0x0000555555555ac8 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555ac8
+0x0000555555555acc in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555acc
+0x0000555555555ad0 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555ad0
+0x0000555555555ad3 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555ad3
+0x0000555555555ad6 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555ad6
+0x0000555555555ad9 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555ad9
+0x0000555555555adc in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555adc
+0x0000555555555ae0 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555ae0
+0x0000555555555ae4 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555ae4
+0x0000555555555ae7 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555ae7
+0x0000555555555aea in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555aea
+0x0000555555555aed in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555aed
+0x0000555555555af0 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555af0
+0x0000555555555af4 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555af4
+0x0000555555555af8 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555af8
+0x0000555555555afb in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555afb
+0x0000555555555afe in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555afe
+0x0000555555555b01 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555b01
+0x0000555555555b04 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555b04
+0x0000555555555b08 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555b08
+0x0000555555555b0c in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555b0c
+0x0000555555555b0f in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555b0f
+0x0000555555555b12 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555b12
+0x0000555555555b15 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555b15
+0x0000555555555b18 in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555b18
+0x0000555555555b1c in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555b1c
+0x0000555555555b20 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555b20
+0x0000555555555b25 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0xda86c3242eff0291; PC = 0x555555555b25
+0x0000555555555b2a in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555b2a
+0x0000555555555b2d in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555b2d
+0x0000555555555b30 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555b30
+0x0000555555555b32 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555b32
+0x0000555555555b35 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555b35
+0x0000555555555b38 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555b38
+0x0000555555555b3c in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555b3c
+0x0000555555555b3e in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555b3e
+0x0000555555555b41 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555b41
+0x0000555555555b44 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555b44
+0x0000555555555b47 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555b47
+0x0000555555555b4b in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555b4b
+0x0000555555555b4f in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555b4f
+0x0000555555555b52 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555b52
+0x0000555555555b55 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555b55
+0x0000555555555b57 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555b57
+0x0000555555555b5a in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555b5a
+0x0000555555555b5d in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555b5d
+0x0000555555555b61 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555b61
+0x0000555555555b63 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555b63
+0x0000555555555b66 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555b66
+0x0000555555555b69 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555b69
+0x0000555555555b6c in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555b6c
+0x0000555555555b70 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555b70
+0x0000555555555b74 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555b74
+0x0000555555555b79 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0xda86c324be790b5a; PC = 0x555555555b79
+0x0000555555555b7e in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555b7e
+0x0000555555555b81 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555b81
+0x0000555555555b84 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555b84
+0x0000555555555b87 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555b87
+0x0000555555555b8a in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555b8a
+0x0000555555555b8e in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555b8e
+0x0000555555555b92 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555b92
+0x0000555555555b95 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555b95
+0x0000555555555b98 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555b98
+0x0000555555555b9b in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555b9b
+0x0000555555555b9e in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555b9e
+0x0000555555555ba2 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555ba2
+0x0000555555555ba6 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555ba6
+0x0000555555555ba9 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555ba9
+0x0000555555555bac in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555bac
+0x0000555555555baf in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555baf
+0x0000555555555bb2 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555bb2
+0x0000555555555bb6 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555bb6
+0x0000555555555bba in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555bba
+0x0000555555555bbd in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555bbd
+0x0000555555555bc0 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555bc0
+0x0000555555555bc3 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555bc3
+0x0000555555555bc6 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555bc6
+0x0000555555555bca in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555bca
+0x0000555555555bce in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555bce
+0x0000555555555bd3 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x00000000da86c324; PC = 0x555555555bd3
+0x0000555555555bd8 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555bd8
+0x0000555555555bdb in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555bdb
+0x0000555555555bde in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555bde
+0x0000555555555be0 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555be0
+0x0000555555555be3 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555be3
+0x0000555555555be6 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555be6
+0x0000555555555bea in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555bea
+0x0000555555555bec in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555bec
+0x0000555555555bef in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555bef
+0x0000555555555bf2 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555bf2
+0x0000555555555bf5 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555bf5
+0x0000555555555bf9 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555bf9
+0x0000555555555bfd in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555bfd
+0x0000555555555c00 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555c00
+0x0000555555555c03 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555c03
+0x0000555555555c05 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555c05
+0x0000555555555c08 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555c08
+0x0000555555555c0b in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555c0b
+0x0000555555555c0f in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555c0f
+0x0000555555555c11 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555c11
+0x0000555555555c14 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555c14
+0x0000555555555c17 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555c17
+0x0000555555555c1a in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555c1a
+0x0000555555555c1e in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555c1e
+0x0000555555555c22 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555c22
+0x0000555555555c25 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555c25
+0x0000555555555c28 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555c28
+0x0000555555555c2b in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555c2b
+0x0000555555555c2e in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555c2e
+0x0000555555555c32 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555c32
+0x0000555555555c36 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555c36
+0x0000555555555c39 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555c39
+0x0000555555555c3c in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555c3c
+0x0000555555555c3f in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555c3f
+0x0000555555555c42 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555c42
+0x0000555555555c46 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555c46
+0x0000555555555c4a in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555c4a
+0x0000555555555c4d in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555c4d
+0x0000555555555c50 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555c50
+0x0000555555555c53 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555c53
+0x0000555555555c56 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555c56
+0x0000555555555c5a in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555c5a
+0x0000555555555c5e in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555c5e
+0x0000555555555c61 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555c61
+0x0000555555555c64 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555c64
+0x0000555555555c67 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555c67
+0x0000555555555c6a in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555c6a
+0x0000555555555c6e in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555c6e
+0x0000555555555c72 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555c72
+0x0000555555555c77 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x8df09390f3b57b1f; PC = 0x555555555c77
+0x0000555555555c7c in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555c7c
+0x0000555555555c7f in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555c7f
+0x0000555555555c82 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555c82
+0x0000555555555c84 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555c84
+0x0000555555555c87 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555c87
+0x0000555555555c8a in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555c8a
+0x0000555555555c8e in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555c8e
+0x0000555555555c90 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555c90
+0x0000555555555c93 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555c93
+0x0000555555555c96 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555c96
+0x0000555555555c99 in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555c99
+0x0000555555555c9d in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555c9d
+0x0000555555555ca1 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555ca1
+0x0000555555555ca4 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555ca4
+0x0000555555555ca7 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555ca7
+0x0000555555555ca9 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555ca9
+0x0000555555555cac in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555cac
+0x0000555555555caf in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555caf
+0x0000555555555cb3 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555cb3
+0x0000555555555cb5 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555cb5
+0x0000555555555cb8 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555cb8
+0x0000555555555cbb in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555cbb
+0x0000555555555cbe in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555cbe
+0x0000555555555cc2 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555cc2
+0x0000555555555cc6 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555cc6
+0x0000555555555ccb in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x8df093908af02feb; PC = 0x555555555ccb
+0x0000555555555cd0 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555cd0
+0x0000555555555cd3 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555cd3
+0x0000555555555cd6 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555cd6
+0x0000555555555cd9 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555cd9
+0x0000555555555cdc in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555cdc
+0x0000555555555ce0 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555ce0
+0x0000555555555ce4 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555ce4
+0x0000555555555ce7 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555ce7
+0x0000555555555cea in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555cea
+0x0000555555555ced in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555ced
+0x0000555555555cf0 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555cf0
+0x0000555555555cf4 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555cf4
+0x0000555555555cf8 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555cf8
+0x0000555555555cfb in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555cfb
+0x0000555555555cfe in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555cfe
+0x0000555555555d01 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555d01
+0x0000555555555d04 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555d04
+0x0000555555555d08 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555d08
+0x0000555555555d0c in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555d0c
+0x0000555555555d0f in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555d0f
+0x0000555555555d12 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555d12
+0x0000555555555d15 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555d15
+0x0000555555555d18 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555d18
+0x0000555555555d1c in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555d1c
+0x0000555555555d20 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555d20
+0x0000555555555d25 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x000000008df09390; PC = 0x555555555d25
+0x0000555555555d2a in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555d2a
+0x0000555555555d2d in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555d2d
+0x0000555555555d30 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555d30
+0x0000555555555d32 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555d32
+0x0000555555555d35 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555d35
+0x0000555555555d38 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555d38
+0x0000555555555d3c in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555d3c
+0x0000555555555d3e in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555d3e
+0x0000555555555d41 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555d41
+0x0000555555555d44 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555d44
+0x0000555555555d47 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555d47
+0x0000555555555d4b in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555d4b
+0x0000555555555d4f in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555d4f
+0x0000555555555d52 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555d52
+0x0000555555555d55 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555d55
+0x0000555555555d57 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555d57
+0x0000555555555d5a in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555d5a
+0x0000555555555d5d in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555d5d
+0x0000555555555d61 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555d61
+0x0000555555555d63 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555d63
+0x0000555555555d66 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555d66
+0x0000555555555d69 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555d69
+0x0000555555555d6c in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555d6c
+0x0000555555555d70 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555d70
+0x0000555555555d74 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555d74
+0x0000555555555d77 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555d77
+0x0000555555555d7a in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555d7a
+0x0000555555555d7d in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555d7d
+0x0000555555555d80 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555d80
+0x0000555555555d84 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555d84
+0x0000555555555d88 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555d88
+0x0000555555555d8b in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555d8b
+0x0000555555555d8e in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555d8e
+0x0000555555555d91 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555d91
+0x0000555555555d94 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555d94
+0x0000555555555d98 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555d98
+0x0000555555555d9c in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555d9c
+0x0000555555555d9f in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555d9f
+0x0000555555555da2 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555da2
+0x0000555555555da5 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555da5
+0x0000555555555da8 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555da8
+0x0000555555555dac in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555dac
+0x0000555555555db0 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555db0
+0x0000555555555db3 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555db3
+0x0000555555555db6 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555db6
+0x0000555555555db9 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555db9
+0x0000555555555dbc in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555dbc
+0x0000555555555dc0 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555dc0
+0x0000555555555dc4 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555dc4
+0x0000555555555dc9 in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x24b6d6bdffc29a8f; PC = 0x555555555dc9
+0x0000555555555dce in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555dce
+0x0000555555555dd1 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555dd1
+0x0000555555555dd4 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555dd4
+0x0000555555555dd6 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555dd6
+0x0000555555555dd9 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555dd9
+0x0000555555555ddc in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555ddc
+0x0000555555555de0 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555de0
+0x0000555555555de2 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555de2
+0x0000555555555de5 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555de5
+0x0000555555555de8 in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555de8
+0x0000555555555deb in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555deb
+0x0000555555555def in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555def
+0x0000555555555df3 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555df3
+0x0000555555555df6 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555df6
+0x0000555555555df9 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555df9
+0x0000555555555dfb in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555dfb
+0x0000555555555dfe in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555dfe
+0x0000555555555e01 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555e01
+0x0000555555555e05 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555e05
+0x0000555555555e07 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555e07
+0x0000555555555e0a in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555e0a
+0x0000555555555e0d in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555e0d
+0x0000555555555e10 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555e10
+0x0000555555555e14 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555e14
+0x0000555555555e18 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555e18
+0x0000555555555e1d in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x24b6d6bdff5e566b; PC = 0x555555555e1d
+0x0000555555555e22 in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555e22
+0x0000555555555e25 in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555e25
+0x0000555555555e28 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555e28
+0x0000555555555e2b in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555e2b
+0x0000555555555e2e in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555e2e
+0x0000555555555e32 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555e32
+0x0000555555555e36 in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555e36
+0x0000555555555e39 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555e39
+0x0000555555555e3c in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555e3c
+0x0000555555555e3f in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555e3f
+0x0000555555555e42 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555e42
+0x0000555555555e46 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555e46
+0x0000555555555e4a in rounds_inline_ref ()
+	add    %r8d,%eax                                #! PC = 0x555555555e4a
+0x0000555555555e4d in rounds_inline_ref ()
+	add    %r10d,%edx                               #! PC = 0x555555555e4d
+0x0000555555555e50 in rounds_inline_ref ()
+	xor    %eax,%r14d                               #! PC = 0x555555555e50
+0x0000555555555e53 in rounds_inline_ref ()
+	xor    %edx,%r15d                               #! PC = 0x555555555e53
+0x0000555555555e56 in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555e56
+0x0000555555555e5a in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555e5a
+0x0000555555555e5e in rounds_inline_ref ()
+	add    %r14d,%ebx                               #! PC = 0x555555555e5e
+0x0000555555555e61 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555e61
+0x0000555555555e64 in rounds_inline_ref ()
+	xor    %ebx,%r8d                                #! PC = 0x555555555e64
+0x0000555555555e67 in rounds_inline_ref ()
+	xor    %r12d,%r10d                              #! PC = 0x555555555e67
+0x0000555555555e6a in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555e6a
+0x0000555555555e6e in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555e6e
+0x0000555555555e72 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555e72
+0x0000555555555e77 in rounds_inline_ref ()
+	mov    0xc(%rsp),%r15d                          #! EA = L0x7fffffffd7dc; Value = 0x0000000024b6d6bd; PC = 0x555555555e77
+0x0000555555555e7c in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555e7c
+0x0000555555555e7f in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555e7f
+0x0000555555555e82 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555e82
+0x0000555555555e84 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555e84
+0x0000555555555e87 in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555e87
+0x0000555555555e8a in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555e8a
+0x0000555555555e8e in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555e8e
+0x0000555555555e90 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555e90
+0x0000555555555e93 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555e93
+0x0000555555555e96 in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555e96
+0x0000555555555e99 in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555e99
+0x0000555555555e9d in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555e9d
+0x0000555555555ea1 in rounds_inline_ref ()
+	add    %r9d,%ecx                                #! PC = 0x555555555ea1
+0x0000555555555ea4 in rounds_inline_ref ()
+	add    %r11d,%esi                               #! PC = 0x555555555ea4
+0x0000555555555ea7 in rounds_inline_ref ()
+	xor    %ecx,%edi                                #! PC = 0x555555555ea7
+0x0000555555555ea9 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555ea9
+0x0000555555555eac in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555eac
+0x0000555555555eaf in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555eaf
+0x0000555555555eb3 in rounds_inline_ref ()
+	add    %edi,%ebp                                #! PC = 0x555555555eb3
+0x0000555555555eb5 in rounds_inline_ref ()
+	add    %r15d,%r13d                              #! PC = 0x555555555eb5
+0x0000555555555eb8 in rounds_inline_ref ()
+	xor    %ebp,%r9d                                #! PC = 0x555555555eb8
+0x0000555555555ebb in rounds_inline_ref ()
+	xor    %r13d,%r11d                              #! PC = 0x555555555ebb
+0x0000555555555ebe in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555ebe
+0x0000555555555ec2 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555ec2
+0x0000555555555ec6 in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555ec6
+0x0000555555555ec9 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555ec9
+0x0000555555555ecc in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555ecc
+0x0000555555555ecf in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555ecf
+0x0000555555555ed2 in rounds_inline_ref ()
+	rol    $0x10,%r14d                              #! PC = 0x555555555ed2
+0x0000555555555ed6 in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555ed6
+0x0000555555555eda in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555eda
+0x0000555555555edd in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555edd
+0x0000555555555ee0 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555ee0
+0x0000555555555ee3 in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555ee3
+0x0000555555555ee6 in rounds_inline_ref ()
+	rol    $0xc,%r10d                               #! PC = 0x555555555ee6
+0x0000555555555eea in rounds_inline_ref ()
+	rol    $0xc,%r9d                                #! PC = 0x555555555eea
+0x0000555555555eee in rounds_inline_ref ()
+	add    %r10d,%ecx                               #! PC = 0x555555555eee
+0x0000555555555ef1 in rounds_inline_ref ()
+	add    %r9d,%eax                                #! PC = 0x555555555ef1
+0x0000555555555ef4 in rounds_inline_ref ()
+	xor    %ecx,%r14d                               #! PC = 0x555555555ef4
+0x0000555555555ef7 in rounds_inline_ref ()
+	xor    %eax,%r15d                               #! PC = 0x555555555ef7
+0x0000555555555efa in rounds_inline_ref ()
+	rol    $0x8,%r14d                               #! PC = 0x555555555efa
+0x0000555555555efe in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555efe
+0x0000555555555f02 in rounds_inline_ref ()
+	add    %r14d,%r13d                              #! PC = 0x555555555f02
+0x0000555555555f05 in rounds_inline_ref ()
+	add    %r15d,%r12d                              #! PC = 0x555555555f05
+0x0000555555555f08 in rounds_inline_ref ()
+	xor    %r13d,%r10d                              #! PC = 0x555555555f08
+0x0000555555555f0b in rounds_inline_ref ()
+	xor    %r12d,%r9d                               #! PC = 0x555555555f0b
+0x0000555555555f0e in rounds_inline_ref ()
+	rol    $0x7,%r10d                               #! PC = 0x555555555f0e
+0x0000555555555f12 in rounds_inline_ref ()
+	rol    $0x7,%r9d                                #! PC = 0x555555555f12
+0x0000555555555f16 in rounds_inline_ref ()
+	mov    %r15d,0xc(%rsp)                          #! EA = L0x7fffffffd7dc; PC = 0x555555555f16
+0x0000555555555f1b in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x13be1335f76cd6a9; PC = 0x555555555f1b
+0x0000555555555f20 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555f20
+0x0000555555555f23 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555f23
+0x0000555555555f26 in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555f26
+0x0000555555555f28 in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555f28
+0x0000555555555f2b in rounds_inline_ref ()
+	rol    $0x10,%edi                               #! PC = 0x555555555f2b
+0x0000555555555f2e in rounds_inline_ref ()
+	rol    $0x10,%r15d                              #! PC = 0x555555555f2e
+0x0000555555555f32 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555f32
+0x0000555555555f34 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555f34
+0x0000555555555f37 in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555f37
+0x0000555555555f3a in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555f3a
+0x0000555555555f3d in rounds_inline_ref ()
+	rol    $0xc,%r11d                               #! PC = 0x555555555f3d
+0x0000555555555f41 in rounds_inline_ref ()
+	rol    $0xc,%r8d                                #! PC = 0x555555555f41
+0x0000555555555f45 in rounds_inline_ref ()
+	add    %r11d,%edx                               #! PC = 0x555555555f45
+0x0000555555555f48 in rounds_inline_ref ()
+	add    %r8d,%esi                                #! PC = 0x555555555f48
+0x0000555555555f4b in rounds_inline_ref ()
+	xor    %edx,%edi                                #! PC = 0x555555555f4b
+0x0000555555555f4d in rounds_inline_ref ()
+	xor    %esi,%r15d                               #! PC = 0x555555555f4d
+0x0000555555555f50 in rounds_inline_ref ()
+	rol    $0x8,%edi                                #! PC = 0x555555555f50
+0x0000555555555f53 in rounds_inline_ref ()
+	rol    $0x8,%r15d                               #! PC = 0x555555555f53
+0x0000555555555f57 in rounds_inline_ref ()
+	add    %edi,%ebx                                #! PC = 0x555555555f57
+0x0000555555555f59 in rounds_inline_ref ()
+	add    %r15d,%ebp                               #! PC = 0x555555555f59
+0x0000555555555f5c in rounds_inline_ref ()
+	xor    %ebx,%r11d                               #! PC = 0x555555555f5c
+0x0000555555555f5f in rounds_inline_ref ()
+	xor    %ebp,%r8d                                #! PC = 0x555555555f5f
+0x0000555555555f62 in rounds_inline_ref ()
+	rol    $0x7,%r11d                               #! PC = 0x555555555f62
+0x0000555555555f66 in rounds_inline_ref ()
+	rol    $0x7,%r8d                                #! PC = 0x555555555f66
+0x0000555555555f6a in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555f6a
+0x0000555555555f6f in rounds_inline_ref ()
+	mov    0x8(%rsp),%r15d                          #! EA = L0x7fffffffd7d8; Value = 0x13be1335568bd009; PC = 0x555555555f6f
+0x0000555555555f74 in rounds_inline_ref ()
+	mov    %r15d,0x8(%rsp)                          #! EA = L0x7fffffffd7d8; PC = 0x555555555f74
+0x0000555555555f79 in rounds_inline_ref ()
+	mov    (%rsp),%r15                              #! EA = L0x7fffffffd7d0; Value = 0x00007fffffffd820; PC = 0x555555555f79
+0x0000555555555f7d in rounds_inline_ref ()
+	mov    %eax,(%r15)                              #! EA = L0x7fffffffd820; PC = 0x555555555f7d
+0x0000555555555f80 in rounds_inline_ref ()
+	mov    %ecx,0x4(%r15)                           #! EA = L0x7fffffffd824; PC = 0x555555555f80
+0x0000555555555f84 in rounds_inline_ref ()
+	mov    %edx,0x8(%r15)                           #! EA = L0x7fffffffd828; PC = 0x555555555f84
+0x0000555555555f88 in rounds_inline_ref ()
+	mov    %esi,0xc(%r15)                           #! EA = L0x7fffffffd82c; PC = 0x555555555f88
+0x0000555555555f8c in rounds_inline_ref ()
+	mov    %r8d,0x10(%r15)                          #! EA = L0x7fffffffd830; PC = 0x555555555f8c
+0x0000555555555f90 in rounds_inline_ref ()
+	mov    %r9d,0x14(%r15)                          #! EA = L0x7fffffffd834; PC = 0x555555555f90
+0x0000555555555f94 in rounds_inline_ref ()
+	mov    %r10d,0x18(%r15)                         #! EA = L0x7fffffffd838; PC = 0x555555555f94
+0x0000555555555f98 in rounds_inline_ref ()
+	mov    %r11d,0x1c(%r15)                         #! EA = L0x7fffffffd83c; PC = 0x555555555f98
+0x0000555555555f9c in rounds_inline_ref ()
+	mov    %ebx,0x20(%r15)                          #! EA = L0x7fffffffd840; PC = 0x555555555f9c
+0x0000555555555fa0 in rounds_inline_ref ()
+	mov    %ebp,0x24(%r15)                          #! EA = L0x7fffffffd844; PC = 0x555555555fa0
+0x0000555555555fa4 in rounds_inline_ref ()
+	mov    %r12d,0x28(%r15)                         #! EA = L0x7fffffffd848; PC = 0x555555555fa4
+0x0000555555555fa8 in rounds_inline_ref ()
+	mov    %r13d,0x2c(%r15)                         #! EA = L0x7fffffffd84c; PC = 0x555555555fa8
+0x0000555555555fac in rounds_inline_ref ()
+	mov    %r14d,0x30(%r15)                         #! EA = L0x7fffffffd850; PC = 0x555555555fac
+0x0000555555555fb0 in rounds_inline_ref ()
+	mov    %edi,0x34(%r15)                          #! EA = L0x7fffffffd854; PC = 0x555555555fb0
+0x0000555555555fb4 in rounds_inline_ref ()
+	mov    0x8(%rsp),%eax                           #! EA = L0x7fffffffd7d8; Value = 0x13be1335568bd009; PC = 0x555555555fb4
+0x0000555555555fb8 in rounds_inline_ref ()
+	mov    %eax,0x38(%r15)                          #! EA = L0x7fffffffd858; PC = 0x555555555fb8
+0x0000555555555fbc in rounds_inline_ref ()
+	mov    0xc(%rsp),%eax                           #! EA = L0x7fffffffd7dc; Value = 0x0000000013be1335; PC = 0x555555555fbc
+0x0000555555555fc0 in rounds_inline_ref ()
+	mov    %eax,0x3c(%r15)                          #! EA = L0x7fffffffd85c; PC = 0x555555555fc0
+0x0000555555555fc4 in rounds_inline_ref ()
+	mov    0x10(%rsp),%rbx                          #! EA = L0x7fffffffd7e0; Value = 0x0000000000000000; PC = 0x555555555fc4
+0x0000555555555fc9 in rounds_inline_ref ()
+	mov    0x18(%rsp),%rbp                          #! EA = L0x7fffffffd7e8; Value = 0x0000000000000001; PC = 0x555555555fc9
+0x0000555555555fce in rounds_inline_ref ()
+	mov    0x20(%rsp),%r12                          #! EA = L0x7fffffffd7f0; Value = 0x00007fffffffdb88; PC = 0x555555555fce
+0x0000555555555fd3 in rounds_inline_ref ()
+	mov    0x28(%rsp),%r13                          #! EA = L0x7fffffffd7f8; Value = 0x0000555555555060; PC = 0x555555555fd3
+0x0000555555555fd8 in rounds_inline_ref ()
+	mov    0x30(%rsp),%r14                          #! EA = L0x7fffffffd800; Value = 0x000055555555adc0; PC = 0x555555555fd8
+0x0000555555555fdd in rounds_inline_ref ()
+	mov    0x38(%rsp),%r15                          #! EA = L0x7fffffffd808; Value = 0x00007ffff7ffd040; PC = 0x555555555fdd
+0x0000555555555fe2 in rounds_inline_ref ()
+	mov    0x40(%rsp),%rsp                          #! EA = L0x7fffffffd810; Value = 0x00007fffffffd818; PC = 0x555555555fe2
+0x0000555555555fe7 in rounds_inline_ref ()
+	#! <- SP = 0x7fffffffd818
+0x0000555555555086 in main ()
+	#ret                                            #! PC = 0x555555555fe7

@@ -1,0 +1,125 @@
+
+param int CHACHA_ROUNDS = 20;
+
+inline fn __half_round_inline_ref(
+  reg u32[16] k,
+  inline int a0 b0 c0 d0
+             a1 b1 c1 d1
+) -> reg u32[16]
+{
+
+  //k = line(k, a, b, d, 16);
+  k[a0] += k[b0];
+  k[a1] += k[b1];
+
+  k[d0] ^= k[a0];
+  k[d1] ^= k[a1];
+
+  _, _, k[d0] = #ROL_32(k[d0], 16);
+  _, _, k[d1] = #ROL_32(k[d1], 16);
+
+  //k = line(k, c, d, b, 12);
+  k[c0] += k[d0];
+  k[c1] += k[d1];
+
+  k[b0] ^= k[c0];
+  k[b1] ^= k[c1];
+
+  _, _, k[b0] = #ROL_32(k[b0], 12);
+  _, _, k[b1] = #ROL_32(k[b1], 12);
+
+  //k = line(k, a, b, d, 8);
+  k[a0] += k[b0];
+  k[a1] += k[b1];
+
+  k[d0] ^= k[a0];
+  k[d1] ^= k[a1];
+
+  _, _, k[d0] = #ROL_32(k[d0], 8);
+  _, _, k[d1] = #ROL_32(k[d1], 8);
+
+  //k = line(k, c, d, b, 7);
+  k[c0] += k[d0];
+  k[c1] += k[d1];
+
+  k[b0] ^= k[c0];
+  k[b1] ^= k[c1];
+
+  _, _, k[b0] = #ROL_32(k[b0], 7);
+  _, _, k[b1] = #ROL_32(k[b1], 7);
+
+  return k;
+}
+
+inline fn __double_round_inline_ref(reg u32[16] k, stack u32 k14 k15) -> reg u32[16], stack u32, stack u32
+{
+  k[14] = k14;
+
+  k = __half_round_inline_ref(k, 0, 4, 8, 12,
+                                 2, 6, 10, 14);
+  k14 = k[14];
+  k[15] = k15;
+
+  k = __half_round_inline_ref(k, 1, 5, 9, 13,
+                                 3, 7, 11, 15);
+
+  k = __half_round_inline_ref(k, 1, 6, 11, 12,
+                                 0, 5, 10, 15);
+
+  k15 = k[15];
+  k[14] = k14;
+
+  k = __half_round_inline_ref(k, 2, 7, 8, 13,
+                                 3, 4, 9, 14);
+
+  k14 = k[14];
+
+  return k, k14, k15;
+}
+
+inline fn __rounds_inline_ref(reg u32[16] k, stack u32 k15) -> reg u32[16], stack u32
+{
+  stack u32 k14;
+  inline int round;
+
+  k14 = k[14];
+
+  for round=0 to (CHACHA_ROUNDS/2)
+  { k, k14, k15 = __double_round_inline_ref(k, k14, k15); }
+
+  k[14] = k14;
+
+  return k, k15;
+}
+
+//
+
+export fn rounds_inline_ref(reg u64 kp)
+{
+  inline int i;
+  reg u32 t;
+  stack u64 kps;
+
+  reg u32[16] k;
+  stack u32 k14 k15;
+
+  // load k (we only have 15 regs (k0..k14); Since 1 reg is for kp, we also copy k14 first)
+  kps = kp;
+  t = (u32)[kp + 14*4]; k14 = t;
+  t = (u32)[kp + 15*4]; k15 = t;
+  for i=0 to 14
+  { k[i] = (u32)[kp + i*4]; }
+  k[14] = k14;
+
+  // rounds
+  k, k15 =  __rounds_inline_ref(k, k15);
+
+  // store k
+  k14 = k[14];
+  kp = kps;
+  for i=0 to 14
+  { (u32)[kp + i*4] = k[i]; }
+  t = k14; (u32)[kp + 14*4] = t;
+  t = k15; (u32)[kp + 15*4] = t;
+}
+

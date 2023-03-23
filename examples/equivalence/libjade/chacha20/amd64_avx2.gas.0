@@ -1,0 +1,3369 @@
+
+Breakpoint 1, 0x0000555555556000 in rounds_v_avx2 ()
+rounds_v_avx2:
+# %rdi = 0x7fffffffd860
+# %rsi = 0x7e9c5a3
+# %rdx = 0x18935213
+# %rcx = 0xe4ee4640
+# %r8  = 0xd2c90ff2
+# %r9  = 0x4072c06
+	#! -> SP = 0x7fffffffd818
+	mov    %rsp,%rsi                                #! PC = 0x555555556000
+0x0000555555556003 in rounds_v_avx2 ()
+	lea    -0x20(%rsp),%rsp                         #! PC = 0x555555556003
+0x0000555555556008 in rounds_v_avx2 ()
+	and    $0xffffffffffffffe0,%rsp                 #! PC = 0x555555556008
+0x000055555555600c in rounds_v_avx2 ()
+	vmovdqu (%rdi),%ymm3                            #! EA = L0x7fffffffd860; Value = 0x0000000000000000; PC = 0x55555555600c
+0x0000555555556010 in rounds_v_avx2 ()
+	vmovdqu 0x20(%rdi),%ymm0                        #! EA = L0x7fffffffd880; Value = 0x0000000000000000; PC = 0x555555556010
+0x0000555555556015 in rounds_v_avx2 ()
+	vmovdqu 0x40(%rdi),%ymm12                       #! EA = L0x7fffffffd8a0; Value = 0x2f2f2f2f2f2f2f2f; PC = 0x555555556015
+0x000055555555601a in rounds_v_avx2 ()
+	vmovdqu 0x60(%rdi),%ymm6                        #! EA = L0x7fffffffd8c0; Value = 0x0000000000000060; PC = 0x55555555601a
+0x000055555555601f in rounds_v_avx2 ()
+	vmovdqu 0x80(%rdi),%ymm5                        #! EA = L0x7fffffffd8e0; Value = 0x0000000000000000; PC = 0x55555555601f
+0x0000555555556027 in rounds_v_avx2 ()
+	vmovdqu 0xa0(%rdi),%ymm11                       #! EA = L0x7fffffffd900; Value = 0x0000000000000000; PC = 0x555555556027
+0x000055555555602f in rounds_v_avx2 ()
+	vmovdqu 0xc0(%rdi),%ymm4                        #! EA = L0x7fffffffd920; Value = 0x0000000000000000; PC = 0x55555555602f
+0x0000555555556037 in rounds_v_avx2 ()
+	vmovdqu 0xe0(%rdi),%ymm9                        #! EA = L0x7fffffffd940; Value = 0x0000000000000000; PC = 0x555555556037
+0x000055555555603f in rounds_v_avx2 ()
+	vmovdqu 0x100(%rdi),%ymm7                       #! EA = L0x7fffffffd960; Value = 0x000000000000000c; PC = 0x55555555603f
+0x0000555555556047 in rounds_v_avx2 ()
+	vmovdqu 0x120(%rdi),%ymm8                       #! EA = L0x7fffffffd980; Value = 0x0000000000000000; PC = 0x555555556047
+0x000055555555604f in rounds_v_avx2 ()
+	vmovdqu 0x140(%rdi),%ymm1                       #! EA = L0x7fffffffd9a0; Value = 0x0000001000000003; PC = 0x55555555604f
+0x0000555555556057 in rounds_v_avx2 ()
+	vmovdqu 0x160(%rdi),%ymm2                       #! EA = L0x7fffffffd9c0; Value = 0x0000000000000002; PC = 0x555555556057
+0x000055555555605f in rounds_v_avx2 ()
+	vmovdqu 0x180(%rdi),%ymm13                      #! EA = L0x7fffffffd9e0; Value = 0x0000000000000000; PC = 0x55555555605f
+0x0000555555556067 in rounds_v_avx2 ()
+	vmovdqu 0x1a0(%rdi),%ymm10                      #! EA = L0x7fffffffda00; Value = 0x0000000000000001; PC = 0x555555556067
+0x000055555555606f in rounds_v_avx2 ()
+	vmovdqu 0x1c0(%rdi),%ymm14                      #! EA = L0x7fffffffda20; Value = 0x0000000000000e30; PC = 0x55555555606f
+0x0000555555556077 in rounds_v_avx2 ()
+	vmovdqu 0x1e0(%rdi),%ymm15                      #! EA = L0x7fffffffda40; Value = 0x0000000000000002; PC = 0x555555556077
+0x000055555555607f in rounds_v_avx2 ()
+	vmovdqu %ymm15,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x55555555607f
+0x0000555555556084 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm3,%ymm3                        #! PC = 0x555555556084
+0x0000555555556088 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm15                      #! PC = 0x555555556088
+0x000055555555608c in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm13                      #! PC = 0x55555555608c
+0x0000555555556092 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556092
+0x0000555555556098 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm15,%ymm13                     #! PC = 0x555555556098
+0x000055555555609d in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x55555555609d
+0x00005555555560a2 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x5555555560a2
+0x00005555555560a6 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm5,%ymm5                        #! PC = 0x5555555560a6
+0x00005555555560aa in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x5555555560aa
+0x00005555555560af in rounds_v_avx2 ()
+	vpslld $0xc,%ymm5,%ymm15                        #! PC = 0x5555555560af
+0x00005555555560b4 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm5,%ymm5                        #! PC = 0x5555555560b4
+0x00005555555560b9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm5,%ymm5                       #! PC = 0x5555555560b9
+0x00005555555560be in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555560be
+0x00005555555560c4 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555560c4
+0x00005555555560ca in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555560ca
+0x00005555555560cf in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm3,%ymm3                        #! PC = 0x5555555560cf
+0x00005555555560d3 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x5555555560d3
+0x00005555555560d8 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm13                      #! PC = 0x5555555560d8
+0x00005555555560dc in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm4                        #! PC = 0x5555555560dc
+0x00005555555560e0 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm15                       #! PC = 0x5555555560e0
+0x00005555555560e6 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x5555555560e6
+0x00005555555560ec in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm13,%ymm13                     #! PC = 0x5555555560ec
+0x00005555555560f1 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x5555555560f1
+0x00005555555560f6 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x5555555560f6
+0x00005555555560fb in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555560fb
+0x0000555555556100 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x555555556100
+0x0000555555556105 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x555555556105
+0x0000555555556109 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm5,%ymm5                        #! PC = 0x555555556109
+0x000055555555610d in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x55555555610d
+0x0000555555556112 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm5,%ymm15                        #! PC = 0x555555556112
+0x0000555555556117 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm5,%ymm5                        #! PC = 0x555555556117
+0x000055555555611c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm5,%ymm5                       #! PC = 0x55555555611c
+0x0000555555556121 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555556121
+0x0000555555556127 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556127
+0x000055555555612d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm15                     #! PC = 0x55555555612d
+0x0000555555556132 in rounds_v_avx2 ()
+	vpaddd %ymm15,%ymm1,%ymm1                       #! PC = 0x555555556132
+0x0000555555556137 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm14                       #! PC = 0x555555556137
+0x000055555555613b in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm4                        #! PC = 0x55555555613b
+0x0000555555556141 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x555555556141
+0x0000555555556147 in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm14,%ymm4                       #! PC = 0x555555556147
+0x000055555555614b in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm14                           #! EA = L0x7fffffffd7e0; Value = 0x0000000000000002; PC = 0x55555555614b
+0x0000555555556150 in rounds_v_avx2 ()
+	vmovdqu %ymm15,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556150
+0x0000555555556155 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm0,%ymm0                       #! PC = 0x555555556155
+0x000055555555615a in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm10,%ymm15                      #! PC = 0x55555555615a
+0x000055555555615e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm10                      #! PC = 0x55555555615e
+0x0000555555556164 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556164
+0x000055555555616a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm10                     #! PC = 0x55555555616a
+0x000055555555616f in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm8,%ymm8                       #! PC = 0x55555555616f
+0x0000555555556174 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm6,%ymm15                       #! PC = 0x555555556174
+0x0000555555556179 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm11,%ymm6                       #! PC = 0x555555556179
+0x000055555555617e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm11                     #! PC = 0x55555555617e
+0x0000555555556183 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm14                        #! PC = 0x555555556183
+0x0000555555556188 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555556188
+0x000055555555618d in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm6,%ymm6                       #! PC = 0x55555555618d
+0x0000555555556192 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm11,%ymm14                      #! PC = 0x555555556192
+0x0000555555556198 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm11,%ymm11                      #! PC = 0x555555556198
+0x000055555555619e in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm11,%ymm14                     #! PC = 0x55555555619e
+0x00005555555561a3 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x5555555561a3
+0x00005555555561a7 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x5555555561a7
+0x00005555555561ac in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm10,%ymm10                      #! PC = 0x5555555561ac
+0x00005555555561b0 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm9,%ymm9                        #! PC = 0x5555555561b0
+0x00005555555561b4 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm11                       #! PC = 0x5555555561b4
+0x00005555555561ba in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x5555555561ba
+0x00005555555561c0 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm10,%ymm11                     #! PC = 0x5555555561c0
+0x00005555555561c5 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm9,%ymm10                        #! PC = 0x5555555561c5
+0x00005555555561cb in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm9,%ymm9                        #! PC = 0x5555555561cb
+0x00005555555561d1 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm9,%ymm9                       #! PC = 0x5555555561d1
+0x00005555555561d6 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm8,%ymm10                      #! PC = 0x5555555561d6
+0x00005555555561db in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm15,%ymm8                       #! PC = 0x5555555561db
+0x00005555555561e0 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm6,%ymm6                       #! PC = 0x5555555561e0
+0x00005555555561e5 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm14                      #! PC = 0x5555555561e5
+0x00005555555561ea in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x5555555561ea
+0x00005555555561ef in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x5555555561ef
+0x00005555555561f4 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x5555555561f4
+0x00005555555561f9 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555561f9
+0x00005555555561ff in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555561ff
+0x0000555555556205 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556205
+0x000055555555620a in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555620a
+0x000055555555620f in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm9,%ymm15                       #! PC = 0x55555555620f
+0x0000555555556213 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm9                        #! PC = 0x555555556213
+0x0000555555556219 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556219
+0x000055555555621f in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm15,%ymm9                       #! PC = 0x55555555621f
+0x0000555555556224 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556224
+0x0000555555556228 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm15                      #! PC = 0x555555556228
+0x000055555555622c in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm13                      #! PC = 0x55555555622c
+0x0000555555556232 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556232
+0x0000555555556238 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm15,%ymm13                     #! PC = 0x555555556238
+0x000055555555623d in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x55555555623d
+0x0000555555556242 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555556242
+0x0000555555556246 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555556246
+0x000055555555624a in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555624a
+0x000055555555624e in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x55555555624e
+0x0000555555556253 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555556253
+0x0000555555556258 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555556258
+0x000055555555625d in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x55555555625d
+0x0000555555556263 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556263
+0x0000555555556269 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556269
+0x000055555555626e in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x55555555626e
+0x0000555555556272 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x555555556272
+0x0000555555556277 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm13                      #! PC = 0x555555556277
+0x000055555555627b in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm6                        #! PC = 0x55555555627b
+0x000055555555627f in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm15                       #! PC = 0x55555555627f
+0x0000555555556285 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x555555556285
+0x000055555555628b in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm13,%ymm13                     #! PC = 0x55555555628b
+0x0000555555556290 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555556290
+0x0000555555556295 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555556295
+0x000055555555629a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x55555555629a
+0x000055555555629f in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x55555555629f
+0x00005555555562a4 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x5555555562a4
+0x00005555555562a8 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x5555555562a8
+0x00005555555562ac in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x5555555562ac
+0x00005555555562b0 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x5555555562b0
+0x00005555555562b5 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x5555555562b5
+0x00005555555562ba in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555562ba
+0x00005555555562bf in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555562bf
+0x00005555555562c5 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555562c5
+0x00005555555562cb in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555562cb
+0x00005555555562d0 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x5555555562d0
+0x00005555555562d5 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm15                       #! PC = 0x5555555562d5
+0x00005555555562d9 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x5555555562d9
+0x00005555555562df in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555562df
+0x00005555555562e5 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x5555555562e5
+0x00005555555562e9 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x0c0d0e0d3d7e6f03; PC = 0x5555555562e9
+0x00005555555562ee in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x5555555562ee
+0x00005555555562f3 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm12,%ymm12                      #! PC = 0x5555555562f3
+0x00005555555562f8 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm11,%ymm14                     #! PC = 0x5555555562f8
+0x00005555555562fd in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm11                      #! PC = 0x5555555562fd
+0x0000555555556303 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556303
+0x0000555555556309 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm14,%ymm14                     #! PC = 0x555555556309
+0x000055555555630e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm7,%ymm7                       #! PC = 0x55555555630e
+0x0000555555556313 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm8,%ymm11                       #! PC = 0x555555556313
+0x0000555555556317 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm9,%ymm8                        #! PC = 0x555555556317
+0x000055555555631b in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm9                      #! PC = 0x55555555631b
+0x0000555555556320 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm8,%ymm15                        #! PC = 0x555555556320
+0x0000555555556326 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm8,%ymm8                        #! PC = 0x555555556326
+0x000055555555632c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x55555555632c
+0x0000555555556331 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm9,%ymm15                       #! PC = 0x555555556331
+0x0000555555556337 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm9,%ymm9                        #! PC = 0x555555556337
+0x000055555555633d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm9,%ymm9                       #! PC = 0x55555555633d
+0x0000555555556342 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm12,%ymm12                      #! PC = 0x555555556342
+0x0000555555556347 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm10,%ymm10                      #! PC = 0x555555556347
+0x000055555555634c in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x55555555634c
+0x0000555555556351 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm5,%ymm15                      #! PC = 0x555555556351
+0x0000555555556356 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm5                        #! PC = 0x555555556356
+0x000055555555635c in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x55555555635c
+0x0000555555556362 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm14,%ymm5                       #! PC = 0x555555556362
+0x0000555555556366 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x555555556366
+0x000055555555636c in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x55555555636c
+0x0000555555556372 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x555555556372
+0x0000555555556377 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm7,%ymm7                        #! PC = 0x555555556377
+0x000055555555637b in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm11,%ymm11                     #! PC = 0x55555555637b
+0x0000555555556380 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x555555556380
+0x0000555555556384 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm9,%ymm15                      #! PC = 0x555555556384
+0x0000555555556389 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm8,%ymm9                         #! PC = 0x555555556389
+0x000055555555638f in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm8,%ymm8                        #! PC = 0x55555555638f
+0x0000555555556395 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm8,%ymm9                        #! PC = 0x555555556395
+0x000055555555639a in rounds_v_avx2 ()
+	vpslld $0x8,%ymm15,%ymm8                        #! PC = 0x55555555639a
+0x00005555555563a0 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm15,%ymm15                      #! PC = 0x5555555563a0
+0x00005555555563a6 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm15,%ymm8                       #! PC = 0x5555555563a6
+0x00005555555563ab in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm10,%ymm15                      #! PC = 0x5555555563ab
+0x00005555555563b0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555563b0
+0x00005555555563b5 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm10                       #! PC = 0x5555555563b5
+0x00005555555563bb in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x5555555563bb
+0x00005555555563c1 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm10                     #! PC = 0x5555555563c1
+0x00005555555563c6 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm3,%ymm3                       #! PC = 0x5555555563c6
+0x00005555555563cb in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm14                      #! PC = 0x5555555563cb
+0x00005555555563cf in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm13                      #! PC = 0x5555555563cf
+0x00005555555563d5 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555563d5
+0x00005555555563db in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm14,%ymm13                     #! PC = 0x5555555563db
+0x00005555555563e0 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x5555555563e0
+0x00005555555563e5 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x5555555563e5
+0x00005555555563e9 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm10,%ymm10                      #! PC = 0x5555555563e9
+0x00005555555563ed in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm8,%ymm14                      #! PC = 0x5555555563ed
+0x00005555555563f2 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm10,%ymm8                        #! PC = 0x5555555563f2
+0x00005555555563f8 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm10,%ymm10                      #! PC = 0x5555555563f8
+0x00005555555563fe in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm10,%ymm8                       #! PC = 0x5555555563fe
+0x0000555555556403 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm10                      #! PC = 0x555555556403
+0x0000555555556409 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556409
+0x000055555555640f in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm10                     #! PC = 0x55555555640f
+0x0000555555556414 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm3,%ymm3                        #! PC = 0x555555556414
+0x0000555555556419 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm1,%ymm1                       #! PC = 0x555555556419
+0x000055555555641e in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm13                      #! PC = 0x55555555641e
+0x0000555555556422 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm4                        #! PC = 0x555555556422
+0x0000555555556426 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm14                       #! PC = 0x555555556426
+0x000055555555642c in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x55555555642c
+0x0000555555556432 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm13,%ymm13                     #! PC = 0x555555556432
+0x0000555555556437 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm14                        #! PC = 0x555555556437
+0x000055555555643c in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x55555555643c
+0x0000555555556441 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm4,%ymm4                       #! PC = 0x555555556441
+0x0000555555556446 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x555555556446
+0x000055555555644b in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x55555555644b
+0x000055555555644f in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x55555555644f
+0x0000555555556453 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm10,%ymm10                     #! PC = 0x555555556453
+0x0000555555556458 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm8,%ymm14                        #! PC = 0x555555556458
+0x000055555555645e in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm8,%ymm8                        #! PC = 0x55555555645e
+0x0000555555556464 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm8,%ymm8                       #! PC = 0x555555556464
+0x0000555555556469 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm14                       #! PC = 0x555555556469
+0x000055555555646f in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x55555555646f
+0x0000555555556475 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm10,%ymm10                     #! PC = 0x555555556475
+0x000055555555647a in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm1,%ymm1                       #! PC = 0x55555555647a
+0x000055555555647f in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm14                       #! PC = 0x55555555647f
+0x0000555555556483 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm4                        #! PC = 0x555555556483
+0x0000555555556489 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x555555556489
+0x000055555555648f in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm14,%ymm4                       #! PC = 0x55555555648f
+0x0000555555556493 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm14                           #! EA = L0x7fffffffd7e0; Value = 0xd4c3b3c326426c47; PC = 0x555555556493
+0x0000555555556498 in rounds_v_avx2 ()
+	vmovdqu %ymm10,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556498
+0x000055555555649d in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x55555555649d
+0x00005555555564a1 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm5,%ymm10                       #! PC = 0x5555555564a1
+0x00005555555564a5 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm10,%ymm5                       #! PC = 0x5555555564a5
+0x00005555555564ab in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm10,%ymm10                      #! PC = 0x5555555564ab
+0x00005555555564b1 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm10,%ymm10                      #! PC = 0x5555555564b1
+0x00005555555564b5 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm15,%ymm5                      #! PC = 0x5555555564b5
+0x00005555555564ba in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm11,%ymm15                      #! PC = 0x5555555564ba
+0x00005555555564bf in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x5555555564bf
+0x00005555555564c3 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm11                     #! PC = 0x5555555564c3
+0x00005555555564c8 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm14                        #! PC = 0x5555555564c8
+0x00005555555564cd in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x5555555564cd
+0x00005555555564d2 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm6,%ymm6                       #! PC = 0x5555555564d2
+0x00005555555564d7 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm11,%ymm14                      #! PC = 0x5555555564d7
+0x00005555555564dd in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm11,%ymm11                      #! PC = 0x5555555564dd
+0x00005555555564e3 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm11,%ymm14                     #! PC = 0x5555555564e3
+0x00005555555564e8 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x5555555564e8
+0x00005555555564ec in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x5555555564ec
+0x00005555555564f1 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm10,%ymm10                      #! PC = 0x5555555564f1
+0x00005555555564f5 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm9,%ymm9                        #! PC = 0x5555555564f5
+0x00005555555564f9 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm11                       #! PC = 0x5555555564f9
+0x00005555555564ff in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x5555555564ff
+0x0000555555556505 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm10,%ymm11                     #! PC = 0x555555556505
+0x000055555555650a in rounds_v_avx2 ()
+	vpslld $0xc,%ymm9,%ymm10                        #! PC = 0x55555555650a
+0x0000555555556510 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm9,%ymm9                        #! PC = 0x555555556510
+0x0000555555556516 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm9,%ymm9                       #! PC = 0x555555556516
+0x000055555555651b in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm5,%ymm10                      #! PC = 0x55555555651b
+0x0000555555556520 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm15,%ymm5                       #! PC = 0x555555556520
+0x0000555555556525 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm6,%ymm6                       #! PC = 0x555555556525
+0x000055555555652a in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm14,%ymm14                      #! PC = 0x55555555652a
+0x000055555555652e in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x55555555652e
+0x0000555555556533 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555556533
+0x0000555555556538 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555556538
+0x000055555555653d in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555653d
+0x0000555555556543 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556543
+0x0000555555556549 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556549
+0x000055555555654e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555654e
+0x0000555555556553 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm9,%ymm15                       #! PC = 0x555555556553
+0x0000555555556557 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm9                        #! PC = 0x555555556557
+0x000055555555655d in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555655d
+0x0000555555556563 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm15,%ymm9                       #! PC = 0x555555556563
+0x0000555555556568 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556568
+0x000055555555656c in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm15                      #! PC = 0x55555555656c
+0x0000555555556570 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm13                      #! PC = 0x555555556570
+0x0000555555556576 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556576
+0x000055555555657c in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm15,%ymm13                     #! PC = 0x55555555657c
+0x0000555555556581 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x555555556581
+0x0000555555556586 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555556586
+0x000055555555658a in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x55555555658a
+0x000055555555658e in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555658e
+0x0000555555556592 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555556592
+0x0000555555556597 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555556597
+0x000055555555659c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x55555555659c
+0x00005555555565a1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555565a1
+0x00005555555565a7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555565a7
+0x00005555555565ad in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555565ad
+0x00005555555565b2 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555565b2
+0x00005555555565b6 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x5555555565b6
+0x00005555555565bb in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm13                      #! PC = 0x5555555565bb
+0x00005555555565bf in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm6                        #! PC = 0x5555555565bf
+0x00005555555565c3 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm15                       #! PC = 0x5555555565c3
+0x00005555555565c9 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x5555555565c9
+0x00005555555565cf in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm13,%ymm13                     #! PC = 0x5555555565cf
+0x00005555555565d4 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x5555555565d4
+0x00005555555565d9 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x5555555565d9
+0x00005555555565de in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x5555555565de
+0x00005555555565e3 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x5555555565e3
+0x00005555555565e8 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x5555555565e8
+0x00005555555565ec in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x5555555565ec
+0x00005555555565f0 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x5555555565f0
+0x00005555555565f4 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x5555555565f4
+0x00005555555565f9 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x5555555565f9
+0x00005555555565fe in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555565fe
+0x0000555555556603 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555556603
+0x0000555555556609 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556609
+0x000055555555660f in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555660f
+0x0000555555556614 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x555555556614
+0x0000555555556619 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm15                       #! PC = 0x555555556619
+0x000055555555661d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x55555555661d
+0x0000555555556623 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556623
+0x0000555555556629 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555556629
+0x000055555555662d in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x9ccdae2171f29535; PC = 0x55555555662d
+0x0000555555556632 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556632
+0x0000555555556637 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm12,%ymm12                      #! PC = 0x555555556637
+0x000055555555663c in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm11,%ymm14                     #! PC = 0x55555555663c
+0x0000555555556641 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm11                      #! PC = 0x555555556641
+0x0000555555556647 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556647
+0x000055555555664d in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm14,%ymm14                     #! PC = 0x55555555664d
+0x0000555555556652 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm7,%ymm7                       #! PC = 0x555555556652
+0x0000555555556657 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm5,%ymm11                       #! PC = 0x555555556657
+0x000055555555665c in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm9,%ymm5                        #! PC = 0x55555555665c
+0x0000555555556660 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm9                      #! PC = 0x555555556660
+0x0000555555556665 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm5,%ymm15                        #! PC = 0x555555556665
+0x000055555555666a in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm5,%ymm5                        #! PC = 0x55555555666a
+0x000055555555666f in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm5,%ymm5                       #! PC = 0x55555555666f
+0x0000555555556674 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm9,%ymm15                       #! PC = 0x555555556674
+0x000055555555667a in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm9,%ymm9                        #! PC = 0x55555555667a
+0x0000555555556680 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm9,%ymm9                       #! PC = 0x555555556680
+0x0000555555556685 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm12,%ymm12                      #! PC = 0x555555556685
+0x0000555555556689 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm10,%ymm10                      #! PC = 0x555555556689
+0x000055555555668e in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x55555555668e
+0x0000555555556693 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm8,%ymm15                      #! PC = 0x555555556693
+0x0000555555556698 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm8                        #! PC = 0x555555556698
+0x000055555555669e in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x55555555669e
+0x00005555555566a4 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x5555555566a4
+0x00005555555566a9 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x5555555566a9
+0x00005555555566af in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x5555555566af
+0x00005555555566b5 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x5555555566b5
+0x00005555555566ba in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm7,%ymm7                        #! PC = 0x5555555566ba
+0x00005555555566bf in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm11,%ymm11                     #! PC = 0x5555555566bf
+0x00005555555566c4 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm5,%ymm5                        #! PC = 0x5555555566c4
+0x00005555555566c8 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm9,%ymm15                      #! PC = 0x5555555566c8
+0x00005555555566cd in rounds_v_avx2 ()
+	vpslld $0x7,%ymm5,%ymm9                         #! PC = 0x5555555566cd
+0x00005555555566d2 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm5,%ymm5                        #! PC = 0x5555555566d2
+0x00005555555566d7 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm5,%ymm9                        #! PC = 0x5555555566d7
+0x00005555555566dc in rounds_v_avx2 ()
+	vpslld $0x8,%ymm15,%ymm5                        #! PC = 0x5555555566dc
+0x00005555555566e2 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm15,%ymm15                      #! PC = 0x5555555566e2
+0x00005555555566e8 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm15,%ymm5                       #! PC = 0x5555555566e8
+0x00005555555566ec in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm10,%ymm15                      #! PC = 0x5555555566ec
+0x00005555555566f0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555566f0
+0x00005555555566f5 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm10                       #! PC = 0x5555555566f5
+0x00005555555566fb in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x5555555566fb
+0x0000555555556701 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm10                     #! PC = 0x555555556701
+0x0000555555556706 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm3,%ymm3                       #! PC = 0x555555556706
+0x000055555555670b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm14                      #! PC = 0x55555555670b
+0x000055555555670f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm13                      #! PC = 0x55555555670f
+0x0000555555556715 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556715
+0x000055555555671b in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm14,%ymm13                     #! PC = 0x55555555671b
+0x0000555555556720 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x555555556720
+0x0000555555556725 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x555555556725
+0x0000555555556729 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm10,%ymm10                      #! PC = 0x555555556729
+0x000055555555672d in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm5,%ymm14                      #! PC = 0x55555555672d
+0x0000555555556732 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm10,%ymm5                        #! PC = 0x555555556732
+0x0000555555556738 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm10,%ymm10                      #! PC = 0x555555556738
+0x000055555555673e in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm10,%ymm5                       #! PC = 0x55555555673e
+0x0000555555556742 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm10                      #! PC = 0x555555556742
+0x0000555555556748 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556748
+0x000055555555674e in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm10                     #! PC = 0x55555555674e
+0x0000555555556753 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm3,%ymm3                        #! PC = 0x555555556753
+0x0000555555556757 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm1,%ymm1                       #! PC = 0x555555556757
+0x000055555555675c in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm13                      #! PC = 0x55555555675c
+0x0000555555556760 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm4                        #! PC = 0x555555556760
+0x0000555555556764 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm14                       #! PC = 0x555555556764
+0x000055555555676a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x55555555676a
+0x0000555555556770 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm13,%ymm13                     #! PC = 0x555555556770
+0x0000555555556775 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm14                        #! PC = 0x555555556775
+0x000055555555677a in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x55555555677a
+0x000055555555677f in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm4,%ymm4                       #! PC = 0x55555555677f
+0x0000555555556784 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x555555556784
+0x0000555555556789 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x555555556789
+0x000055555555678d in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm5,%ymm5                        #! PC = 0x55555555678d
+0x0000555555556791 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm10,%ymm10                     #! PC = 0x555555556791
+0x0000555555556796 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm5,%ymm14                        #! PC = 0x555555556796
+0x000055555555679b in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm5,%ymm5                        #! PC = 0x55555555679b
+0x00005555555567a0 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm5,%ymm5                       #! PC = 0x5555555567a0
+0x00005555555567a5 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm14                       #! PC = 0x5555555567a5
+0x00005555555567ab in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x5555555567ab
+0x00005555555567b1 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm10,%ymm10                     #! PC = 0x5555555567b1
+0x00005555555567b6 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm1,%ymm1                       #! PC = 0x5555555567b6
+0x00005555555567bb in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm14                       #! PC = 0x5555555567bb
+0x00005555555567bf in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm4                        #! PC = 0x5555555567bf
+0x00005555555567c5 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x5555555567c5
+0x00005555555567cb in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm14,%ymm4                       #! PC = 0x5555555567cb
+0x00005555555567cf in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm14                           #! EA = L0x7fffffffd7e0; Value = 0x1d7b3470f228bafa; PC = 0x5555555567cf
+0x00005555555567d4 in rounds_v_avx2 ()
+	vmovdqu %ymm10,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x5555555567d4
+0x00005555555567d9 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x5555555567d9
+0x00005555555567dd in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm10                       #! PC = 0x5555555567dd
+0x00005555555567e1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm10,%ymm8                       #! PC = 0x5555555567e1
+0x00005555555567e7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm10,%ymm10                      #! PC = 0x5555555567e7
+0x00005555555567ed in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm10,%ymm10                      #! PC = 0x5555555567ed
+0x00005555555567f2 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm15,%ymm8                      #! PC = 0x5555555567f2
+0x00005555555567f7 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm11,%ymm15                      #! PC = 0x5555555567f7
+0x00005555555567fc in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm6,%ymm6                        #! PC = 0x5555555567fc
+0x0000555555556801 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm11                     #! PC = 0x555555556801
+0x0000555555556806 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm14                        #! PC = 0x555555556806
+0x000055555555680b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x55555555680b
+0x0000555555556810 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm6,%ymm6                       #! PC = 0x555555556810
+0x0000555555556815 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm11,%ymm14                      #! PC = 0x555555556815
+0x000055555555681b in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm11,%ymm11                      #! PC = 0x55555555681b
+0x0000555555556821 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm11,%ymm14                     #! PC = 0x555555556821
+0x0000555555556826 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555556826
+0x000055555555682a in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555682a
+0x000055555555682f in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm10,%ymm10                      #! PC = 0x55555555682f
+0x0000555555556833 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm9,%ymm11                       #! PC = 0x555555556833
+0x0000555555556837 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm9                        #! PC = 0x555555556837
+0x000055555555683d in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x55555555683d
+0x0000555555556843 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm10,%ymm9                       #! PC = 0x555555556843
+0x0000555555556848 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm10                       #! PC = 0x555555556848
+0x000055555555684e in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x55555555684e
+0x0000555555556854 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm11,%ymm10                     #! PC = 0x555555556854
+0x0000555555556859 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm8,%ymm11                       #! PC = 0x555555556859
+0x000055555555685e in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm15,%ymm8                      #! PC = 0x55555555685e
+0x0000555555556863 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm6,%ymm6                       #! PC = 0x555555556863
+0x0000555555556868 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm14                      #! PC = 0x555555556868
+0x000055555555686d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x55555555686d
+0x0000555555556872 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555556872
+0x0000555555556877 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555556877
+0x000055555555687c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555687c
+0x0000555555556882 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556882
+0x0000555555556888 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556888
+0x000055555555688d in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555688d
+0x0000555555556892 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm10,%ymm15                      #! PC = 0x555555556892
+0x0000555555556896 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm10                       #! PC = 0x555555556896
+0x000055555555689c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555689c
+0x00005555555568a2 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm10                     #! PC = 0x5555555568a2
+0x00005555555568a7 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555568a7
+0x00005555555568ab in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm15                      #! PC = 0x5555555568ab
+0x00005555555568af in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm13                      #! PC = 0x5555555568af
+0x00005555555568b5 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x5555555568b5
+0x00005555555568bb in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm15,%ymm13                     #! PC = 0x5555555568bb
+0x00005555555568c0 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x5555555568c0
+0x00005555555568c5 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x5555555568c5
+0x00005555555568c9 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x5555555568c9
+0x00005555555568cd in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x5555555568cd
+0x00005555555568d1 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x5555555568d1
+0x00005555555568d6 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x5555555568d6
+0x00005555555568db in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555568db
+0x00005555555568e0 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555568e0
+0x00005555555568e6 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555568e6
+0x00005555555568ec in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555568ec
+0x00005555555568f1 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555568f1
+0x00005555555568f5 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x5555555568f5
+0x00005555555568fa in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm13                      #! PC = 0x5555555568fa
+0x00005555555568fe in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm6                        #! PC = 0x5555555568fe
+0x0000555555556902 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm15                       #! PC = 0x555555556902
+0x0000555555556908 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x555555556908
+0x000055555555690e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm13,%ymm13                     #! PC = 0x55555555690e
+0x0000555555556913 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555556913
+0x0000555555556918 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555556918
+0x000055555555691d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x55555555691d
+0x0000555555556922 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm2,%ymm2                       #! PC = 0x555555556922
+0x0000555555556927 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555556927
+0x000055555555692b in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x55555555692b
+0x000055555555692f in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555692f
+0x0000555555556933 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x555555556933
+0x0000555555556938 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555556938
+0x000055555555693d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x55555555693d
+0x0000555555556942 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555556942
+0x0000555555556948 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556948
+0x000055555555694e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555694e
+0x0000555555556953 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm1                       #! PC = 0x555555556953
+0x0000555555556958 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm15                       #! PC = 0x555555556958
+0x000055555555695c in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x55555555695c
+0x0000555555556962 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556962
+0x0000555555556968 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555556968
+0x000055555555696c in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x9a7817984f307309; PC = 0x55555555696c
+0x0000555555556971 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556971
+0x0000555555556976 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm12,%ymm12                     #! PC = 0x555555556976
+0x000055555555697b in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm9,%ymm14                      #! PC = 0x55555555697b
+0x0000555555556980 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm9                       #! PC = 0x555555556980
+0x0000555555556986 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556986
+0x000055555555698c in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm14,%ymm14                      #! PC = 0x55555555698c
+0x0000555555556991 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm7,%ymm7                       #! PC = 0x555555556991
+0x0000555555556996 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm8,%ymm9                        #! PC = 0x555555556996
+0x000055555555699a in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm10,%ymm8                       #! PC = 0x55555555699a
+0x000055555555699e in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm15,%ymm10                      #! PC = 0x55555555699e
+0x00005555555569a3 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm8,%ymm15                        #! PC = 0x5555555569a3
+0x00005555555569a9 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm8,%ymm8                        #! PC = 0x5555555569a9
+0x00005555555569af in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x5555555569af
+0x00005555555569b4 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm10,%ymm15                      #! PC = 0x5555555569b4
+0x00005555555569ba in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm10,%ymm10                      #! PC = 0x5555555569ba
+0x00005555555569c0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm10,%ymm10                     #! PC = 0x5555555569c0
+0x00005555555569c5 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm12,%ymm12                      #! PC = 0x5555555569c5
+0x00005555555569ca in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm11,%ymm11                     #! PC = 0x5555555569ca
+0x00005555555569cf in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x5555555569cf
+0x00005555555569d4 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm5,%ymm15                      #! PC = 0x5555555569d4
+0x00005555555569d9 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm5                        #! PC = 0x5555555569d9
+0x00005555555569df in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555569df
+0x00005555555569e5 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm14,%ymm5                       #! PC = 0x5555555569e5
+0x00005555555569e9 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x5555555569e9
+0x00005555555569ef in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x5555555569ef
+0x00005555555569f5 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x5555555569f5
+0x00005555555569fa in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm7,%ymm7                        #! PC = 0x5555555569fa
+0x00005555555569fe in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm9,%ymm9                       #! PC = 0x5555555569fe
+0x0000555555556a03 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x555555556a03
+0x0000555555556a07 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm10,%ymm10                      #! PC = 0x555555556a07
+0x0000555555556a0c in rounds_v_avx2 ()
+	vpslld $0x7,%ymm8,%ymm15                        #! PC = 0x555555556a0c
+0x0000555555556a12 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm8,%ymm8                        #! PC = 0x555555556a12
+0x0000555555556a18 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555556a18
+0x0000555555556a1d in rounds_v_avx2 ()
+	vpslld $0x8,%ymm10,%ymm15                       #! PC = 0x555555556a1d
+0x0000555555556a23 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm10,%ymm10                      #! PC = 0x555555556a23
+0x0000555555556a29 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm10,%ymm10                     #! PC = 0x555555556a29
+0x0000555555556a2e in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm11,%ymm15                     #! PC = 0x555555556a2e
+0x0000555555556a33 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556a33
+0x0000555555556a38 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm11                       #! PC = 0x555555556a38
+0x0000555555556a3e in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x555555556a3e
+0x0000555555556a44 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm14,%ymm11                     #! PC = 0x555555556a44
+0x0000555555556a49 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm3,%ymm3                       #! PC = 0x555555556a49
+0x0000555555556a4e in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm14                      #! PC = 0x555555556a4e
+0x0000555555556a52 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm13                      #! PC = 0x555555556a52
+0x0000555555556a58 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556a58
+0x0000555555556a5e in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm14,%ymm13                     #! PC = 0x555555556a5e
+0x0000555555556a63 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm7,%ymm7                       #! PC = 0x555555556a63
+0x0000555555556a68 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm12                      #! PC = 0x555555556a68
+0x0000555555556a6c in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm11,%ymm11                      #! PC = 0x555555556a6c
+0x0000555555556a70 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm10,%ymm14                     #! PC = 0x555555556a70
+0x0000555555556a75 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm10                       #! PC = 0x555555556a75
+0x0000555555556a7b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555556a7b
+0x0000555555556a81 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm11,%ymm10                     #! PC = 0x555555556a81
+0x0000555555556a86 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm11                      #! PC = 0x555555556a86
+0x0000555555556a8c in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556a8c
+0x0000555555556a92 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm14,%ymm11                     #! PC = 0x555555556a92
+0x0000555555556a97 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm3,%ymm3                       #! PC = 0x555555556a97
+0x0000555555556a9c in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm1,%ymm1                       #! PC = 0x555555556a9c
+0x0000555555556aa1 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm13,%ymm13                      #! PC = 0x555555556aa1
+0x0000555555556aa5 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm4                        #! PC = 0x555555556aa5
+0x0000555555556aa9 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm14                       #! PC = 0x555555556aa9
+0x0000555555556aaf in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x555555556aaf
+0x0000555555556ab5 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm13,%ymm14                     #! PC = 0x555555556ab5
+0x0000555555556aba in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm13                        #! PC = 0x555555556aba
+0x0000555555556abf in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555556abf
+0x0000555555556ac4 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm4,%ymm4                       #! PC = 0x555555556ac4
+0x0000555555556ac9 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm7,%ymm7                       #! PC = 0x555555556ac9
+0x0000555555556ace in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm12,%ymm13                      #! PC = 0x555555556ace
+0x0000555555556ad2 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm10,%ymm10                      #! PC = 0x555555556ad2
+0x0000555555556ad6 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm11,%ymm11                     #! PC = 0x555555556ad6
+0x0000555555556adb in rounds_v_avx2 ()
+	vpslld $0x7,%ymm10,%ymm12                       #! PC = 0x555555556adb
+0x0000555555556ae1 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm10,%ymm10                      #! PC = 0x555555556ae1
+0x0000555555556ae7 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm10,%ymm10                     #! PC = 0x555555556ae7
+0x0000555555556aec in rounds_v_avx2 ()
+	vpslld $0x8,%ymm11,%ymm12                       #! PC = 0x555555556aec
+0x0000555555556af2 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm11,%ymm11                      #! PC = 0x555555556af2
+0x0000555555556af8 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm11,%ymm11                     #! PC = 0x555555556af8
+0x0000555555556afd in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm1,%ymm1                       #! PC = 0x555555556afd
+0x0000555555556b02 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm4,%ymm12                       #! PC = 0x555555556b02
+0x0000555555556b06 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm4                        #! PC = 0x555555556b06
+0x0000555555556b0c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x555555556b0c
+0x0000555555556b12 in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm12,%ymm4                       #! PC = 0x555555556b12
+0x0000555555556b16 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm12                           #! EA = L0x7fffffffd7e0; Value = 0x32a0a1597b32f5a0; PC = 0x555555556b16
+0x0000555555556b1b in rounds_v_avx2 ()
+	vmovdqu %ymm11,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556b1b
+0x0000555555556b20 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555556b20
+0x0000555555556b24 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm5,%ymm11                       #! PC = 0x555555556b24
+0x0000555555556b28 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm11,%ymm5                       #! PC = 0x555555556b28
+0x0000555555556b2e in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm11,%ymm11                      #! PC = 0x555555556b2e
+0x0000555555556b34 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm11,%ymm11                      #! PC = 0x555555556b34
+0x0000555555556b38 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm15,%ymm5                      #! PC = 0x555555556b38
+0x0000555555556b3d in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm15                       #! PC = 0x555555556b3d
+0x0000555555556b42 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x555555556b42
+0x0000555555556b46 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm9                      #! PC = 0x555555556b46
+0x0000555555556b4b in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm12                        #! PC = 0x555555556b4b
+0x0000555555556b50 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555556b50
+0x0000555555556b55 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm6,%ymm6                       #! PC = 0x555555556b55
+0x0000555555556b5a in rounds_v_avx2 ()
+	vpslld $0x10,%ymm9,%ymm12                       #! PC = 0x555555556b5a
+0x0000555555556b60 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm9,%ymm9                        #! PC = 0x555555556b60
+0x0000555555556b66 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm9,%ymm9                       #! PC = 0x555555556b66
+0x0000555555556b6b in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555556b6b
+0x0000555555556b6f in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm2,%ymm2                        #! PC = 0x555555556b6f
+0x0000555555556b74 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm11,%ymm11                      #! PC = 0x555555556b74
+0x0000555555556b78 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm8,%ymm8                        #! PC = 0x555555556b78
+0x0000555555556b7c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm11,%ymm12                       #! PC = 0x555555556b7c
+0x0000555555556b82 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm11,%ymm11                      #! PC = 0x555555556b82
+0x0000555555556b88 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm11,%ymm12                     #! PC = 0x555555556b88
+0x0000555555556b8d in rounds_v_avx2 ()
+	vpslld $0xc,%ymm8,%ymm11                        #! PC = 0x555555556b8d
+0x0000555555556b93 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm8,%ymm8                        #! PC = 0x555555556b93
+0x0000555555556b99 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm8,%ymm11                      #! PC = 0x555555556b99
+0x0000555555556b9e in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm5,%ymm8                       #! PC = 0x555555556b9e
+0x0000555555556ba3 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm15,%ymm5                      #! PC = 0x555555556ba3
+0x0000555555556ba8 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm6,%ymm6                        #! PC = 0x555555556ba8
+0x0000555555556bad in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm9,%ymm15                       #! PC = 0x555555556bad
+0x0000555555556bb1 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm9                         #! PC = 0x555555556bb1
+0x0000555555556bb6 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555556bb6
+0x0000555555556bbb in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm6,%ymm9                        #! PC = 0x555555556bbb
+0x0000555555556bc0 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm15,%ymm6                        #! PC = 0x555555556bc0
+0x0000555555556bc6 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm15,%ymm15                      #! PC = 0x555555556bc6
+0x0000555555556bcc in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555556bcc
+0x0000555555556bd0 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm2,%ymm2                        #! PC = 0x555555556bd0
+0x0000555555556bd4 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555556bd4
+0x0000555555556bd8 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555556bd8
+0x0000555555556bde in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556bde
+0x0000555555556be4 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x555555556be4
+0x0000555555556be9 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556be9
+0x0000555555556bed in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm14,%ymm15                      #! PC = 0x555555556bed
+0x0000555555556bf1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm14                      #! PC = 0x555555556bf1
+0x0000555555556bf7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556bf7
+0x0000555555556bfd in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x555555556bfd
+0x0000555555556c02 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x555555556c02
+0x0000555555556c07 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm3,%ymm3                        #! PC = 0x555555556c07
+0x0000555555556c0c in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555556c0c
+0x0000555555556c10 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm6,%ymm6                        #! PC = 0x555555556c10
+0x0000555555556c14 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555556c14
+0x0000555555556c19 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555556c19
+0x0000555555556c1e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555556c1e
+0x0000555555556c23 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm6,%ymm15                       #! PC = 0x555555556c23
+0x0000555555556c28 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm6,%ymm6                        #! PC = 0x555555556c28
+0x0000555555556c2d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555556c2d
+0x0000555555556c32 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556c32
+0x0000555555556c36 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm1,%ymm1                        #! PC = 0x555555556c36
+0x0000555555556c3a in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm14,%ymm14                      #! PC = 0x555555556c3a
+0x0000555555556c3e in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm9,%ymm15                       #! PC = 0x555555556c3e
+0x0000555555556c42 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm9                        #! PC = 0x555555556c42
+0x0000555555556c48 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556c48
+0x0000555555556c4e in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm14,%ymm9                       #! PC = 0x555555556c4e
+0x0000555555556c53 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x555555556c53
+0x0000555555556c59 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x555555556c59
+0x0000555555556c5f in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm15                     #! PC = 0x555555556c5f
+0x0000555555556c64 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm2,%ymm2                        #! PC = 0x555555556c64
+0x0000555555556c69 in rounds_v_avx2 ()
+	vpaddd %ymm15,%ymm3,%ymm3                       #! PC = 0x555555556c69
+0x0000555555556c6e in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555556c6e
+0x0000555555556c72 in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm6,%ymm14                       #! PC = 0x555555556c72
+0x0000555555556c76 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm6                         #! PC = 0x555555556c76
+0x0000555555556c7b in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555556c7b
+0x0000555555556c80 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm4,%ymm6                        #! PC = 0x555555556c80
+0x0000555555556c84 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm4                        #! PC = 0x555555556c84
+0x0000555555556c8a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556c8a
+0x0000555555556c90 in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm14,%ymm14                      #! PC = 0x555555556c90
+0x0000555555556c94 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm1,%ymm4                       #! PC = 0x555555556c94
+0x0000555555556c99 in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm15                      #! PC = 0x555555556c99
+0x0000555555556c9d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm1                        #! PC = 0x555555556c9d
+0x0000555555556ca3 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556ca3
+0x0000555555556ca9 in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x555555556ca9
+0x0000555555556cad in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x5c59a0392ada8879; PC = 0x555555556cad
+0x0000555555556cb2 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556cb2
+0x0000555555556cb7 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm13,%ymm13                     #! PC = 0x555555556cb7
+0x0000555555556cbc in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm14                     #! PC = 0x555555556cbc
+0x0000555555556cc1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm12                      #! PC = 0x555555556cc1
+0x0000555555556cc7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556cc7
+0x0000555555556ccd in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm14                     #! PC = 0x555555556ccd
+0x0000555555556cd2 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm7,%ymm7                       #! PC = 0x555555556cd2
+0x0000555555556cd7 in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm5,%ymm12                      #! PC = 0x555555556cd7
+0x0000555555556cdc in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm11,%ymm5                       #! PC = 0x555555556cdc
+0x0000555555556ce0 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm11                     #! PC = 0x555555556ce0
+0x0000555555556ce5 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm5,%ymm15                        #! PC = 0x555555556ce5
+0x0000555555556cea in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm5,%ymm5                        #! PC = 0x555555556cea
+0x0000555555556cef in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm5,%ymm5                       #! PC = 0x555555556cef
+0x0000555555556cf4 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm11,%ymm15                      #! PC = 0x555555556cf4
+0x0000555555556cfa in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm11,%ymm11                      #! PC = 0x555555556cfa
+0x0000555555556d00 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555556d00
+0x0000555555556d05 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm13,%ymm13                      #! PC = 0x555555556d05
+0x0000555555556d09 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm8,%ymm8                       #! PC = 0x555555556d09
+0x0000555555556d0e in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm14,%ymm14                     #! PC = 0x555555556d0e
+0x0000555555556d13 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm10,%ymm15                      #! PC = 0x555555556d13
+0x0000555555556d18 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm10                       #! PC = 0x555555556d18
+0x0000555555556d1e in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555556d1e
+0x0000555555556d24 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm10                     #! PC = 0x555555556d24
+0x0000555555556d29 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x555555556d29
+0x0000555555556d2f in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x555555556d2f
+0x0000555555556d35 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x555555556d35
+0x0000555555556d3a in rounds_v_avx2 ()
+	vpaddd %ymm10,%ymm7,%ymm7                       #! PC = 0x555555556d3a
+0x0000555555556d3f in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm12,%ymm12                     #! PC = 0x555555556d3f
+0x0000555555556d44 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm5,%ymm5                        #! PC = 0x555555556d44
+0x0000555555556d48 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm11,%ymm15                     #! PC = 0x555555556d48
+0x0000555555556d4d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm5,%ymm11                        #! PC = 0x555555556d4d
+0x0000555555556d52 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm5,%ymm5                        #! PC = 0x555555556d52
+0x0000555555556d57 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm5,%ymm11                      #! PC = 0x555555556d57
+0x0000555555556d5c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm15,%ymm5                        #! PC = 0x555555556d5c
+0x0000555555556d62 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm15,%ymm15                      #! PC = 0x555555556d62
+0x0000555555556d68 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm15,%ymm5                       #! PC = 0x555555556d68
+0x0000555555556d6c in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm8,%ymm15                       #! PC = 0x555555556d6c
+0x0000555555556d70 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555556d70
+0x0000555555556d75 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm8                        #! PC = 0x555555556d75
+0x0000555555556d7b in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x555555556d7b
+0x0000555555556d81 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555556d81
+0x0000555555556d86 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm3,%ymm3                        #! PC = 0x555555556d86
+0x0000555555556d8b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm9,%ymm14                       #! PC = 0x555555556d8b
+0x0000555555556d8f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm9                       #! PC = 0x555555556d8f
+0x0000555555556d95 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556d95
+0x0000555555556d9b in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm14,%ymm9                       #! PC = 0x555555556d9b
+0x0000555555556da0 in rounds_v_avx2 ()
+	vpaddd %ymm9,%ymm7,%ymm7                        #! PC = 0x555555556da0
+0x0000555555556da5 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm13,%ymm13                      #! PC = 0x555555556da5
+0x0000555555556da9 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x555555556da9
+0x0000555555556dad in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm5,%ymm14                      #! PC = 0x555555556dad
+0x0000555555556db2 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm8,%ymm5                         #! PC = 0x555555556db2
+0x0000555555556db8 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm8,%ymm8                        #! PC = 0x555555556db8
+0x0000555555556dbe in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm8,%ymm5                        #! PC = 0x555555556dbe
+0x0000555555556dc2 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x555555556dc2
+0x0000555555556dc8 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555556dc8
+0x0000555555556dce in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555556dce
+0x0000555555556dd3 in rounds_v_avx2 ()
+	vpaddd %ymm5,%ymm3,%ymm3                        #! PC = 0x555555556dd3
+0x0000555555556dd7 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm4,%ymm4                        #! PC = 0x555555556dd7
+0x0000555555556ddc in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm9,%ymm9                        #! PC = 0x555555556ddc
+0x0000555555556de0 in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm6,%ymm14                       #! PC = 0x555555556de0
+0x0000555555556de4 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm9,%ymm6                         #! PC = 0x555555556de4
+0x0000555555556dea in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm9,%ymm9                        #! PC = 0x555555556dea
+0x0000555555556df0 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm9,%ymm6                        #! PC = 0x555555556df0
+0x0000555555556df4 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm14,%ymm9                        #! PC = 0x555555556df4
+0x0000555555556dfa in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm14,%ymm14                      #! PC = 0x555555556dfa
+0x0000555555556e00 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm14,%ymm14                      #! PC = 0x555555556e00
+0x0000555555556e05 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm7,%ymm9                        #! PC = 0x555555556e05
+0x0000555555556e09 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm7                      #! PC = 0x555555556e09
+0x0000555555556e0e in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm5,%ymm5                        #! PC = 0x555555556e0e
+0x0000555555556e13 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm13                       #! PC = 0x555555556e13
+0x0000555555556e17 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm5,%ymm8                         #! PC = 0x555555556e17
+0x0000555555556e1c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm5,%ymm5                        #! PC = 0x555555556e1c
+0x0000555555556e21 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm5,%ymm8                        #! PC = 0x555555556e21
+0x0000555555556e26 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm5                        #! PC = 0x555555556e26
+0x0000555555556e2c in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x555555556e2c
+0x0000555555556e32 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm13,%ymm13                      #! PC = 0x555555556e32
+0x0000555555556e36 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm4,%ymm5                       #! PC = 0x555555556e36
+0x0000555555556e3b in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm14,%ymm14                      #! PC = 0x555555556e3b
+0x0000555555556e3f in rounds_v_avx2 ()
+	vpslld $0x7,%ymm14,%ymm4                        #! PC = 0x555555556e3f
+0x0000555555556e45 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm14,%ymm14                      #! PC = 0x555555556e45
+0x0000555555556e4b in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm14,%ymm4                       #! PC = 0x555555556e4b
+0x0000555555556e4f in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm14                           #! EA = L0x7fffffffd7e0; Value = 0xebf6f8a7af28320b; PC = 0x555555556e4f
+0x0000555555556e54 in rounds_v_avx2 ()
+	vmovdqu %ymm13,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556e54
+0x0000555555556e59 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm0,%ymm0                        #! PC = 0x555555556e59
+0x0000555555556e5d in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm10,%ymm13                      #! PC = 0x555555556e5d
+0x0000555555556e61 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm13,%ymm10                      #! PC = 0x555555556e61
+0x0000555555556e67 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm13,%ymm13                      #! PC = 0x555555556e67
+0x0000555555556e6d in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm13,%ymm13                     #! PC = 0x555555556e6d
+0x0000555555556e72 in rounds_v_avx2 ()
+	vpaddd %ymm13,%ymm15,%ymm10                     #! PC = 0x555555556e72
+0x0000555555556e77 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm12,%ymm15                     #! PC = 0x555555556e77
+0x0000555555556e7c in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm1,%ymm1                       #! PC = 0x555555556e7c
+0x0000555555556e81 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm12                     #! PC = 0x555555556e81
+0x0000555555556e86 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm1,%ymm14                        #! PC = 0x555555556e86
+0x0000555555556e8b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm1,%ymm1                        #! PC = 0x555555556e8b
+0x0000555555556e90 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm1,%ymm1                       #! PC = 0x555555556e90
+0x0000555555556e95 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm12,%ymm14                      #! PC = 0x555555556e95
+0x0000555555556e9b in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm12,%ymm12                      #! PC = 0x555555556e9b
+0x0000555555556ea1 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm12,%ymm12                     #! PC = 0x555555556ea1
+0x0000555555556ea6 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm0,%ymm0                        #! PC = 0x555555556ea6
+0x0000555555556eaa in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm2,%ymm2                       #! PC = 0x555555556eaa
+0x0000555555556eaf in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm13,%ymm13                      #! PC = 0x555555556eaf
+0x0000555555556eb3 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x555555556eb3
+0x0000555555556eb7 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm13,%ymm14                       #! PC = 0x555555556eb7
+0x0000555555556ebd in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm13,%ymm13                      #! PC = 0x555555556ebd
+0x0000555555556ec3 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm13,%ymm14                     #! PC = 0x555555556ec3
+0x0000555555556ec8 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm13                       #! PC = 0x555555556ec8
+0x0000555555556ece in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555556ece
+0x0000555555556ed4 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm11,%ymm11                     #! PC = 0x555555556ed4
+0x0000555555556ed9 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm10,%ymm13                     #! PC = 0x555555556ed9
+0x0000555555556ede in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm15,%ymm10                     #! PC = 0x555555556ede
+0x0000555555556ee3 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm1,%ymm1                       #! PC = 0x555555556ee3
+0x0000555555556ee8 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm12,%ymm12                     #! PC = 0x555555556ee8
+0x0000555555556eed in rounds_v_avx2 ()
+	vpslld $0x7,%ymm1,%ymm15                        #! PC = 0x555555556eed
+0x0000555555556ef2 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm1,%ymm1                        #! PC = 0x555555556ef2
+0x0000555555556ef7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x555555556ef7
+0x0000555555556efc in rounds_v_avx2 ()
+	vpslld $0x8,%ymm12,%ymm15                       #! PC = 0x555555556efc
+0x0000555555556f02 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm12,%ymm12                      #! PC = 0x555555556f02
+0x0000555555556f08 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555556f08
+0x0000555555556f0d in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm2,%ymm2                       #! PC = 0x555555556f0d
+0x0000555555556f12 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555556f12
+0x0000555555556f16 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555556f16
+0x0000555555556f1c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555556f1c
+0x0000555555556f22 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x555555556f22
+0x0000555555556f27 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556f27
+0x0000555555556f2b in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm6,%ymm15                       #! PC = 0x555555556f2b
+0x0000555555556f2f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm6                       #! PC = 0x555555556f2f
+0x0000555555556f35 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555556f35
+0x0000555555556f3b in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555556f3b
+0x0000555555556f3f in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm2,%ymm2                        #! PC = 0x555555556f3f
+0x0000555555556f43 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm3,%ymm3                        #! PC = 0x555555556f43
+0x0000555555556f47 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555556f47
+0x0000555555556f4b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm12,%ymm12                      #! PC = 0x555555556f4b
+0x0000555555556f4f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555556f4f
+0x0000555555556f54 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555556f54
+0x0000555555556f59 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555556f59
+0x0000555555556f5e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm12,%ymm15                      #! PC = 0x555555556f5e
+0x0000555555556f64 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm12,%ymm12                      #! PC = 0x555555556f64
+0x0000555555556f6a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555556f6a
+0x0000555555556f6f in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555556f6f
+0x0000555555556f73 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm5,%ymm5                       #! PC = 0x555555556f73
+0x0000555555556f78 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm6,%ymm6                        #! PC = 0x555555556f78
+0x0000555555556f7c in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm1,%ymm15                       #! PC = 0x555555556f7c
+0x0000555555556f80 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm6,%ymm1                         #! PC = 0x555555556f80
+0x0000555555556f85 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm6,%ymm6                        #! PC = 0x555555556f85
+0x0000555555556f8a in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm6,%ymm1                        #! PC = 0x555555556f8a
+0x0000555555556f8e in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm6                        #! PC = 0x555555556f8e
+0x0000555555556f94 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x555555556f94
+0x0000555555556f9a in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555556f9a
+0x0000555555556f9e in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x555555556f9e
+0x0000555555556fa2 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555556fa2
+0x0000555555556fa6 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555556fa6
+0x0000555555556faa in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm12,%ymm12                      #! PC = 0x555555556faa
+0x0000555555556fae in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x555555556fae
+0x0000555555556fb3 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555556fb3
+0x0000555555556fb8 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555556fb8
+0x0000555555556fbd in rounds_v_avx2 ()
+	vpslld $0x8,%ymm12,%ymm15                       #! PC = 0x555555556fbd
+0x0000555555556fc3 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm12,%ymm12                      #! PC = 0x555555556fc3
+0x0000555555556fc9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm15                     #! PC = 0x555555556fc9
+0x0000555555556fce in rounds_v_avx2 ()
+	vpaddd %ymm15,%ymm5,%ymm5                       #! PC = 0x555555556fce
+0x0000555555556fd3 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm12                       #! PC = 0x555555556fd3
+0x0000555555556fd7 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm6                        #! PC = 0x555555556fd7
+0x0000555555556fdd in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x555555556fdd
+0x0000555555556fe3 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm12,%ymm6                       #! PC = 0x555555556fe3
+0x0000555555556fe7 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm12                           #! EA = L0x7fffffffd7e0; Value = 0x57a0b82f4a224bbd; PC = 0x555555556fe7
+0x0000555555556fec in rounds_v_avx2 ()
+	vmovdqu %ymm15,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555556fec
+0x0000555555556ff1 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555556ff1
+0x0000555555556ff6 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm15                      #! PC = 0x555555556ff6
+0x0000555555556ffa in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm14                      #! PC = 0x555555556ffa
+0x0000555555557000 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557000
+0x0000555555557006 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x555555557006
+0x000055555555700b in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm9,%ymm9                       #! PC = 0x55555555700b
+0x0000555555557010 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm10,%ymm10                      #! PC = 0x555555557010
+0x0000555555557015 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557015
+0x000055555555701a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm12,%ymm12                     #! PC = 0x55555555701a
+0x000055555555701f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x55555555701f
+0x0000555555557025 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555557025
+0x000055555555702b in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x55555555702b
+0x0000555555557030 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm12,%ymm15                      #! PC = 0x555555557030
+0x0000555555557036 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm12,%ymm12                      #! PC = 0x555555557036
+0x000055555555703c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x55555555703c
+0x0000555555557041 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557041
+0x0000555555557046 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm13,%ymm13                     #! PC = 0x555555557046
+0x000055555555704b in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x55555555704b
+0x000055555555704f in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm8,%ymm15                      #! PC = 0x55555555704f
+0x0000555555557054 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm8                        #! PC = 0x555555557054
+0x000055555555705a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x55555555705a
+0x0000555555557060 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557060
+0x0000555555557065 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm15,%ymm14                       #! PC = 0x555555557065
+0x000055555555706b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm15,%ymm15                      #! PC = 0x55555555706b
+0x0000555555557071 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x555555557071
+0x0000555555557076 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x555555557076
+0x000055555555707b in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm10,%ymm10                     #! PC = 0x55555555707b
+0x0000555555557080 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557080
+0x0000555555557085 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm12,%ymm12                     #! PC = 0x555555557085
+0x000055555555708a in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x55555555708a
+0x0000555555557090 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x555555557090
+0x0000555555557096 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557096
+0x000055555555709b in rounds_v_avx2 ()
+	vpslld $0x8,%ymm12,%ymm15                       #! PC = 0x55555555709b
+0x00005555555570a1 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm12,%ymm12                      #! PC = 0x5555555570a1
+0x00005555555570a7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555570a7
+0x00005555555570ac in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm13,%ymm13                     #! PC = 0x5555555570ac
+0x00005555555570b1 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm14,%ymm15                     #! PC = 0x5555555570b1
+0x00005555555570b6 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm14                       #! PC = 0x5555555570b6
+0x00005555555570bc in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555570bc
+0x00005555555570c2 in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x5555555570c2
+0x00005555555570c7 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm3,%ymm3                       #! PC = 0x5555555570c7
+0x00005555555570cc in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm15                       #! PC = 0x5555555570cc
+0x00005555555570d0 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x5555555570d0
+0x00005555555570d6 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x5555555570d6
+0x00005555555570dc in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x5555555570dc
+0x00005555555570e0 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x5555555570e0
+0x00005555555570e4 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x5555555570e4
+0x00005555555570e8 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm14,%ymm14                      #! PC = 0x5555555570e8
+0x00005555555570ed in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm12,%ymm15                      #! PC = 0x5555555570ed
+0x00005555555570f1 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm14,%ymm12                       #! PC = 0x5555555570f1
+0x00005555555570f7 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm14,%ymm14                      #! PC = 0x5555555570f7
+0x00005555555570fd in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm14,%ymm12                     #! PC = 0x5555555570fd
+0x0000555555557102 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm14                      #! PC = 0x555555557102
+0x0000555555557108 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557108
+0x000055555555710e in rounds_v_avx2 ()
+	vpxor  %ymm14,%ymm15,%ymm14                     #! PC = 0x55555555710e
+0x0000555555557113 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557113
+0x0000555555557118 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557118
+0x000055555555711d in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm1                        #! PC = 0x55555555711d
+0x0000555555557121 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm4                        #! PC = 0x555555557121
+0x0000555555557125 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557125
+0x000055555555712a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x55555555712a
+0x000055555555712f in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x55555555712f
+0x0000555555557134 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557134
+0x0000555555557139 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557139
+0x000055555555713e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x55555555713e
+0x0000555555557143 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557143
+0x0000555555557147 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557147
+0x000055555555714b in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x55555555714b
+0x0000555555557150 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557150
+0x0000555555557154 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm15                       #! PC = 0x555555557154
+0x000055555555715a in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x55555555715a
+0x0000555555557160 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557160
+0x0000555555557165 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557165
+0x000055555555716b in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x55555555716b
+0x0000555555557171 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557171
+0x0000555555557176 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557176
+0x000055555555717b in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm15                       #! PC = 0x55555555717b
+0x000055555555717f in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm4                        #! PC = 0x55555555717f
+0x0000555555557185 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557185
+0x000055555555718b in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm4                       #! PC = 0x55555555718b
+0x000055555555718f in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x666cd25f7a7359da; PC = 0x55555555718f
+0x0000555555557194 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555557194
+0x0000555555557199 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557199
+0x000055555555719d in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm14                       #! PC = 0x55555555719d
+0x00005555555571a1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x5555555571a1
+0x00005555555571a7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555571a7
+0x00005555555571ad in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x5555555571ad
+0x00005555555571b2 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x5555555571b2
+0x00005555555571b7 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x5555555571b7
+0x00005555555571bc in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x5555555571bc
+0x00005555555571c1 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x5555555571c1
+0x00005555555571c6 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x5555555571c6
+0x00005555555571cb in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x5555555571cb
+0x00005555555571d0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x5555555571d0
+0x00005555555571d5 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555571d5
+0x00005555555571db in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555571db
+0x00005555555571e1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555571e1
+0x00005555555571e6 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x5555555571e6
+0x00005555555571ea in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x5555555571ea
+0x00005555555571ef in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm8                        #! PC = 0x5555555571ef
+0x00005555555571f3 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x5555555571f3
+0x00005555555571f7 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x5555555571f7
+0x00005555555571fd in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x5555555571fd
+0x0000555555557203 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557203
+0x0000555555557208 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557208
+0x000055555555720e in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x55555555720e
+0x0000555555557214 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557214
+0x0000555555557219 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557219
+0x000055555555721e in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x55555555721e
+0x0000555555557223 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557223
+0x0000555555557228 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557228
+0x000055555555722d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x55555555722d
+0x0000555555557232 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555557232
+0x0000555555557237 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557237
+0x000055555555723c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555723c
+0x0000555555557242 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557242
+0x0000555555557248 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557248
+0x000055555555724d in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555724d
+0x0000555555557252 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555557252
+0x0000555555557256 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555557256
+0x000055555555725c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555725c
+0x0000555555557262 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x555555557262
+0x0000555555557267 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555557267
+0x000055555555726b in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm15                       #! PC = 0x55555555726b
+0x000055555555726f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x55555555726f
+0x0000555555557275 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557275
+0x000055555555727b in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x55555555727b
+0x000055555555727f in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x55555555727f
+0x0000555555557283 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557283
+0x0000555555557287 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557287
+0x000055555555728b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555728b
+0x000055555555728f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x55555555728f
+0x0000555555557294 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557294
+0x0000555555557299 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557299
+0x000055555555729e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x55555555729e
+0x00005555555572a4 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555572a4
+0x00005555555572aa in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555572aa
+0x00005555555572af in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555572af
+0x00005555555572b3 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x5555555572b3
+0x00005555555572b8 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm1                        #! PC = 0x5555555572b8
+0x00005555555572bc in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x5555555572bc
+0x00005555555572c0 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x5555555572c0
+0x00005555555572c5 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x5555555572c5
+0x00005555555572ca in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x5555555572ca
+0x00005555555572cf in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x5555555572cf
+0x00005555555572d4 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x5555555572d4
+0x00005555555572d9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x5555555572d9
+0x00005555555572de in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x5555555572de
+0x00005555555572e2 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x5555555572e2
+0x00005555555572e6 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x5555555572e6
+0x00005555555572ea in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x5555555572ea
+0x00005555555572ee in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x5555555572ee
+0x00005555555572f3 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x5555555572f3
+0x00005555555572f8 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555572f8
+0x00005555555572fd in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555572fd
+0x0000555555557303 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557303
+0x0000555555557309 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557309
+0x000055555555730e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x55555555730e
+0x0000555555557313 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm15                       #! PC = 0x555555557313
+0x0000555555557317 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x555555557317
+0x000055555555731d in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555731d
+0x0000555555557323 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555557323
+0x0000555555557327 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0xdacceed16bb90ebb; PC = 0x555555557327
+0x000055555555732c in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x55555555732c
+0x0000555555557331 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557331
+0x0000555555557336 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm14                       #! PC = 0x555555557336
+0x000055555555733a in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x55555555733a
+0x0000555555557340 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557340
+0x0000555555557346 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557346
+0x000055555555734b in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x55555555734b
+0x0000555555557350 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555557350
+0x0000555555557355 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557355
+0x000055555555735a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x55555555735a
+0x000055555555735f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x55555555735f
+0x0000555555557365 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555557365
+0x000055555555736b in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x55555555736b
+0x0000555555557370 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557370
+0x0000555555557376 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557376
+0x000055555555737c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555737c
+0x0000555555557381 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557381
+0x0000555555557386 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555557386
+0x000055555555738b in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x55555555738b
+0x000055555555738f in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm12                     #! PC = 0x55555555738f
+0x0000555555557394 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557394
+0x000055555555739a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x55555555739a
+0x00005555555573a0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x5555555573a0
+0x00005555555573a5 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x5555555573a5
+0x00005555555573ab in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x5555555573ab
+0x00005555555573b1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555573b1
+0x00005555555573b6 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x5555555573b6
+0x00005555555573bb in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x5555555573bb
+0x00005555555573c0 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x5555555573c0
+0x00005555555573c5 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x5555555573c5
+0x00005555555573ca in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x5555555573ca
+0x00005555555573d0 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x5555555573d0
+0x00005555555573d6 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x5555555573d6
+0x00005555555573db in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555573db
+0x00005555555573e1 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555573e1
+0x00005555555573e7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555573e7
+0x00005555555573ec in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x5555555573ec
+0x00005555555573f1 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm15                     #! PC = 0x5555555573f1
+0x00005555555573f6 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm12                       #! PC = 0x5555555573f6
+0x00005555555573fc in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555573fc
+0x0000555555557402 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm12                     #! PC = 0x555555557402
+0x0000555555557407 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557407
+0x000055555555740c in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm15                       #! PC = 0x55555555740c
+0x0000555555557410 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557410
+0x0000555555557416 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557416
+0x000055555555741c in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x55555555741c
+0x0000555555557420 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557420
+0x0000555555557424 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557424
+0x0000555555557428 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557428
+0x000055555555742d in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x55555555742d
+0x0000555555557431 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557431
+0x0000555555557437 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557437
+0x000055555555743d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x55555555743d
+0x0000555555557442 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557442
+0x0000555555557448 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557448
+0x000055555555744e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555744e
+0x0000555555557453 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557453
+0x0000555555557458 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557458
+0x000055555555745d in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm1                        #! PC = 0x55555555745d
+0x0000555555557461 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm4                        #! PC = 0x555555557461
+0x0000555555557465 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557465
+0x000055555555746a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x55555555746a
+0x000055555555746f in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x55555555746f
+0x0000555555557474 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557474
+0x0000555555557479 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557479
+0x000055555555747e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x55555555747e
+0x0000555555557483 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557483
+0x0000555555557487 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557487
+0x000055555555748b in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x55555555748b
+0x0000555555557490 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557490
+0x0000555555557494 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm15                       #! PC = 0x555555557494
+0x000055555555749a in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x55555555749a
+0x00005555555574a0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555574a0
+0x00005555555574a5 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555574a5
+0x00005555555574ab in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555574ab
+0x00005555555574b1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555574b1
+0x00005555555574b6 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x5555555574b6
+0x00005555555574bb in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm15                       #! PC = 0x5555555574bb
+0x00005555555574bf in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm4                        #! PC = 0x5555555574bf
+0x00005555555574c5 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555574c5
+0x00005555555574cb in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm4                       #! PC = 0x5555555574cb
+0x00005555555574cf in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0xc19dab7efeb8d9be; PC = 0x5555555574cf
+0x00005555555574d4 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x5555555574d4
+0x00005555555574d9 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x5555555574d9
+0x00005555555574dd in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm14                       #! PC = 0x5555555574dd
+0x00005555555574e1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x5555555574e1
+0x00005555555574e7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555574e7
+0x00005555555574ed in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x5555555574ed
+0x00005555555574f2 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x5555555574f2
+0x00005555555574f7 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x5555555574f7
+0x00005555555574fc in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x5555555574fc
+0x0000555555557501 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x555555557501
+0x0000555555557506 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557506
+0x000055555555750b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x55555555750b
+0x0000555555557510 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557510
+0x0000555555557515 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557515
+0x000055555555751b in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x55555555751b
+0x0000555555557521 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557521
+0x0000555555557526 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557526
+0x000055555555752a in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555752a
+0x000055555555752f in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm8                        #! PC = 0x55555555752f
+0x0000555555557533 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x555555557533
+0x0000555555557537 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557537
+0x000055555555753d in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x55555555753d
+0x0000555555557543 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557543
+0x0000555555557548 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557548
+0x000055555555754e in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x55555555754e
+0x0000555555557554 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557554
+0x0000555555557559 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557559
+0x000055555555755e in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x55555555755e
+0x0000555555557563 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557563
+0x0000555555557568 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557568
+0x000055555555756d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x55555555756d
+0x0000555555557572 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555557572
+0x0000555555557577 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557577
+0x000055555555757c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555757c
+0x0000555555557582 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557582
+0x0000555555557588 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557588
+0x000055555555758d in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555758d
+0x0000555555557592 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555557592
+0x0000555555557596 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555557596
+0x000055555555759c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555759c
+0x00005555555575a2 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x5555555575a2
+0x00005555555575a7 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555575a7
+0x00005555555575ab in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm15                       #! PC = 0x5555555575ab
+0x00005555555575af in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x5555555575af
+0x00005555555575b5 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x5555555575b5
+0x00005555555575bb in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x5555555575bb
+0x00005555555575bf in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x5555555575bf
+0x00005555555575c3 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x5555555575c3
+0x00005555555575c7 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x5555555575c7
+0x00005555555575cb in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x5555555575cb
+0x00005555555575cf in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x5555555575cf
+0x00005555555575d4 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x5555555575d4
+0x00005555555575d9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555575d9
+0x00005555555575de in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555575de
+0x00005555555575e4 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555575e4
+0x00005555555575ea in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555575ea
+0x00005555555575ef in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555575ef
+0x00005555555575f3 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x5555555575f3
+0x00005555555575f8 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm1                        #! PC = 0x5555555575f8
+0x00005555555575fc in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x5555555575fc
+0x0000555555557600 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557600
+0x0000555555557605 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557605
+0x000055555555760a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x55555555760a
+0x000055555555760f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x55555555760f
+0x0000555555557614 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557614
+0x0000555555557619 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557619
+0x000055555555761e in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x55555555761e
+0x0000555555557622 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557622
+0x0000555555557626 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557626
+0x000055555555762a in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555762a
+0x000055555555762e in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x55555555762e
+0x0000555555557633 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555557633
+0x0000555555557638 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557638
+0x000055555555763d in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555763d
+0x0000555555557643 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557643
+0x0000555555557649 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557649
+0x000055555555764e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x55555555764e
+0x0000555555557653 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm15                       #! PC = 0x555555557653
+0x0000555555557657 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x555555557657
+0x000055555555765d in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555765d
+0x0000555555557663 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555557663
+0x0000555555557667 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x50124f4ffa2a5bae; PC = 0x555555557667
+0x000055555555766c in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x55555555766c
+0x0000555555557671 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557671
+0x0000555555557676 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm14                       #! PC = 0x555555557676
+0x000055555555767a in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x55555555767a
+0x0000555555557680 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557680
+0x0000555555557686 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557686
+0x000055555555768b in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x55555555768b
+0x0000555555557690 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555557690
+0x0000555555557695 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557695
+0x000055555555769a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x55555555769a
+0x000055555555769f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x55555555769f
+0x00005555555576a5 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x5555555576a5
+0x00005555555576ab in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x5555555576ab
+0x00005555555576b0 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555576b0
+0x00005555555576b6 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555576b6
+0x00005555555576bc in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555576bc
+0x00005555555576c1 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x5555555576c1
+0x00005555555576c6 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x5555555576c6
+0x00005555555576cb in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x5555555576cb
+0x00005555555576cf in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm12                     #! PC = 0x5555555576cf
+0x00005555555576d4 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x5555555576d4
+0x00005555555576da in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x5555555576da
+0x00005555555576e0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x5555555576e0
+0x00005555555576e5 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x5555555576e5
+0x00005555555576eb in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x5555555576eb
+0x00005555555576f1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555576f1
+0x00005555555576f6 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x5555555576f6
+0x00005555555576fb in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x5555555576fb
+0x0000555555557700 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557700
+0x0000555555557705 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557705
+0x000055555555770a in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x55555555770a
+0x0000555555557710 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x555555557710
+0x0000555555557716 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557716
+0x000055555555771b in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555771b
+0x0000555555557721 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557721
+0x0000555555557727 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557727
+0x000055555555772c in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x55555555772c
+0x0000555555557731 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm15                     #! PC = 0x555555557731
+0x0000555555557736 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm12                       #! PC = 0x555555557736
+0x000055555555773c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555773c
+0x0000555555557742 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm12                     #! PC = 0x555555557742
+0x0000555555557747 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557747
+0x000055555555774c in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm15                       #! PC = 0x55555555774c
+0x0000555555557750 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557750
+0x0000555555557756 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557756
+0x000055555555775c in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x55555555775c
+0x0000555555557760 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557760
+0x0000555555557764 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557764
+0x0000555555557768 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557768
+0x000055555555776d in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x55555555776d
+0x0000555555557771 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557771
+0x0000555555557777 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557777
+0x000055555555777d in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x55555555777d
+0x0000555555557782 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557782
+0x0000555555557788 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557788
+0x000055555555778e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555778e
+0x0000555555557793 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557793
+0x0000555555557798 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557798
+0x000055555555779d in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm1                        #! PC = 0x55555555779d
+0x00005555555577a1 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm4                        #! PC = 0x5555555577a1
+0x00005555555577a5 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x5555555577a5
+0x00005555555577aa in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x5555555577aa
+0x00005555555577af in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x5555555577af
+0x00005555555577b4 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x5555555577b4
+0x00005555555577b9 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x5555555577b9
+0x00005555555577be in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x5555555577be
+0x00005555555577c3 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x5555555577c3
+0x00005555555577c7 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x5555555577c7
+0x00005555555577cb in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x5555555577cb
+0x00005555555577d0 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x5555555577d0
+0x00005555555577d4 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm15                       #! PC = 0x5555555577d4
+0x00005555555577da in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x5555555577da
+0x00005555555577e0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555577e0
+0x00005555555577e5 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555577e5
+0x00005555555577eb in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555577eb
+0x00005555555577f1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555577f1
+0x00005555555577f6 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x5555555577f6
+0x00005555555577fb in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm15                       #! PC = 0x5555555577fb
+0x00005555555577ff in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm4                        #! PC = 0x5555555577ff
+0x0000555555557805 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557805
+0x000055555555780b in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm4                       #! PC = 0x55555555780b
+0x000055555555780f in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0xe69ae770b2890e97; PC = 0x55555555780f
+0x0000555555557814 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555557814
+0x0000555555557819 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557819
+0x000055555555781d in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm14                       #! PC = 0x55555555781d
+0x0000555555557821 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x555555557821
+0x0000555555557827 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557827
+0x000055555555782d in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x55555555782d
+0x0000555555557832 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557832
+0x0000555555557837 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x555555557837
+0x000055555555783c in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x55555555783c
+0x0000555555557841 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x555555557841
+0x0000555555557846 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557846
+0x000055555555784b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x55555555784b
+0x0000555555557850 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557850
+0x0000555555557855 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557855
+0x000055555555785b in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x55555555785b
+0x0000555555557861 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557861
+0x0000555555557866 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557866
+0x000055555555786a in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x55555555786a
+0x000055555555786f in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm8                        #! PC = 0x55555555786f
+0x0000555555557873 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x555555557873
+0x0000555555557877 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557877
+0x000055555555787d in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x55555555787d
+0x0000555555557883 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557883
+0x0000555555557888 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557888
+0x000055555555788e in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x55555555788e
+0x0000555555557894 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557894
+0x0000555555557899 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557899
+0x000055555555789e in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x55555555789e
+0x00005555555578a3 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x5555555578a3
+0x00005555555578a8 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x5555555578a8
+0x00005555555578ad in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x5555555578ad
+0x00005555555578b2 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x5555555578b2
+0x00005555555578b7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x5555555578b7
+0x00005555555578bc in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555578bc
+0x00005555555578c2 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555578c2
+0x00005555555578c8 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555578c8
+0x00005555555578cd in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x5555555578cd
+0x00005555555578d2 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x5555555578d2
+0x00005555555578d6 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x5555555578d6
+0x00005555555578dc in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555578dc
+0x00005555555578e2 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x5555555578e2
+0x00005555555578e7 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x5555555578e7
+0x00005555555578eb in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm15                       #! PC = 0x5555555578eb
+0x00005555555578ef in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x5555555578ef
+0x00005555555578f5 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x5555555578f5
+0x00005555555578fb in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x5555555578fb
+0x00005555555578ff in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x5555555578ff
+0x0000555555557903 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557903
+0x0000555555557907 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557907
+0x000055555555790b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555790b
+0x000055555555790f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x55555555790f
+0x0000555555557914 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557914
+0x0000555555557919 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557919
+0x000055555555791e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x55555555791e
+0x0000555555557924 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557924
+0x000055555555792a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555792a
+0x000055555555792f in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x55555555792f
+0x0000555555557933 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557933
+0x0000555555557938 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm1                        #! PC = 0x555555557938
+0x000055555555793c in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x55555555793c
+0x0000555555557940 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557940
+0x0000555555557945 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557945
+0x000055555555794a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x55555555794a
+0x000055555555794f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x55555555794f
+0x0000555555557954 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557954
+0x0000555555557959 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557959
+0x000055555555795e in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x55555555795e
+0x0000555555557962 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557962
+0x0000555555557966 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557966
+0x000055555555796a in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x55555555796a
+0x000055555555796e in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x55555555796e
+0x0000555555557973 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555557973
+0x0000555555557978 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557978
+0x000055555555797d in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x55555555797d
+0x0000555555557983 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557983
+0x0000555555557989 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557989
+0x000055555555798e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x55555555798e
+0x0000555555557993 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm15                       #! PC = 0x555555557993
+0x0000555555557997 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x555555557997
+0x000055555555799d in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555799d
+0x00005555555579a3 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x5555555579a3
+0x00005555555579a7 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x94a6b8c6f2eb9fd6; PC = 0x5555555579a7
+0x00005555555579ac in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x5555555579ac
+0x00005555555579b1 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x5555555579b1
+0x00005555555579b6 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm14                       #! PC = 0x5555555579b6
+0x00005555555579ba in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x5555555579ba
+0x00005555555579c0 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555579c0
+0x00005555555579c6 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x5555555579c6
+0x00005555555579cb in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x5555555579cb
+0x00005555555579d0 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x5555555579d0
+0x00005555555579d5 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x5555555579d5
+0x00005555555579da in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x5555555579da
+0x00005555555579df in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x5555555579df
+0x00005555555579e5 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x5555555579e5
+0x00005555555579eb in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x5555555579eb
+0x00005555555579f0 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x5555555579f0
+0x00005555555579f6 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x5555555579f6
+0x00005555555579fc in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555579fc
+0x0000555555557a01 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557a01
+0x0000555555557a06 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555557a06
+0x0000555555557a0b in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x555555557a0b
+0x0000555555557a0f in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm12                     #! PC = 0x555555557a0f
+0x0000555555557a14 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557a14
+0x0000555555557a1a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x555555557a1a
+0x0000555555557a20 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557a20
+0x0000555555557a25 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557a25
+0x0000555555557a2b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557a2b
+0x0000555555557a31 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557a31
+0x0000555555557a36 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x555555557a36
+0x0000555555557a3b in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555557a3b
+0x0000555555557a40 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557a40
+0x0000555555557a45 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557a45
+0x0000555555557a4a in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x555555557a4a
+0x0000555555557a50 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x555555557a50
+0x0000555555557a56 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557a56
+0x0000555555557a5b in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557a5b
+0x0000555555557a61 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557a61
+0x0000555555557a67 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557a67
+0x0000555555557a6c in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555557a6c
+0x0000555555557a71 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm15                     #! PC = 0x555555557a71
+0x0000555555557a76 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm12                       #! PC = 0x555555557a76
+0x0000555555557a7c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557a7c
+0x0000555555557a82 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm12                     #! PC = 0x555555557a82
+0x0000555555557a87 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557a87
+0x0000555555557a8c in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm15                       #! PC = 0x555555557a8c
+0x0000555555557a90 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557a90
+0x0000555555557a96 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557a96
+0x0000555555557a9c in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x555555557a9c
+0x0000555555557aa0 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557aa0
+0x0000555555557aa4 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557aa4
+0x0000555555557aa8 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557aa8
+0x0000555555557aad in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557aad
+0x0000555555557ab1 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557ab1
+0x0000555555557ab7 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557ab7
+0x0000555555557abd in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557abd
+0x0000555555557ac2 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557ac2
+0x0000555555557ac8 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557ac8
+0x0000555555557ace in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557ace
+0x0000555555557ad3 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557ad3
+0x0000555555557ad8 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557ad8
+0x0000555555557add in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm1                        #! PC = 0x555555557add
+0x0000555555557ae1 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm4                        #! PC = 0x555555557ae1
+0x0000555555557ae5 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557ae5
+0x0000555555557aea in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557aea
+0x0000555555557aef in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x555555557aef
+0x0000555555557af4 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557af4
+0x0000555555557af9 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557af9
+0x0000555555557afe in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557afe
+0x0000555555557b03 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557b03
+0x0000555555557b07 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557b07
+0x0000555555557b0b in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557b0b
+0x0000555555557b10 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557b10
+0x0000555555557b14 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm15                       #! PC = 0x555555557b14
+0x0000555555557b1a in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x555555557b1a
+0x0000555555557b20 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557b20
+0x0000555555557b25 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557b25
+0x0000555555557b2b in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557b2b
+0x0000555555557b31 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557b31
+0x0000555555557b36 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557b36
+0x0000555555557b3b in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm15                       #! PC = 0x555555557b3b
+0x0000555555557b3f in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm4                        #! PC = 0x555555557b3f
+0x0000555555557b45 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557b45
+0x0000555555557b4b in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm4                       #! PC = 0x555555557b4b
+0x0000555555557b4f in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x34e8a76e93ca823c; PC = 0x555555557b4f
+0x0000555555557b54 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555557b54
+0x0000555555557b59 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557b59
+0x0000555555557b5d in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm14                       #! PC = 0x555555557b5d
+0x0000555555557b61 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x555555557b61
+0x0000555555557b67 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557b67
+0x0000555555557b6d in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557b6d
+0x0000555555557b72 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557b72
+0x0000555555557b77 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x555555557b77
+0x0000555555557b7c in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557b7c
+0x0000555555557b81 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x555555557b81
+0x0000555555557b86 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557b86
+0x0000555555557b8b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557b8b
+0x0000555555557b90 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557b90
+0x0000555555557b95 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557b95
+0x0000555555557b9b in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557b9b
+0x0000555555557ba1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557ba1
+0x0000555555557ba6 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557ba6
+0x0000555555557baa in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x555555557baa
+0x0000555555557baf in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm8                        #! PC = 0x555555557baf
+0x0000555555557bb3 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x555555557bb3
+0x0000555555557bb7 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557bb7
+0x0000555555557bbd in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x555555557bbd
+0x0000555555557bc3 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557bc3
+0x0000555555557bc8 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557bc8
+0x0000555555557bce in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555557bce
+0x0000555555557bd4 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557bd4
+0x0000555555557bd9 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557bd9
+0x0000555555557bde in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x555555557bde
+0x0000555555557be3 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557be3
+0x0000555555557be8 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557be8
+0x0000555555557bed in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x555555557bed
+0x0000555555557bf2 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555557bf2
+0x0000555555557bf7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557bf7
+0x0000555555557bfc in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557bfc
+0x0000555555557c02 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557c02
+0x0000555555557c08 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557c08
+0x0000555555557c0d in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x555555557c0d
+0x0000555555557c12 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555557c12
+0x0000555555557c16 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555557c16
+0x0000555555557c1c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557c1c
+0x0000555555557c22 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x555555557c22
+0x0000555555557c27 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555557c27
+0x0000555555557c2b in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm15                       #! PC = 0x555555557c2b
+0x0000555555557c2f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557c2f
+0x0000555555557c35 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557c35
+0x0000555555557c3b in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x555555557c3b
+0x0000555555557c3f in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x555555557c3f
+0x0000555555557c43 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557c43
+0x0000555555557c47 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557c47
+0x0000555555557c4b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x555555557c4b
+0x0000555555557c4f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557c4f
+0x0000555555557c54 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557c54
+0x0000555555557c59 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557c59
+0x0000555555557c5e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557c5e
+0x0000555555557c64 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557c64
+0x0000555555557c6a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557c6a
+0x0000555555557c6f in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555557c6f
+0x0000555555557c73 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557c73
+0x0000555555557c78 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm1                        #! PC = 0x555555557c78
+0x0000555555557c7c in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x555555557c7c
+0x0000555555557c80 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557c80
+0x0000555555557c85 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557c85
+0x0000555555557c8a in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x555555557c8a
+0x0000555555557c8f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557c8f
+0x0000555555557c94 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557c94
+0x0000555555557c99 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557c99
+0x0000555555557c9e in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x555555557c9e
+0x0000555555557ca2 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557ca2
+0x0000555555557ca6 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557ca6
+0x0000555555557caa in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x555555557caa
+0x0000555555557cae in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x555555557cae
+0x0000555555557cb3 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555557cb3
+0x0000555555557cb8 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557cb8
+0x0000555555557cbd in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557cbd
+0x0000555555557cc3 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557cc3
+0x0000555555557cc9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557cc9
+0x0000555555557cce in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557cce
+0x0000555555557cd3 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm15                       #! PC = 0x555555557cd3
+0x0000555555557cd7 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x555555557cd7
+0x0000555555557cdd in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557cdd
+0x0000555555557ce3 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555557ce3
+0x0000555555557ce7 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x69111157bc9a3c09; PC = 0x555555557ce7
+0x0000555555557cec in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555557cec
+0x0000555555557cf1 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557cf1
+0x0000555555557cf6 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm14                       #! PC = 0x555555557cf6
+0x0000555555557cfa in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x555555557cfa
+0x0000555555557d00 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557d00
+0x0000555555557d06 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557d06
+0x0000555555557d0b in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x555555557d0b
+0x0000555555557d10 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555557d10
+0x0000555555557d15 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557d15
+0x0000555555557d1a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x555555557d1a
+0x0000555555557d1f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557d1f
+0x0000555555557d25 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555557d25
+0x0000555555557d2b in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557d2b
+0x0000555555557d30 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557d30
+0x0000555555557d36 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557d36
+0x0000555555557d3c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557d3c
+0x0000555555557d41 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555557d41
+0x0000555555557d46 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555557d46
+0x0000555555557d4b in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x555555557d4b
+0x0000555555557d4f in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm12                     #! PC = 0x555555557d4f
+0x0000555555557d54 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557d54
+0x0000555555557d5a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x555555557d5a
+0x0000555555557d60 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557d60
+0x0000555555557d65 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557d65
+0x0000555555557d6b in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557d6b
+0x0000555555557d71 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557d71
+0x0000555555557d76 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x555555557d76
+0x0000555555557d7b in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555557d7b
+0x0000555555557d80 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555557d80
+0x0000555555557d85 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557d85
+0x0000555555557d8a in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x555555557d8a
+0x0000555555557d90 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x555555557d90
+0x0000555555557d96 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557d96
+0x0000555555557d9b in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557d9b
+0x0000555555557da1 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557da1
+0x0000555555557da7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557da7
+0x0000555555557dac in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555557dac
+0x0000555555557db1 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm15                     #! PC = 0x555555557db1
+0x0000555555557db6 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm12                       #! PC = 0x555555557db6
+0x0000555555557dbc in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557dbc
+0x0000555555557dc2 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm12                     #! PC = 0x555555557dc2
+0x0000555555557dc7 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557dc7
+0x0000555555557dcc in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm15                       #! PC = 0x555555557dcc
+0x0000555555557dd0 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557dd0
+0x0000555555557dd6 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557dd6
+0x0000555555557ddc in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x555555557ddc
+0x0000555555557de0 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557de0
+0x0000555555557de4 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557de4
+0x0000555555557de8 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557de8
+0x0000555555557ded in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557ded
+0x0000555555557df1 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x555555557df1
+0x0000555555557df7 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x555555557df7
+0x0000555555557dfd in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557dfd
+0x0000555555557e02 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557e02
+0x0000555555557e08 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557e08
+0x0000555555557e0e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557e0e
+0x0000555555557e13 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm3,%ymm3                       #! PC = 0x555555557e13
+0x0000555555557e18 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557e18
+0x0000555555557e1d in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm1,%ymm1                        #! PC = 0x555555557e1d
+0x0000555555557e21 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm4                        #! PC = 0x555555557e21
+0x0000555555557e25 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557e25
+0x0000555555557e2a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557e2a
+0x0000555555557e2f in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x555555557e2f
+0x0000555555557e34 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557e34
+0x0000555555557e39 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557e39
+0x0000555555557e3e in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557e3e
+0x0000555555557e43 in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm9,%ymm9                        #! PC = 0x555555557e43
+0x0000555555557e47 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm7,%ymm7                        #! PC = 0x555555557e47
+0x0000555555557e4b in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm12,%ymm12                      #! PC = 0x555555557e4b
+0x0000555555557e50 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm14,%ymm14                      #! PC = 0x555555557e50
+0x0000555555557e54 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm12,%ymm15                       #! PC = 0x555555557e54
+0x0000555555557e5a in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm12,%ymm12                      #! PC = 0x555555557e5a
+0x0000555555557e60 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x555555557e60
+0x0000555555557e65 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557e65
+0x0000555555557e6b in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557e6b
+0x0000555555557e71 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557e71
+0x0000555555557e76 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557e76
+0x0000555555557e7b in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm4,%ymm15                       #! PC = 0x555555557e7b
+0x0000555555557e7f in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm4                        #! PC = 0x555555557e7f
+0x0000555555557e85 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557e85
+0x0000555555557e8b in rounds_v_avx2 ()
+	vpxor  %ymm4,%ymm15,%ymm4                       #! PC = 0x555555557e8b
+0x0000555555557e8f in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0xd72adfbe53a594c0; PC = 0x555555557e8f
+0x0000555555557e94 in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x555555557e94
+0x0000555555557e99 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557e99
+0x0000555555557e9d in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm14                       #! PC = 0x555555557e9d
+0x0000555555557ea1 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x555555557ea1
+0x0000555555557ea7 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557ea7
+0x0000555555557ead in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555557ead
+0x0000555555557eb2 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557eb2
+0x0000555555557eb7 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x555555557eb7
+0x0000555555557ebc in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557ebc
+0x0000555555557ec1 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x555555557ec1
+0x0000555555557ec6 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557ec6
+0x0000555555557ecb in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557ecb
+0x0000555555557ed0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557ed0
+0x0000555555557ed5 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557ed5
+0x0000555555557edb in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557edb
+0x0000555555557ee1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557ee1
+0x0000555555557ee6 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm0,%ymm0                        #! PC = 0x555555557ee6
+0x0000555555557eea in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x555555557eea
+0x0000555555557eef in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm8,%ymm8                        #! PC = 0x555555557eef
+0x0000555555557ef3 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm11                      #! PC = 0x555555557ef3
+0x0000555555557ef7 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555557ef7
+0x0000555555557efd in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x555555557efd
+0x0000555555557f03 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x555555557f03
+0x0000555555557f08 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x555555557f08
+0x0000555555557f0e in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555557f0e
+0x0000555555557f14 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x555555557f14
+0x0000555555557f19 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm13,%ymm13                      #! PC = 0x555555557f19
+0x0000555555557f1e in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm10,%ymm10                     #! PC = 0x555555557f1e
+0x0000555555557f23 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm6,%ymm6                       #! PC = 0x555555557f23
+0x0000555555557f28 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x555555557f28
+0x0000555555557f2d in rounds_v_avx2 ()
+	vpslld $0x7,%ymm6,%ymm15                        #! PC = 0x555555557f2d
+0x0000555555557f32 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm6,%ymm6                        #! PC = 0x555555557f32
+0x0000555555557f37 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557f37
+0x0000555555557f3c in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557f3c
+0x0000555555557f42 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555557f42
+0x0000555555557f48 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557f48
+0x0000555555557f4d in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm2,%ymm2                       #! PC = 0x555555557f4d
+0x0000555555557f52 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm11,%ymm15                      #! PC = 0x555555557f52
+0x0000555555557f56 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm11                       #! PC = 0x555555557f56
+0x0000555555557f5c in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x555555557f5c
+0x0000555555557f62 in rounds_v_avx2 ()
+	vpxor  %ymm11,%ymm15,%ymm11                     #! PC = 0x555555557f62
+0x0000555555557f67 in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555557f67
+0x0000555555557f6b in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm15                       #! PC = 0x555555557f6b
+0x0000555555557f6f in rounds_v_avx2 ()
+	vpslld $0x10,%ymm15,%ymm1                       #! PC = 0x555555557f6f
+0x0000555555557f75 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm15,%ymm15                      #! PC = 0x555555557f75
+0x0000555555557f7b in rounds_v_avx2 ()
+	vpxor  %ymm1,%ymm15,%ymm1                       #! PC = 0x555555557f7b
+0x0000555555557f7f in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x555555557f7f
+0x0000555555557f83 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557f83
+0x0000555555557f87 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557f87
+0x0000555555557f8b in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x555555557f8b
+0x0000555555557f8f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm4,%ymm15                        #! PC = 0x555555557f8f
+0x0000555555557f94 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm4,%ymm4                        #! PC = 0x555555557f94
+0x0000555555557f99 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557f99
+0x0000555555557f9e in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555557f9e
+0x0000555555557fa4 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555557fa4
+0x0000555555557faa in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555557faa
+0x0000555555557faf in rounds_v_avx2 ()
+	vpaddd %ymm4,%ymm0,%ymm0                        #! PC = 0x555555557faf
+0x0000555555557fb3 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x555555557fb3
+0x0000555555557fb8 in rounds_v_avx2 ()
+	vpxor  %ymm0,%ymm1,%ymm1                        #! PC = 0x555555557fb8
+0x0000555555557fbc in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm6                        #! PC = 0x555555557fbc
+0x0000555555557fc0 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm1,%ymm15                        #! PC = 0x555555557fc0
+0x0000555555557fc5 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm1,%ymm1                        #! PC = 0x555555557fc5
+0x0000555555557fca in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm1,%ymm1                       #! PC = 0x555555557fca
+0x0000555555557fcf in rounds_v_avx2 ()
+	vpslld $0xc,%ymm6,%ymm15                        #! PC = 0x555555557fcf
+0x0000555555557fd4 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm6,%ymm6                        #! PC = 0x555555557fd4
+0x0000555555557fd9 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm6,%ymm6                       #! PC = 0x555555557fd9
+0x0000555555557fde in rounds_v_avx2 ()
+	vpaddd %ymm1,%ymm2,%ymm2                        #! PC = 0x555555557fde
+0x0000555555557fe2 in rounds_v_avx2 ()
+	vpaddd %ymm6,%ymm3,%ymm3                        #! PC = 0x555555557fe2
+0x0000555555557fe6 in rounds_v_avx2 ()
+	vpxor  %ymm2,%ymm4,%ymm4                        #! PC = 0x555555557fe6
+0x0000555555557fea in rounds_v_avx2 ()
+	vpxor  %ymm3,%ymm14,%ymm14                      #! PC = 0x555555557fea
+0x0000555555557fee in rounds_v_avx2 ()
+	vpslld $0x7,%ymm4,%ymm15                        #! PC = 0x555555557fee
+0x0000555555557ff3 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm4,%ymm4                        #! PC = 0x555555557ff3
+0x0000555555557ff8 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm4,%ymm4                       #! PC = 0x555555557ff8
+0x0000555555557ffd in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x555555557ffd
+0x0000555555558003 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x555555558003
+0x0000555555558009 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x555555558009
+0x000055555555800e in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm5,%ymm5                       #! PC = 0x55555555800e
+0x0000555555558013 in rounds_v_avx2 ()
+	vpxor  %ymm5,%ymm6,%ymm15                       #! PC = 0x555555558013
+0x0000555555558017 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm6                        #! PC = 0x555555558017
+0x000055555555801d in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x55555555801d
+0x0000555555558023 in rounds_v_avx2 ()
+	vpxor  %ymm6,%ymm15,%ymm6                       #! PC = 0x555555558023
+0x0000555555558027 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0x061ab671c85f6297; PC = 0x555555558027
+0x000055555555802c in rounds_v_avx2 ()
+	vmovdqu %ymm14,(%rsp)                           #! EA = L0x7fffffffd7e0; PC = 0x55555555802c
+0x0000555555558031 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555558031
+0x0000555555558036 in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm14                       #! PC = 0x555555558036
+0x000055555555803a in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm8                       #! PC = 0x55555555803a
+0x0000555555558040 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555558040
+0x0000555555558046 in rounds_v_avx2 ()
+	vpxor  %ymm8,%ymm14,%ymm8                       #! PC = 0x555555558046
+0x000055555555804b in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x55555555804b
+0x0000555555558050 in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x555555558050
+0x0000555555558055 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x555555558055
+0x000055555555805a in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm15,%ymm14                     #! PC = 0x55555555805a
+0x000055555555805f in rounds_v_avx2 ()
+	vpslld $0xc,%ymm11,%ymm15                       #! PC = 0x55555555805f
+0x0000555555558065 in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm11,%ymm11                      #! PC = 0x555555558065
+0x000055555555806b in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x55555555806b
+0x0000555555558070 in rounds_v_avx2 ()
+	vpslld $0x10,%ymm14,%ymm15                      #! PC = 0x555555558070
+0x0000555555558076 in rounds_v_avx2 ()
+	vpsrld $0x10,%ymm14,%ymm14                      #! PC = 0x555555558076
+0x000055555555807c in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x55555555807c
+0x0000555555558081 in rounds_v_avx2 ()
+	vpaddd %ymm11,%ymm7,%ymm7                       #! PC = 0x555555558081
+0x0000555555558086 in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x555555558086
+0x000055555555808b in rounds_v_avx2 ()
+	vpxor  %ymm7,%ymm8,%ymm8                        #! PC = 0x55555555808b
+0x000055555555808f in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm12                     #! PC = 0x55555555808f
+0x0000555555558094 in rounds_v_avx2 ()
+	vpslld $0x8,%ymm8,%ymm15                        #! PC = 0x555555558094
+0x000055555555809a in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm8,%ymm8                        #! PC = 0x55555555809a
+0x00005555555580a0 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm8,%ymm8                       #! PC = 0x5555555580a0
+0x00005555555580a5 in rounds_v_avx2 ()
+	vpslld $0xc,%ymm12,%ymm15                       #! PC = 0x5555555580a5
+0x00005555555580ab in rounds_v_avx2 ()
+	vpsrld $0x14,%ymm12,%ymm12                      #! PC = 0x5555555580ab
+0x00005555555580b1 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm12,%ymm12                     #! PC = 0x5555555580b1
+0x00005555555580b6 in rounds_v_avx2 ()
+	vpaddd %ymm8,%ymm9,%ymm9                        #! PC = 0x5555555580b6
+0x00005555555580bb in rounds_v_avx2 ()
+	vpaddd %ymm12,%ymm10,%ymm10                     #! PC = 0x5555555580bb
+0x00005555555580c0 in rounds_v_avx2 ()
+	vpxor  %ymm9,%ymm11,%ymm11                      #! PC = 0x5555555580c0
+0x00005555555580c5 in rounds_v_avx2 ()
+	vpxor  %ymm10,%ymm14,%ymm14                     #! PC = 0x5555555580c5
+0x00005555555580ca in rounds_v_avx2 ()
+	vpslld $0x7,%ymm11,%ymm15                       #! PC = 0x5555555580ca
+0x00005555555580d0 in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm11,%ymm11                      #! PC = 0x5555555580d0
+0x00005555555580d6 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm11,%ymm11                     #! PC = 0x5555555580d6
+0x00005555555580db in rounds_v_avx2 ()
+	vpslld $0x8,%ymm14,%ymm15                       #! PC = 0x5555555580db
+0x00005555555580e1 in rounds_v_avx2 ()
+	vpsrld $0x18,%ymm14,%ymm14                      #! PC = 0x5555555580e1
+0x00005555555580e7 in rounds_v_avx2 ()
+	vpxor  %ymm15,%ymm14,%ymm14                     #! PC = 0x5555555580e7
+0x00005555555580ec in rounds_v_avx2 ()
+	vpaddd %ymm14,%ymm13,%ymm13                     #! PC = 0x5555555580ec
+0x00005555555580f1 in rounds_v_avx2 ()
+	vpxor  %ymm13,%ymm12,%ymm15                     #! PC = 0x5555555580f1
+0x00005555555580f6 in rounds_v_avx2 ()
+	vpslld $0x7,%ymm15,%ymm12                       #! PC = 0x5555555580f6
+0x00005555555580fc in rounds_v_avx2 ()
+	vpsrld $0x19,%ymm15,%ymm15                      #! PC = 0x5555555580fc
+0x0000555555558102 in rounds_v_avx2 ()
+	vpxor  %ymm12,%ymm15,%ymm12                     #! PC = 0x555555558102
+0x0000555555558107 in rounds_v_avx2 ()
+	vmovdqu (%rsp),%ymm15                           #! EA = L0x7fffffffd7e0; Value = 0xddc139d774c7d926; PC = 0x555555558107
+0x000055555555810c in rounds_v_avx2 ()
+	vmovdqu %ymm3,(%rdi)                            #! EA = L0x7fffffffd860; PC = 0x55555555810c
+0x0000555555558110 in rounds_v_avx2 ()
+	vmovdqu %ymm0,0x20(%rdi)                        #! EA = L0x7fffffffd880; PC = 0x555555558110
+0x0000555555558115 in rounds_v_avx2 ()
+	vmovdqu %ymm7,0x40(%rdi)                        #! EA = L0x7fffffffd8a0; PC = 0x555555558115
+0x000055555555811a in rounds_v_avx2 ()
+	vmovdqu %ymm10,0x60(%rdi)                       #! EA = L0x7fffffffd8c0; PC = 0x55555555811a
+0x000055555555811f in rounds_v_avx2 ()
+	vmovdqu %ymm12,0x80(%rdi)                       #! EA = L0x7fffffffd8e0; PC = 0x55555555811f
+0x0000555555558127 in rounds_v_avx2 ()
+	vmovdqu %ymm6,0xa0(%rdi)                        #! EA = L0x7fffffffd900; PC = 0x555555558127
+0x000055555555812f in rounds_v_avx2 ()
+	vmovdqu %ymm4,0xc0(%rdi)                        #! EA = L0x7fffffffd920; PC = 0x55555555812f
+0x0000555555558137 in rounds_v_avx2 ()
+	vmovdqu %ymm11,0xe0(%rdi)                       #! EA = L0x7fffffffd940; PC = 0x555555558137
+0x000055555555813f in rounds_v_avx2 ()
+	vmovdqu %ymm9,0x100(%rdi)                       #! EA = L0x7fffffffd960; PC = 0x55555555813f
+0x0000555555558147 in rounds_v_avx2 ()
+	vmovdqu %ymm13,0x120(%rdi)                      #! EA = L0x7fffffffd980; PC = 0x555555558147
+0x000055555555814f in rounds_v_avx2 ()
+	vmovdqu %ymm5,0x140(%rdi)                       #! EA = L0x7fffffffd9a0; PC = 0x55555555814f
+0x0000555555558157 in rounds_v_avx2 ()
+	vmovdqu %ymm2,0x160(%rdi)                       #! EA = L0x7fffffffd9c0; PC = 0x555555558157
+0x000055555555815f in rounds_v_avx2 ()
+	vmovdqu %ymm1,0x180(%rdi)                       #! EA = L0x7fffffffd9e0; PC = 0x55555555815f
+0x0000555555558167 in rounds_v_avx2 ()
+	vmovdqu %ymm8,0x1a0(%rdi)                       #! EA = L0x7fffffffda00; PC = 0x555555558167
+0x000055555555816f in rounds_v_avx2 ()
+	vmovdqu %ymm14,0x1c0(%rdi)                      #! EA = L0x7fffffffda20; PC = 0x55555555816f
+0x0000555555558177 in rounds_v_avx2 ()
+	vmovdqu %ymm15,0x1e0(%rdi)                      #! EA = L0x7fffffffda40; PC = 0x555555558177
+0x000055555555817f in rounds_v_avx2 ()
+	mov    %rsi,%rsp                                #! PC = 0x55555555817f
+0x0000555555558182 in rounds_v_avx2 ()
+	#! <- SP = 0x7fffffffd818
+0x0000555555555090 in main ()
+	#ret                                            #! PC = 0x555555558182
