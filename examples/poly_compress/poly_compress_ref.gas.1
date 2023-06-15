@@ -12,24 +12,24 @@
 #! %dx = %%dx
 #! %si = %%si
 
-
-#! mov $1c, $2v -> mov $2v $1c
 #! mov $1ea, $2v -> mov $2v $1ea
-#! add $1c, $2v -> add $2v $2v $1c
+#! add \$0xf2ff, $1v -> add $1v $1v 0xf2ff@sint16
+#! and \$0xd01, $1v -> and $1v@sint16 $1v 0xd01@sint16
 #! mov $1v, $2v -> mov $2v $1v
 #! sar $1c, $2v -> sar $2v $2v $1c
-#! and $1c, $2v -> and $2v $2v $1c
 #! add $1v, $2v -> add $2v $2v $1v
-#! inc $1v -> add $1v $1v 1
-#! movzwl $1v,$2v -> cast uint64 $2v $1v
+#! mov \$0x0,$1v -> mov $1v 0x0@uint64
+#! add \$0x681,$1v -> add $1v $1v 0x681@uint32
+#! inc $1v -> add $1v $1v 1@uint64
+#! movzwl $1v,$2v -> cast uint32 $2v $1v
 #! shl $1c,$2v -> shl $2v $2v $1c
-#! imul $1c,$2v,$2v -> mul $2v $1c $2v
+#! imul \$0x13afb,$2v,$2v -> mul $2v $2v 0x13afb@uint32
+#! and \$0xf, $1v -> and $1v@uint32 $1v 0xf@uint32
 #! shr $1c,$2v -> shr $2v $2v $1c
-#! or $1v,$2v -> or $2v $2v $1v
+#! or $1v,$2v -> or $2v@uint32 $2v $1v
 #! mov %dl,$1ea -> cast uint8 dl edx;\nmov $1ea dl
 
 
-poly_compress_ref:
 	mov    (%rax),%cx                               #! EA = L0x7ff7bfefec48; Value = 0x0000000000000000; PC = 0x100006f01
 	add    $0xf2ff,%cx                              #! PC = 0x100006f04
 	mov    %cx,%dx                                  #! PC = 0x100006f09
