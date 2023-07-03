@@ -329,21 +329,22 @@ mov L0x7ff7bfefee44 c_fe; mov L0x7ff7bfefee46 c_ff;
 (* mov    (%rax),%cx                               #! EA = L0x7ff7bfefec48; Value = 0x0000000000000000; PC = 0x100006f01 *)
 mov cx L0x7ff7bfefec48;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f04 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f09 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f0c *)
-sar dx dx 0xf;
+sar dx dx 0xf@sint16;
 (* and    $0xd01,%dx                               #! PC = 0x100006f10 *)
 and dx@sint16 dx 0xd01@sint16;
 (* add    %dx,%cx                                  #! PC = 0x100006f15 *)
 add cx cx dx;
 (* mov    %cx,(%rax)                               #! EA = L0x7ff7bfefec48; PC = 0x100006f18 *)
 mov L0x7ff7bfefec48 cx;
+
 (* mov    0x2(%rax),%cx                            #! EA = L0x7ff7bfefec4a; Value = 0x0000000000000000; PC = 0x100006f1b *)
 mov cx L0x7ff7bfefec4a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f1f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f24 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f27 *)
@@ -357,7 +358,7 @@ mov L0x7ff7bfefec4a cx;
 (* mov    0x4(%rax),%cx                            #! EA = L0x7ff7bfefec4c; Value = 0x0000000000000000; PC = 0x100006f37 *)
 mov cx L0x7ff7bfefec4c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f3b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f40 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f43 *)
@@ -371,7 +372,7 @@ mov L0x7ff7bfefec4c cx;
 (* mov    0x6(%rax),%cx                            #! EA = L0x7ff7bfefec4e; Value = 0x0000000000000000; PC = 0x100006f53 *)
 mov cx L0x7ff7bfefec4e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f57 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f5c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f5f *)
@@ -385,7 +386,7 @@ mov L0x7ff7bfefec4e cx;
 (* mov    0x8(%rax),%cx                            #! EA = L0x7ff7bfefec50; Value = 0x0000000000000000; PC = 0x100006f6f *)
 mov cx L0x7ff7bfefec50;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f73 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f78 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f7b *)
@@ -399,7 +400,7 @@ mov L0x7ff7bfefec50 cx;
 (* mov    0xa(%rax),%cx                            #! EA = L0x7ff7bfefec52; Value = 0xf0e0000000000000; PC = 0x100006f8b *)
 mov cx L0x7ff7bfefec52;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006f8f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006f94 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006f97 *)
@@ -413,7 +414,7 @@ mov L0x7ff7bfefec52 cx;
 (* mov    0xc(%rax),%cx                            #! EA = L0x7ff7bfefec54; Value = 0xbfeff0e000000000; PC = 0x100006fa7 *)
 mov cx L0x7ff7bfefec54;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006fab *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006fb0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006fb3 *)
@@ -427,7 +428,7 @@ mov L0x7ff7bfefec54 cx;
 (* mov    0xe(%rax),%cx                            #! EA = L0x7ff7bfefec56; Value = 0x7ff7bfeff0e00000; PC = 0x100006fc3 *)
 mov cx L0x7ff7bfefec56;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006fc7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006fcc *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006fcf *)
@@ -441,7 +442,7 @@ mov L0x7ff7bfefec56 cx;
 (* mov    0x10(%rax),%cx                           #! EA = L0x7ff7bfefec58; Value = 0x00007ff7bfeff0e0; PC = 0x100006fdf *)
 mov cx L0x7ff7bfefec58;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006fe3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100006fe8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100006feb *)
@@ -455,7 +456,7 @@ mov L0x7ff7bfefec58 cx;
 (* mov    0x12(%rax),%cx                           #! EA = L0x7ff7bfefec5a; Value = 0x942800007ff7bfef; PC = 0x100006ffb *)
 mov cx L0x7ff7bfefec5a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100006fff *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007004 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007007 *)
@@ -469,7 +470,7 @@ mov L0x7ff7bfefec5a cx;
 (* mov    0x14(%rax),%cx                           #! EA = L0x7ff7bfefec5c; Value = 0x0005942800007ff7; PC = 0x100007017 *)
 mov cx L0x7ff7bfefec5c;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000701b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007020 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007023 *)
@@ -483,7 +484,7 @@ mov L0x7ff7bfefec5c cx;
 (* mov    0x16(%rax),%cx                           #! EA = L0x7ff7bfefec5e; Value = 0x0001000594280000; PC = 0x100007033 *)
 mov cx L0x7ff7bfefec5e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007037 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000703c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000703f *)
@@ -497,7 +498,7 @@ mov L0x7ff7bfefec5e cx;
 (* mov    0x18(%rax),%cx                           #! EA = L0x7ff7bfefec60; Value = 0x0000000100059428; PC = 0x10000704f *)
 mov cx L0x7ff7bfefec60;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007053 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007058 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000705b *)
@@ -511,7 +512,7 @@ mov L0x7ff7bfefec60 cx;
 (* mov    0x1a(%rax),%cx                           #! EA = L0x7ff7bfefec62; Value = 0x0400000000010005; PC = 0x10000706b *)
 mov cx L0x7ff7bfefec62;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000706f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007074 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007077 *)
@@ -525,7 +526,7 @@ mov L0x7ff7bfefec62 cx;
 (* mov    0x1c(%rax),%cx                           #! EA = L0x7ff7bfefec64; Value = 0x0000040000000001; PC = 0x100007087 *)
 mov cx L0x7ff7bfefec64;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000708b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007090 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007093 *)
@@ -539,7 +540,7 @@ mov L0x7ff7bfefec64 cx;
 (* mov    0x1e(%rax),%cx                           #! EA = L0x7ff7bfefec66; Value = 0x0000000004000000; PC = 0x1000070a3 *)
 mov cx L0x7ff7bfefec66;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000070a7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000070ac *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000070af *)
@@ -553,7 +554,7 @@ mov L0x7ff7bfefec66 cx;
 (* mov    0x20(%rax),%cx                           #! EA = L0x7ff7bfefec68; Value = 0x0000000000000400; PC = 0x1000070bf *)
 mov cx L0x7ff7bfefec68;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000070c3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000070c8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000070cb *)
@@ -567,7 +568,7 @@ mov L0x7ff7bfefec68 cx;
 (* mov    0x22(%rax),%cx                           #! EA = L0x7ff7bfefec6a; Value = 0xe0a0000000000000; PC = 0x1000070db *)
 mov cx L0x7ff7bfefec6a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000070df *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000070e4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000070e7 *)
@@ -581,7 +582,7 @@ mov L0x7ff7bfefec6a cx;
 (* mov    0x24(%rax),%cx                           #! EA = L0x7ff7bfefec6c; Value = 0x05cee0a000000000; PC = 0x1000070f7 *)
 mov cx L0x7ff7bfefec6c;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000070fb *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007100 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007103 *)
@@ -595,7 +596,7 @@ mov L0x7ff7bfefec6c cx;
 (* mov    0x26(%rax),%cx                           #! EA = L0x7ff7bfefec6e; Value = 0x7ff805cee0a00000; PC = 0x100007113 *)
 mov cx L0x7ff7bfefec6e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007117 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000711c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000711f *)
@@ -609,7 +610,7 @@ mov L0x7ff7bfefec6e cx;
 (* mov    0x28(%rax),%cx                           #! EA = L0x7ff7bfefec70; Value = 0x00007ff805cee0a0; PC = 0x10000712f *)
 mov cx L0x7ff7bfefec70;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007133 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007138 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000713b *)
@@ -623,7 +624,7 @@ mov L0x7ff7bfefec70 cx;
 (* mov    0x2a(%rax),%cx                           #! EA = L0x7ff7bfefec72; Value = 0xe07700007ff805ce; PC = 0x10000714b *)
 mov cx L0x7ff7bfefec72;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000714f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007154 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007157 *)
@@ -637,7 +638,7 @@ mov L0x7ff7bfefec72 cx;
 (* mov    0x2c(%rax),%cx                           #! EA = L0x7ff7bfefec74; Value = 0x05cae07700007ff8; PC = 0x100007167 *)
 mov cx L0x7ff7bfefec74;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000716b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007170 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007173 *)
@@ -651,7 +652,7 @@ mov L0x7ff7bfefec74 cx;
 (* mov    0x2e(%rax),%cx                           #! EA = L0x7ff7bfefec76; Value = 0x7ff805cae0770000; PC = 0x100007183 *)
 mov cx L0x7ff7bfefec76;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007187 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000718c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000718f *)
@@ -665,7 +666,7 @@ mov L0x7ff7bfefec76 cx;
 (* mov    0x30(%rax),%cx                           #! EA = L0x7ff7bfefec78; Value = 0x00007ff805cae077; PC = 0x10000719f *)
 mov cx L0x7ff7bfefec78;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000071a3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000071a8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000071ab *)
@@ -679,7 +680,7 @@ mov L0x7ff7bfefec78 cx;
 (* mov    0x32(%rax),%cx                           #! EA = L0x7ff7bfefec7a; Value = 0x040000007ff805ca; PC = 0x1000071bb *)
 mov cx L0x7ff7bfefec7a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000071bf *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000071c4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000071c7 *)
@@ -693,7 +694,7 @@ mov L0x7ff7bfefec7a cx;
 (* mov    0x34(%rax),%cx                           #! EA = L0x7ff7bfefec7c; Value = 0x0000040000007ff8; PC = 0x1000071d7 *)
 mov cx L0x7ff7bfefec7c;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000071db *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000071e0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000071e3 *)
@@ -707,7 +708,7 @@ mov L0x7ff7bfefec7c cx;
 (* mov    0x36(%rax),%cx                           #! EA = L0x7ff7bfefec7e; Value = 0x0000000004000000; PC = 0x1000071f3 *)
 mov cx L0x7ff7bfefec7e;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000071f7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000071fc *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000071ff *)
@@ -721,7 +722,7 @@ mov L0x7ff7bfefec7e cx;
 (* mov    0x38(%rax),%cx                           #! EA = L0x7ff7bfefec80; Value = 0x0000000000000400; PC = 0x10000720f *)
 mov cx L0x7ff7bfefec80;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007213 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007218 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000721b *)
@@ -735,7 +736,7 @@ mov L0x7ff7bfefec80 cx;
 (* mov    0x3a(%rax),%cx                           #! EA = L0x7ff7bfefec82; Value = 0x5404000000000000; PC = 0x10000722b *)
 mov cx L0x7ff7bfefec82;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000722f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007234 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007237 *)
@@ -749,7 +750,7 @@ mov L0x7ff7bfefec82 cx;
 (* mov    0x3c(%rax),%cx                           #! EA = L0x7ff7bfefec84; Value = 0x05cf540400000000; PC = 0x100007247 *)
 mov cx L0x7ff7bfefec84;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000724b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007250 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007253 *)
@@ -763,7 +764,7 @@ mov L0x7ff7bfefec84 cx;
 (* mov    0x3e(%rax),%cx                           #! EA = L0x7ff7bfefec86; Value = 0x7ff805cf54040000; PC = 0x100007263 *)
 mov cx L0x7ff7bfefec86;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007267 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000726c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000726f *)
@@ -777,7 +778,7 @@ mov L0x7ff7bfefec86 cx;
 (* mov    0x40(%rax),%cx                           #! EA = L0x7ff7bfefec88; Value = 0x00007ff805cf5404; PC = 0x10000727f *)
 mov cx L0x7ff7bfefec88;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007283 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007288 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000728b *)
@@ -791,7 +792,7 @@ mov L0x7ff7bfefec88 cx;
 (* mov    0x42(%rax),%cx                           #! EA = L0x7ff7bfefec8a; Value = 0xcb0d00007ff805cf; PC = 0x10000729b *)
 mov cx L0x7ff7bfefec8a;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000729f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000072a4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000072a7 *)
@@ -805,7 +806,7 @@ mov L0x7ff7bfefec8a cx;
 (* mov    0x44(%rax),%cx                           #! EA = L0x7ff7bfefec8c; Value = 0x05c9cb0d00007ff8; PC = 0x1000072b7 *)
 mov cx L0x7ff7bfefec8c;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000072bb *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000072c0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000072c3 *)
@@ -819,7 +820,7 @@ mov L0x7ff7bfefec8c cx;
 (* mov    0x46(%rax),%cx                           #! EA = L0x7ff7bfefec8e; Value = 0x7ff805c9cb0d0000; PC = 0x1000072d3 *)
 mov cx L0x7ff7bfefec8e;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000072d7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000072dc *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000072df *)
@@ -833,7 +834,7 @@ mov L0x7ff7bfefec8e cx;
 (* mov    0x48(%rax),%cx                           #! EA = L0x7ff7bfefec90; Value = 0x00007ff805c9cb0d; PC = 0x1000072ef *)
 mov cx L0x7ff7bfefec90;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000072f3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000072f8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000072fb *)
@@ -847,7 +848,7 @@ mov L0x7ff7bfefec90 cx;
 (* mov    0x4a(%rax),%cx                           #! EA = L0x7ff7bfefec92; Value = 0xa41800007ff805c9; PC = 0x10000730b *)
 mov cx L0x7ff7bfefec92;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000730f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007314 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007317 *)
@@ -861,7 +862,7 @@ mov L0x7ff7bfefec92 cx;
 (* mov    0x4c(%rax),%cx                           #! EA = L0x7ff7bfefec94; Value = 0x45bda41800007ff8; PC = 0x100007327 *)
 mov cx L0x7ff7bfefec94;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000732b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007330 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007333 *)
@@ -875,7 +876,7 @@ mov L0x7ff7bfefec94 cx;
 (* mov    0x4e(%rax),%cx                           #! EA = L0x7ff7bfefec96; Value = 0x7ff845bda4180000; PC = 0x100007343 *)
 mov cx L0x7ff7bfefec96;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007347 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000734c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000734f *)
@@ -889,7 +890,7 @@ mov L0x7ff7bfefec96 cx;
 (* mov    0x50(%rax),%cx                           #! EA = L0x7ff7bfefec98; Value = 0x00007ff845bda418; PC = 0x10000735f *)
 mov cx L0x7ff7bfefec98;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007363 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007368 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000736b *)
@@ -903,7 +904,7 @@ mov L0x7ff7bfefec98 cx;
 (* mov    0x52(%rax),%cx                           #! EA = L0x7ff7bfefec9a; Value = 0xebb000007ff845bd; PC = 0x10000737b *)
 mov cx L0x7ff7bfefec9a;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000737f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007384 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007387 *)
@@ -917,7 +918,7 @@ mov L0x7ff7bfefec9a cx;
 (* mov    0x54(%rax),%cx                           #! EA = L0x7ff7bfefec9c; Value = 0xbfefebb000007ff8; PC = 0x100007397 *)
 mov cx L0x7ff7bfefec9c;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000739b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000073a0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000073a3 *)
@@ -931,7 +932,7 @@ mov L0x7ff7bfefec9c cx;
 (* mov    0x56(%rax),%cx                           #! EA = L0x7ff7bfefec9e; Value = 0x7ff7bfefebb00000; PC = 0x1000073b3 *)
 mov cx L0x7ff7bfefec9e;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000073b7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000073bc *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000073bf *)
@@ -945,7 +946,7 @@ mov L0x7ff7bfefec9e cx;
 (* mov    0x58(%rax),%cx                           #! EA = L0x7ff7bfefeca0; Value = 0x00007ff7bfefebb0; PC = 0x1000073cf *)
 mov cx L0x7ff7bfefeca0;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000073d3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000073d8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000073db *)
@@ -959,7 +960,7 @@ mov L0x7ff7bfefeca0 cx;
 (* mov    0x5a(%rax),%cx                           #! EA = L0x7ff7bfefeca2; Value = 0xece000007ff7bfef; PC = 0x1000073eb *)
 mov cx L0x7ff7bfefeca2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000073ef *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000073f4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000073f7 *)
@@ -973,7 +974,7 @@ mov L0x7ff7bfefeca2 cx;
 (* mov    0x5c(%rax),%cx                           #! EA = L0x7ff7bfefeca4; Value = 0xbfefece000007ff7; PC = 0x100007407 *)
 mov cx L0x7ff7bfefeca4;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000740b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007410 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007413 *)
@@ -987,7 +988,7 @@ mov L0x7ff7bfefeca4 cx;
 (* mov    0x5e(%rax),%cx                           #! EA = L0x7ff7bfefeca6; Value = 0x7ff7bfefece00000; PC = 0x100007423 *)
 mov cx L0x7ff7bfefeca6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007427 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000742c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000742f *)
@@ -1001,7 +1002,7 @@ mov L0x7ff7bfefeca6 cx;
 (* mov    0x60(%rax),%cx                           #! EA = L0x7ff7bfefeca8; Value = 0x00007ff7bfefece0; PC = 0x10000743f *)
 mov cx L0x7ff7bfefeca8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007443 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007448 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000744b *)
@@ -1015,7 +1016,7 @@ mov L0x7ff7bfefeca8 cx;
 (* mov    0x62(%rax),%cx                           #! EA = L0x7ff7bfefecaa; Value = 0x02c000007ff7bfef; PC = 0x10000745b *)
 mov cx L0x7ff7bfefecaa;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000745f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007464 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007467 *)
@@ -1029,7 +1030,7 @@ mov L0x7ff7bfefecaa cx;
 (* mov    0x64(%rax),%cx                           #! EA = L0x7ff7bfefecac; Value = 0x000002c000007ff7; PC = 0x100007477 *)
 mov cx L0x7ff7bfefecac;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000747b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007480 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007483 *)
@@ -1043,7 +1044,7 @@ mov L0x7ff7bfefecac cx;
 (* mov    0x66(%rax),%cx                           #! EA = L0x7ff7bfefecae; Value = 0x0000000002c00000; PC = 0x100007493 *)
 mov cx L0x7ff7bfefecae;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007497 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000749c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000749f *)
@@ -1057,7 +1058,7 @@ mov L0x7ff7bfefecae cx;
 (* mov    0x68(%rax),%cx                           #! EA = L0x7ff7bfefecb0; Value = 0x00000000000002c0; PC = 0x1000074af *)
 mov cx L0x7ff7bfefecb0;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000074b3 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000074b8 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000074bb *)
@@ -1071,7 +1072,7 @@ mov L0x7ff7bfefecb0 cx;
 (* mov    0x6a(%rax),%cx                           #! EA = L0x7ff7bfefecb2; Value = 0x0000000000000000; PC = 0x1000074cb *)
 mov cx L0x7ff7bfefecb2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000074cf *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000074d4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000074d7 *)
@@ -1085,7 +1086,7 @@ mov L0x7ff7bfefecb2 cx;
 (* mov    0x6c(%rax),%cx                           #! EA = L0x7ff7bfefecb4; Value = 0x0000000000000000; PC = 0x1000074e7 *)
 mov cx L0x7ff7bfefecb4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000074eb *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000074f0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000074f3 *)
@@ -1099,7 +1100,7 @@ mov L0x7ff7bfefecb4 cx;
 (* mov    0x6e(%rax),%cx                           #! EA = L0x7ff7bfefecb6; Value = 0x0000000000000000; PC = 0x100007503 *)
 mov cx L0x7ff7bfefecb6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007507 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000750c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000750f *)
@@ -1113,7 +1114,7 @@ mov L0x7ff7bfefecb6 cx;
 (* mov    0x70(%rax),%cx                           #! EA = L0x7ff7bfefecb8; Value = 0x0000000000000000; PC = 0x10000751f *)
 mov cx L0x7ff7bfefecb8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007523 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007528 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000752b *)
@@ -1127,7 +1128,7 @@ mov L0x7ff7bfefecb8 cx;
 (* mov    0x72(%rax),%cx                           #! EA = L0x7ff7bfefecba; Value = 0x0000000000000000; PC = 0x10000753b *)
 mov cx L0x7ff7bfefecba;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000753f *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007544 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007547 *)
@@ -1141,7 +1142,7 @@ mov L0x7ff7bfefecba cx;
 (* mov    0x74(%rax),%cx                           #! EA = L0x7ff7bfefecbc; Value = 0x0000000000000000; PC = 0x100007557 *)
 mov cx L0x7ff7bfefecbc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000755b *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007560 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007563 *)
@@ -1155,7 +1156,7 @@ mov L0x7ff7bfefecbc cx;
 (* mov    0x76(%rax),%cx                           #! EA = L0x7ff7bfefecbe; Value = 0x0000000000000000; PC = 0x100007573 *)
 mov cx L0x7ff7bfefecbe;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007577 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000757c *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000757f *)
@@ -1169,7 +1170,7 @@ mov L0x7ff7bfefecbe cx;
 (* mov    0x78(%rax),%cx                           #! EA = L0x7ff7bfefecc0; Value = 0x0000000000000000; PC = 0x10000758f *)
 mov cx L0x7ff7bfefecc0;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007593 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007598 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000759b *)
@@ -1183,7 +1184,7 @@ mov L0x7ff7bfefecc0 cx;
 (* mov    0x7a(%rax),%cx                           #! EA = L0x7ff7bfefecc2; Value = 0xefa0000000000000; PC = 0x1000075ab *)
 mov cx L0x7ff7bfefecc2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000075af *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000075b4 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000075b7 *)
@@ -1197,7 +1198,7 @@ mov L0x7ff7bfefecc2 cx;
 (* mov    0x7c(%rax),%cx                           #! EA = L0x7ff7bfefecc4; Value = 0xbfefefa000000000; PC = 0x1000075c7 *)
 mov cx L0x7ff7bfefecc4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000075cb *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000075d0 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000075d3 *)
@@ -1211,7 +1212,7 @@ mov L0x7ff7bfefecc4 cx;
 (* mov    0x7e(%rax),%cx                           #! EA = L0x7ff7bfefecc6; Value = 0x7ff7bfefefa00000; PC = 0x1000075e3 *)
 mov cx L0x7ff7bfefecc6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000075e7 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000075ec *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000075ef *)
@@ -1225,7 +1226,7 @@ mov L0x7ff7bfefecc6 cx;
 (* mov    0x80(%rax),%cx                           #! EA = L0x7ff7bfefecc8; Value = 0x00007ff7bfefefa0; PC = 0x1000075ff *)
 mov cx L0x7ff7bfefecc8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007606 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000760b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000760e *)
@@ -1239,7 +1240,7 @@ mov L0x7ff7bfefecc8 cx;
 (* mov    0x82(%rax),%cx                           #! EA = L0x7ff7bfefecca; Value = 0x000000007ff7bfef; PC = 0x100007621 *)
 mov cx L0x7ff7bfefecca;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007628 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000762d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007630 *)
@@ -1253,7 +1254,7 @@ mov L0x7ff7bfefecca cx;
 (* mov    0x84(%rax),%cx                           #! EA = L0x7ff7bfefeccc; Value = 0x0000000000007ff7; PC = 0x100007643 *)
 mov cx L0x7ff7bfefeccc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000764a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000764f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007652 *)
@@ -1267,7 +1268,7 @@ mov L0x7ff7bfefeccc cx;
 (* mov    0x86(%rax),%cx                           #! EA = L0x7ff7bfefecce; Value = 0x0000000000000000; PC = 0x100007665 *)
 mov cx L0x7ff7bfefecce;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000766c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007671 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007674 *)
@@ -1281,7 +1282,7 @@ mov L0x7ff7bfefecce cx;
 (* mov    0x88(%rax),%cx                           #! EA = L0x7ff7bfefecd0; Value = 0x0000000000000000; PC = 0x100007687 *)
 mov cx L0x7ff7bfefecd0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000768e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007693 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007696 *)
@@ -1295,7 +1296,7 @@ mov L0x7ff7bfefecd0 cx;
 (* mov    0x8a(%rax),%cx                           #! EA = L0x7ff7bfefecd2; Value = 0x0000000000000000; PC = 0x1000076a9 *)
 mov cx L0x7ff7bfefecd2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000076b0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000076b5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000076b8 *)
@@ -1309,7 +1310,7 @@ mov L0x7ff7bfefecd2 cx;
 (* mov    0x8c(%rax),%cx                           #! EA = L0x7ff7bfefecd4; Value = 0x0000000000000000; PC = 0x1000076cb *)
 mov cx L0x7ff7bfefecd4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000076d2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000076d7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000076da *)
@@ -1323,7 +1324,7 @@ mov L0x7ff7bfefecd4 cx;
 (* mov    0x8e(%rax),%cx                           #! EA = L0x7ff7bfefecd6; Value = 0x0000000000000000; PC = 0x1000076ed *)
 mov cx L0x7ff7bfefecd6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000076f4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000076f9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000076fc *)
@@ -1337,7 +1338,7 @@ mov L0x7ff7bfefecd6 cx;
 (* mov    0x90(%rax),%cx                           #! EA = L0x7ff7bfefecd8; Value = 0x0000000000000000; PC = 0x10000770f *)
 mov cx L0x7ff7bfefecd8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007716 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000771b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000771e *)
@@ -1351,7 +1352,7 @@ mov L0x7ff7bfefecd8 cx;
 (* mov    0x92(%rax),%cx                           #! EA = L0x7ff7bfefecda; Value = 0x0000000000000000; PC = 0x100007731 *)
 mov cx L0x7ff7bfefecda;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007738 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000773d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007740 *)
@@ -1365,7 +1366,7 @@ mov L0x7ff7bfefecda cx;
 (* mov    0x94(%rax),%cx                           #! EA = L0x7ff7bfefecdc; Value = 0x0000000000000000; PC = 0x100007753 *)
 mov cx L0x7ff7bfefecdc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000775a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000775f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007762 *)
@@ -1379,7 +1380,7 @@ mov L0x7ff7bfefecdc cx;
 (* mov    0x96(%rax),%cx                           #! EA = L0x7ff7bfefecde; Value = 0x0000000000000000; PC = 0x100007775 *)
 mov cx L0x7ff7bfefecde;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000777c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007781 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007784 *)
@@ -1393,7 +1394,7 @@ mov L0x7ff7bfefecde cx;
 (* mov    0x98(%rax),%cx                           #! EA = L0x7ff7bfefece0; Value = 0x0000000000000000; PC = 0x100007797 *)
 mov cx L0x7ff7bfefece0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000779e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000077a3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000077a6 *)
@@ -1407,7 +1408,7 @@ mov L0x7ff7bfefece0 cx;
 (* mov    0x9a(%rax),%cx                           #! EA = L0x7ff7bfefece2; Value = 0x000d000000000000; PC = 0x1000077b9 *)
 mov cx L0x7ff7bfefece2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000077c0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000077c5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000077c8 *)
@@ -1421,7 +1422,7 @@ mov L0x7ff7bfefece2 cx;
 (* mov    0x9c(%rax),%cx                           #! EA = L0x7ff7bfefece4; Value = 0xd49e000d00000000; PC = 0x1000077db *)
 mov cx L0x7ff7bfefece4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000077e2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000077e7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000077ea *)
@@ -1435,7 +1436,7 @@ mov L0x7ff7bfefece4 cx;
 (* mov    0x9e(%rax),%cx                           #! EA = L0x7ff7bfefece6; Value = 0x40b1d49e000d0000; PC = 0x1000077fd *)
 mov cx L0x7ff7bfefece6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007804 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007809 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000780c *)
@@ -1449,7 +1450,7 @@ mov L0x7ff7bfefece6 cx;
 (* mov    0xa0(%rax),%cx                           #! EA = L0x7ff7bfefece8; Value = 0xa5fe40b1d49e000d; PC = 0x10000781f *)
 mov cx L0x7ff7bfefece8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007826 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000782b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000782e *)
@@ -1463,7 +1464,7 @@ mov L0x7ff7bfefece8 cx;
 (* mov    0xa2(%rax),%cx                           #! EA = L0x7ff7bfefecea; Value = 0xf038a5fe40b1d49e; PC = 0x100007841 *)
 mov cx L0x7ff7bfefecea;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007848 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000784d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007850 *)
@@ -1477,7 +1478,7 @@ mov L0x7ff7bfefecea cx;
 (* mov    0xa4(%rax),%cx                           #! EA = L0x7ff7bfefecec; Value = 0xbfeff038a5fe40b1; PC = 0x100007863 *)
 mov cx L0x7ff7bfefecec;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000786a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000786f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007872 *)
@@ -1491,7 +1492,7 @@ mov L0x7ff7bfefecec cx;
 (* mov    0xa6(%rax),%cx                           #! EA = L0x7ff7bfefecee; Value = 0x7ff7bfeff038a5fe; PC = 0x100007885 *)
 mov cx L0x7ff7bfefecee;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000788c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007891 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007894 *)
@@ -1505,7 +1506,7 @@ mov L0x7ff7bfefecee cx;
 (* mov    0xa8(%rax),%cx                           #! EA = L0x7ff7bfefecf0; Value = 0x00007ff7bfeff038; PC = 0x1000078a7 *)
 mov cx L0x7ff7bfefecf0;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000078ae *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000078b3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000078b6 *)
@@ -1519,7 +1520,7 @@ mov L0x7ff7bfefecf0 cx;
 (* mov    0xaa(%rax),%cx                           #! EA = L0x7ff7bfefecf2; Value = 0xf11000007ff7bfef; PC = 0x1000078c9 *)
 mov cx L0x7ff7bfefecf2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000078d0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000078d5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000078d8 *)
@@ -1533,7 +1534,7 @@ mov L0x7ff7bfefecf2 cx;
 (* mov    0xac(%rax),%cx                           #! EA = L0x7ff7bfefecf4; Value = 0xbfeff11000007ff7; PC = 0x1000078eb *)
 mov cx L0x7ff7bfefecf4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000078f2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000078f7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000078fa *)
@@ -1547,7 +1548,7 @@ mov L0x7ff7bfefecf4 cx;
 (* mov    0xae(%rax),%cx                           #! EA = L0x7ff7bfefecf6; Value = 0x7ff7bfeff1100000; PC = 0x10000790d *)
 mov cx L0x7ff7bfefecf6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007914 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007919 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000791c *)
@@ -1561,7 +1562,7 @@ mov L0x7ff7bfefecf6 cx;
 (* mov    0xb0(%rax),%cx                           #! EA = L0x7ff7bfefecf8; Value = 0x00007ff7bfeff110; PC = 0x10000792f *)
 mov cx L0x7ff7bfefecf8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007936 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000793b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000793e *)
@@ -1575,7 +1576,7 @@ mov L0x7ff7bfefecf8 cx;
 (* mov    0xb2(%rax),%cx                           #! EA = L0x7ff7bfefecfa; Value = 0xf03800007ff7bfef; PC = 0x100007951 *)
 mov cx L0x7ff7bfefecfa;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007958 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000795d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007960 *)
@@ -1589,7 +1590,7 @@ mov L0x7ff7bfefecfa cx;
 (* mov    0xb4(%rax),%cx                           #! EA = L0x7ff7bfefecfc; Value = 0xbfeff03800007ff7; PC = 0x100007973 *)
 mov cx L0x7ff7bfefecfc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000797a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000797f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007982 *)
@@ -1603,7 +1604,7 @@ mov L0x7ff7bfefecfc cx;
 (* mov    0xb6(%rax),%cx                           #! EA = L0x7ff7bfefecfe; Value = 0x7ff7bfeff0380000; PC = 0x100007995 *)
 mov cx L0x7ff7bfefecfe;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000799c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000079a1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000079a4 *)
@@ -1617,7 +1618,7 @@ mov L0x7ff7bfefecfe cx;
 (* mov    0xb8(%rax),%cx                           #! EA = L0x7ff7bfefed00; Value = 0x00007ff7bfeff038; PC = 0x1000079b7 *)
 mov cx L0x7ff7bfefed00;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000079be *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000079c3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000079c6 *)
@@ -1631,7 +1632,7 @@ mov L0x7ff7bfefed00 cx;
 (* mov    0xba(%rax),%cx                           #! EA = L0x7ff7bfefed02; Value = 0x9f0000007ff7bfef; PC = 0x1000079d9 *)
 mov cx L0x7ff7bfefed02;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000079e0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000079e5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000079e8 *)
@@ -1645,7 +1646,7 @@ mov L0x7ff7bfefed02 cx;
 (* mov    0xbc(%rax),%cx                           #! EA = L0x7ff7bfefed04; Value = 0x00019f0000007ff7; PC = 0x1000079fb *)
 mov cx L0x7ff7bfefed04;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007a02 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007a07 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007a0a *)
@@ -1659,7 +1660,7 @@ mov L0x7ff7bfefed04 cx;
 (* mov    0xbe(%rax),%cx                           #! EA = L0x7ff7bfefed06; Value = 0x000100019f000000; PC = 0x100007a1d *)
 mov cx L0x7ff7bfefed06;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007a24 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007a29 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007a2c *)
@@ -1673,7 +1674,7 @@ mov L0x7ff7bfefed06 cx;
 (* mov    0xc0(%rax),%cx                           #! EA = L0x7ff7bfefed08; Value = 0x0000000100019f00; PC = 0x100007a3f *)
 mov cx L0x7ff7bfefed08;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007a46 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007a4b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007a4e *)
@@ -1687,7 +1688,7 @@ mov L0x7ff7bfefed08 cx;
 (* mov    0xc2(%rax),%cx                           #! EA = L0x7ff7bfefed0a; Value = 0xf0a8000000010001; PC = 0x100007a61 *)
 mov cx L0x7ff7bfefed0a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007a68 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007a6d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007a70 *)
@@ -1701,7 +1702,7 @@ mov L0x7ff7bfefed0a cx;
 (* mov    0xc4(%rax),%cx                           #! EA = L0x7ff7bfefed0c; Value = 0xbfeff0a800000001; PC = 0x100007a83 *)
 mov cx L0x7ff7bfefed0c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007a8a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007a8f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007a92 *)
@@ -1715,7 +1716,7 @@ mov L0x7ff7bfefed0c cx;
 (* mov    0xc6(%rax),%cx                           #! EA = L0x7ff7bfefed0e; Value = 0x7ff7bfeff0a80000; PC = 0x100007aa5 *)
 mov cx L0x7ff7bfefed0e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007aac *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007ab1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007ab4 *)
@@ -1729,7 +1730,7 @@ mov L0x7ff7bfefed0e cx;
 (* mov    0xc8(%rax),%cx                           #! EA = L0x7ff7bfefed10; Value = 0x00007ff7bfeff0a8; PC = 0x100007ac7 *)
 mov cx L0x7ff7bfefed10;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007ace *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007ad3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007ad6 *)
@@ -1743,7 +1744,7 @@ mov L0x7ff7bfefed10 cx;
 (* mov    0xca(%rax),%cx                           #! EA = L0x7ff7bfefed12; Value = 0xf16000007ff7bfef; PC = 0x100007ae9 *)
 mov cx L0x7ff7bfefed12;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007af0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007af5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007af8 *)
@@ -1757,7 +1758,7 @@ mov L0x7ff7bfefed12 cx;
 (* mov    0xcc(%rax),%cx                           #! EA = L0x7ff7bfefed14; Value = 0xbfeff16000007ff7; PC = 0x100007b0b *)
 mov cx L0x7ff7bfefed14;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007b12 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007b17 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007b1a *)
@@ -1771,7 +1772,7 @@ mov L0x7ff7bfefed14 cx;
 (* mov    0xce(%rax),%cx                           #! EA = L0x7ff7bfefed16; Value = 0x7ff7bfeff1600000; PC = 0x100007b2d *)
 mov cx L0x7ff7bfefed16;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007b34 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007b39 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007b3c *)
@@ -1785,7 +1786,7 @@ mov L0x7ff7bfefed16 cx;
 (* mov    0xd0(%rax),%cx                           #! EA = L0x7ff7bfefed18; Value = 0x00007ff7bfeff160; PC = 0x100007b4f *)
 mov cx L0x7ff7bfefed18;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007b56 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007b5b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007b5e *)
@@ -1799,7 +1800,7 @@ mov L0x7ff7bfefed18 cx;
 (* mov    0xd2(%rax),%cx                           #! EA = L0x7ff7bfefed1a; Value = 0x039100007ff7bfef; PC = 0x100007b71 *)
 mov cx L0x7ff7bfefed1a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007b78 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007b7d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007b80 *)
@@ -1813,7 +1814,7 @@ mov L0x7ff7bfefed1a cx;
 (* mov    0xd4(%rax),%cx                           #! EA = L0x7ff7bfefed1c; Value = 0x05c8039100007ff7; PC = 0x100007b93 *)
 mov cx L0x7ff7bfefed1c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007b9a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007b9f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007ba2 *)
@@ -1827,7 +1828,7 @@ mov L0x7ff7bfefed1c cx;
 (* mov    0xd6(%rax),%cx                           #! EA = L0x7ff7bfefed1e; Value = 0x7ff805c803910000; PC = 0x100007bb5 *)
 mov cx L0x7ff7bfefed1e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007bbc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007bc1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007bc4 *)
@@ -1841,7 +1842,7 @@ mov L0x7ff7bfefed1e cx;
 (* mov    0xd8(%rax),%cx                           #! EA = L0x7ff7bfefed20; Value = 0x00007ff805c80391; PC = 0x100007bd7 *)
 mov cx L0x7ff7bfefed20;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007bde *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007be3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007be6 *)
@@ -1855,7 +1856,7 @@ mov L0x7ff7bfefed20 cx;
 (* mov    0xda(%rax),%cx                           #! EA = L0x7ff7bfefed22; Value = 0x000000007ff805c8; PC = 0x100007bf9 *)
 mov cx L0x7ff7bfefed22;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007c00 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007c05 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007c08 *)
@@ -1869,7 +1870,7 @@ mov L0x7ff7bfefed22 cx;
 (* mov    0xdc(%rax),%cx                           #! EA = L0x7ff7bfefed24; Value = 0x0000000000007ff8; PC = 0x100007c1b *)
 mov cx L0x7ff7bfefed24;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007c22 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007c27 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007c2a *)
@@ -1883,7 +1884,7 @@ mov L0x7ff7bfefed24 cx;
 (* mov    0xde(%rax),%cx                           #! EA = L0x7ff7bfefed26; Value = 0x0000000000000000; PC = 0x100007c3d *)
 mov cx L0x7ff7bfefed26;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007c44 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007c49 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007c4c *)
@@ -1897,7 +1898,7 @@ mov L0x7ff7bfefed26 cx;
 (* mov    0xe0(%rax),%cx                           #! EA = L0x7ff7bfefed28; Value = 0x0000000000000000; PC = 0x100007c5f *)
 mov cx L0x7ff7bfefed28;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007c66 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007c6b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007c6e *)
@@ -1911,7 +1912,7 @@ mov L0x7ff7bfefed28 cx;
 (* mov    0xe2(%rax),%cx                           #! EA = L0x7ff7bfefed2a; Value = 0x0030000000000000; PC = 0x100007c81 *)
 mov cx L0x7ff7bfefed2a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007c88 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007c8d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007c90 *)
@@ -1925,7 +1926,7 @@ mov L0x7ff7bfefed2a cx;
 (* mov    0xe4(%rax),%cx                           #! EA = L0x7ff7bfefed2c; Value = 0x1f07003000000000; PC = 0x100007ca3 *)
 mov cx L0x7ff7bfefed2c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007caa *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007caf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007cb2 *)
@@ -1939,7 +1940,7 @@ mov L0x7ff7bfefed2c cx;
 (* mov    0xe6(%rax),%cx                           #! EA = L0x7ff7bfefed2e; Value = 0x00001f0700300000; PC = 0x100007cc5 *)
 mov cx L0x7ff7bfefed2e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007ccc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007cd1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007cd4 *)
@@ -1953,7 +1954,7 @@ mov L0x7ff7bfefed2e cx;
 (* mov    0xe8(%rax),%cx                           #! EA = L0x7ff7bfefed30; Value = 0x000000001f070030; PC = 0x100007ce7 *)
 mov cx L0x7ff7bfefed30;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007cee *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007cf3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007cf6 *)
@@ -1967,7 +1968,7 @@ mov L0x7ff7bfefed30 cx;
 (* mov    0xea(%rax),%cx                           #! EA = L0x7ff7bfefed32; Value = 0x0000000000001f07; PC = 0x100007d09 *)
 mov cx L0x7ff7bfefed32;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007d10 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007d15 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007d18 *)
@@ -1981,7 +1982,7 @@ mov L0x7ff7bfefed32 cx;
 (* mov    0xec(%rax),%cx                           #! EA = L0x7ff7bfefed34; Value = 0x0000000000000000; PC = 0x100007d2b *)
 mov cx L0x7ff7bfefed34;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007d32 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007d37 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007d3a *)
@@ -1995,7 +1996,7 @@ mov L0x7ff7bfefed34 cx;
 (* mov    0xee(%rax),%cx                           #! EA = L0x7ff7bfefed36; Value = 0x0000000000000000; PC = 0x100007d4d *)
 mov cx L0x7ff7bfefed36;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007d54 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007d59 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007d5c *)
@@ -2009,7 +2010,7 @@ mov L0x7ff7bfefed36 cx;
 (* mov    0xf0(%rax),%cx                           #! EA = L0x7ff7bfefed38; Value = 0x0000000000000000; PC = 0x100007d6f *)
 mov cx L0x7ff7bfefed38;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007d76 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007d7b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007d7e *)
@@ -2023,7 +2024,7 @@ mov L0x7ff7bfefed38 cx;
 (* mov    0xf2(%rax),%cx                           #! EA = L0x7ff7bfefed3a; Value = 0x0000000000000000; PC = 0x100007d91 *)
 mov cx L0x7ff7bfefed3a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007d98 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007d9d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007da0 *)
@@ -2037,7 +2038,7 @@ mov L0x7ff7bfefed3a cx;
 (* mov    0xf4(%rax),%cx                           #! EA = L0x7ff7bfefed3c; Value = 0x0000000000000000; PC = 0x100007db3 *)
 mov cx L0x7ff7bfefed3c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007dba *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007dbf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007dc2 *)
@@ -2051,7 +2052,7 @@ mov L0x7ff7bfefed3c cx;
 (* mov    0xf6(%rax),%cx                           #! EA = L0x7ff7bfefed3e; Value = 0x0000000000000000; PC = 0x100007dd5 *)
 mov cx L0x7ff7bfefed3e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007ddc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007de1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007de4 *)
@@ -2065,7 +2066,7 @@ mov L0x7ff7bfefed3e cx;
 (* mov    0xf8(%rax),%cx                           #! EA = L0x7ff7bfefed40; Value = 0x0000000000000000; PC = 0x100007df7 *)
 mov cx L0x7ff7bfefed40;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007dfe *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007e03 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007e06 *)
@@ -2079,7 +2080,7 @@ mov L0x7ff7bfefed40 cx;
 (* mov    0xfa(%rax),%cx                           #! EA = L0x7ff7bfefed42; Value = 0x0000000000000000; PC = 0x100007e19 *)
 mov cx L0x7ff7bfefed42;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007e20 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007e25 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007e28 *)
@@ -2093,7 +2094,7 @@ mov L0x7ff7bfefed42 cx;
 (* mov    0xfc(%rax),%cx                           #! EA = L0x7ff7bfefed44; Value = 0x0000000000000000; PC = 0x100007e3b *)
 mov cx L0x7ff7bfefed44;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007e42 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007e47 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007e4a *)
@@ -2107,7 +2108,7 @@ mov L0x7ff7bfefed44 cx;
 (* mov    0xfe(%rax),%cx                           #! EA = L0x7ff7bfefed46; Value = 0x0000000000000000; PC = 0x100007e5d *)
 mov cx L0x7ff7bfefed46;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007e64 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007e69 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007e6c *)
@@ -2121,7 +2122,7 @@ mov L0x7ff7bfefed46 cx;
 (* mov    0x100(%rax),%cx                          #! EA = L0x7ff7bfefed48; Value = 0x0000000000000000; PC = 0x100007e7f *)
 mov cx L0x7ff7bfefed48;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007e86 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007e8b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007e8e *)
@@ -2135,7 +2136,7 @@ mov L0x7ff7bfefed48 cx;
 (* mov    0x102(%rax),%cx                          #! EA = L0x7ff7bfefed4a; Value = 0x0000000000000000; PC = 0x100007ea1 *)
 mov cx L0x7ff7bfefed4a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007ea8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007ead *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007eb0 *)
@@ -2149,7 +2150,7 @@ mov L0x7ff7bfefed4a cx;
 (* mov    0x104(%rax),%cx                          #! EA = L0x7ff7bfefed4c; Value = 0x0000000000000000; PC = 0x100007ec3 *)
 mov cx L0x7ff7bfefed4c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007eca *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007ecf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007ed2 *)
@@ -2163,7 +2164,7 @@ mov L0x7ff7bfefed4c cx;
 (* mov    0x106(%rax),%cx                          #! EA = L0x7ff7bfefed4e; Value = 0x0000000000000000; PC = 0x100007ee5 *)
 mov cx L0x7ff7bfefed4e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007eec *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007ef1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007ef4 *)
@@ -2177,7 +2178,7 @@ mov L0x7ff7bfefed4e cx;
 (* mov    0x108(%rax),%cx                          #! EA = L0x7ff7bfefed50; Value = 0x0000000000000000; PC = 0x100007f07 *)
 mov cx L0x7ff7bfefed50;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007f0e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007f13 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007f16 *)
@@ -2191,7 +2192,7 @@ mov L0x7ff7bfefed50 cx;
 (* mov    0x10a(%rax),%cx                          #! EA = L0x7ff7bfefed52; Value = 0x0000000000000000; PC = 0x100007f29 *)
 mov cx L0x7ff7bfefed52;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007f30 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007f35 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007f38 *)
@@ -2205,7 +2206,7 @@ mov L0x7ff7bfefed52 cx;
 (* mov    0x10c(%rax),%cx                          #! EA = L0x7ff7bfefed54; Value = 0x0000000000000000; PC = 0x100007f4b *)
 mov cx L0x7ff7bfefed54;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007f52 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007f57 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007f5a *)
@@ -2219,7 +2220,7 @@ mov L0x7ff7bfefed54 cx;
 (* mov    0x10e(%rax),%cx                          #! EA = L0x7ff7bfefed56; Value = 0x0000000000000000; PC = 0x100007f6d *)
 mov cx L0x7ff7bfefed56;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007f74 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007f79 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007f7c *)
@@ -2233,7 +2234,7 @@ mov L0x7ff7bfefed56 cx;
 (* mov    0x110(%rax),%cx                          #! EA = L0x7ff7bfefed58; Value = 0x0000000000000000; PC = 0x100007f8f *)
 mov cx L0x7ff7bfefed58;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007f96 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007f9b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007f9e *)
@@ -2247,7 +2248,7 @@ mov L0x7ff7bfefed58 cx;
 (* mov    0x112(%rax),%cx                          #! EA = L0x7ff7bfefed5a; Value = 0x0000000000000000; PC = 0x100007fb1 *)
 mov cx L0x7ff7bfefed5a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007fb8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007fbd *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007fc0 *)
@@ -2261,7 +2262,7 @@ mov L0x7ff7bfefed5a cx;
 (* mov    0x114(%rax),%cx                          #! EA = L0x7ff7bfefed5c; Value = 0x0000000000000000; PC = 0x100007fd3 *)
 mov cx L0x7ff7bfefed5c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007fda *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100007fdf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100007fe2 *)
@@ -2275,7 +2276,7 @@ mov L0x7ff7bfefed5c cx;
 (* mov    0x116(%rax),%cx                          #! EA = L0x7ff7bfefed5e; Value = 0x0000000000000000; PC = 0x100007ff5 *)
 mov cx L0x7ff7bfefed5e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100007ffc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008001 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008004 *)
@@ -2289,7 +2290,7 @@ mov L0x7ff7bfefed5e cx;
 (* mov    0x118(%rax),%cx                          #! EA = L0x7ff7bfefed60; Value = 0x0000000000000000; PC = 0x100008017 *)
 mov cx L0x7ff7bfefed60;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000801e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008023 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008026 *)
@@ -2303,7 +2304,7 @@ mov L0x7ff7bfefed60 cx;
 (* mov    0x11a(%rax),%cx                          #! EA = L0x7ff7bfefed62; Value = 0x0000000000000000; PC = 0x100008039 *)
 mov cx L0x7ff7bfefed62;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008040 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008045 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008048 *)
@@ -2317,7 +2318,7 @@ mov L0x7ff7bfefed62 cx;
 (* mov    0x11c(%rax),%cx                          #! EA = L0x7ff7bfefed64; Value = 0x0000000000000000; PC = 0x10000805b *)
 mov cx L0x7ff7bfefed64;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008062 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008067 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000806a *)
@@ -2331,7 +2332,7 @@ mov L0x7ff7bfefed64 cx;
 (* mov    0x11e(%rax),%cx                          #! EA = L0x7ff7bfefed66; Value = 0x0000000000000000; PC = 0x10000807d *)
 mov cx L0x7ff7bfefed66;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008084 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008089 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000808c *)
@@ -2345,7 +2346,7 @@ mov L0x7ff7bfefed66 cx;
 (* mov    0x120(%rax),%cx                          #! EA = L0x7ff7bfefed68; Value = 0x0000000000000000; PC = 0x10000809f *)
 mov cx L0x7ff7bfefed68;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000080a6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000080ab *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000080ae *)
@@ -2359,7 +2360,7 @@ mov L0x7ff7bfefed68 cx;
 (* mov    0x122(%rax),%cx                          #! EA = L0x7ff7bfefed6a; Value = 0x0000000000000000; PC = 0x1000080c1 *)
 mov cx L0x7ff7bfefed6a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000080c8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000080cd *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000080d0 *)
@@ -2373,7 +2374,7 @@ mov L0x7ff7bfefed6a cx;
 (* mov    0x124(%rax),%cx                          #! EA = L0x7ff7bfefed6c; Value = 0x0000000000000000; PC = 0x1000080e3 *)
 mov cx L0x7ff7bfefed6c;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000080ea *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000080ef *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000080f2 *)
@@ -2387,7 +2388,7 @@ mov L0x7ff7bfefed6c cx;
 (* mov    0x126(%rax),%cx                          #! EA = L0x7ff7bfefed6e; Value = 0x0000000000000000; PC = 0x100008105 *)
 mov cx L0x7ff7bfefed6e;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000810c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008111 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008114 *)
@@ -2401,7 +2402,7 @@ mov L0x7ff7bfefed6e cx;
 (* mov    0x128(%rax),%cx                          #! EA = L0x7ff7bfefed70; Value = 0x0000000000000000; PC = 0x100008127 *)
 mov cx L0x7ff7bfefed70;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000812e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008133 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008136 *)
@@ -2415,7 +2416,7 @@ mov L0x7ff7bfefed70 cx;
 (* mov    0x12a(%rax),%cx                          #! EA = L0x7ff7bfefed72; Value = 0x0000000000000000; PC = 0x100008149 *)
 mov cx L0x7ff7bfefed72;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008150 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008155 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008158 *)
@@ -2429,7 +2430,7 @@ mov L0x7ff7bfefed72 cx;
 (* mov    0x12c(%rax),%cx                          #! EA = L0x7ff7bfefed74; Value = 0x0000000000000000; PC = 0x10000816b *)
 mov cx L0x7ff7bfefed74;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008172 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008177 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000817a *)
@@ -2443,7 +2444,7 @@ mov L0x7ff7bfefed74 cx;
 (* mov    0x12e(%rax),%cx                          #! EA = L0x7ff7bfefed76; Value = 0x0000000000000000; PC = 0x10000818d *)
 mov cx L0x7ff7bfefed76;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008194 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008199 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000819c *)
@@ -2457,7 +2458,7 @@ mov L0x7ff7bfefed76 cx;
 (* mov    0x130(%rax),%cx                          #! EA = L0x7ff7bfefed78; Value = 0x0000000000000000; PC = 0x1000081af *)
 mov cx L0x7ff7bfefed78;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000081b6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000081bb *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000081be *)
@@ -2471,7 +2472,7 @@ mov L0x7ff7bfefed78 cx;
 (* mov    0x132(%rax),%cx                          #! EA = L0x7ff7bfefed7a; Value = 0x0000000000000000; PC = 0x1000081d1 *)
 mov cx L0x7ff7bfefed7a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000081d8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000081dd *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000081e0 *)
@@ -2485,7 +2486,7 @@ mov L0x7ff7bfefed7a cx;
 (* mov    0x134(%rax),%cx                          #! EA = L0x7ff7bfefed7c; Value = 0x0000000000000000; PC = 0x1000081f3 *)
 mov cx L0x7ff7bfefed7c;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000081fa *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000081ff *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008202 *)
@@ -2499,7 +2500,7 @@ mov L0x7ff7bfefed7c cx;
 (* mov    0x136(%rax),%cx                          #! EA = L0x7ff7bfefed7e; Value = 0x0000000000000000; PC = 0x100008215 *)
 mov cx L0x7ff7bfefed7e;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000821c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008221 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008224 *)
@@ -2513,7 +2514,7 @@ mov L0x7ff7bfefed7e cx;
 (* mov    0x138(%rax),%cx                          #! EA = L0x7ff7bfefed80; Value = 0x0000000000000000; PC = 0x100008237 *)
 mov cx L0x7ff7bfefed80;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000823e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008243 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008246 *)
@@ -2527,7 +2528,7 @@ mov L0x7ff7bfefed80 cx;
 (* mov    0x13a(%rax),%cx                          #! EA = L0x7ff7bfefed82; Value = 0x0000000000000000; PC = 0x100008259 *)
 mov cx L0x7ff7bfefed82;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008260 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008265 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008268 *)
@@ -2541,7 +2542,7 @@ mov L0x7ff7bfefed82 cx;
 (* mov    0x13c(%rax),%cx                          #! EA = L0x7ff7bfefed84; Value = 0x0000000000000000; PC = 0x10000827b *)
 mov cx L0x7ff7bfefed84;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008282 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008287 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000828a *)
@@ -2555,7 +2556,7 @@ mov L0x7ff7bfefed84 cx;
 (* mov    0x13e(%rax),%cx                          #! EA = L0x7ff7bfefed86; Value = 0x0000000000000000; PC = 0x10000829d *)
 mov cx L0x7ff7bfefed86;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000082a4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000082a9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000082ac *)
@@ -2569,7 +2570,7 @@ mov L0x7ff7bfefed86 cx;
 (* mov    0x140(%rax),%cx                          #! EA = L0x7ff7bfefed88; Value = 0x0000000000000000; PC = 0x1000082bf *)
 mov cx L0x7ff7bfefed88;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000082c6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000082cb *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000082ce *)
@@ -2583,7 +2584,7 @@ mov L0x7ff7bfefed88 cx;
 (* mov    0x142(%rax),%cx                          #! EA = L0x7ff7bfefed8a; Value = 0x0000000000000000; PC = 0x1000082e1 *)
 mov cx L0x7ff7bfefed8a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000082e8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000082ed *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000082f0 *)
@@ -2597,7 +2598,7 @@ mov L0x7ff7bfefed8a cx;
 (* mov    0x144(%rax),%cx                          #! EA = L0x7ff7bfefed8c; Value = 0x0000000000000000; PC = 0x100008303 *)
 mov cx L0x7ff7bfefed8c;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000830a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000830f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008312 *)
@@ -2611,7 +2612,7 @@ mov L0x7ff7bfefed8c cx;
 (* mov    0x146(%rax),%cx                          #! EA = L0x7ff7bfefed8e; Value = 0x0000000000000000; PC = 0x100008325 *)
 mov cx L0x7ff7bfefed8e;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000832c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008331 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008334 *)
@@ -2625,7 +2626,7 @@ mov L0x7ff7bfefed8e cx;
 (* mov    0x148(%rax),%cx                          #! EA = L0x7ff7bfefed90; Value = 0x0000000000000000; PC = 0x100008347 *)
 mov cx L0x7ff7bfefed90;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000834e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008353 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008356 *)
@@ -2639,7 +2640,7 @@ mov L0x7ff7bfefed90 cx;
 (* mov    0x14a(%rax),%cx                          #! EA = L0x7ff7bfefed92; Value = 0x0000000000000000; PC = 0x100008369 *)
 mov cx L0x7ff7bfefed92;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008370 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008375 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008378 *)
@@ -2653,7 +2654,7 @@ mov L0x7ff7bfefed92 cx;
 (* mov    0x14c(%rax),%cx                          #! EA = L0x7ff7bfefed94; Value = 0x0000000000000000; PC = 0x10000838b *)
 mov cx L0x7ff7bfefed94;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008392 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008397 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000839a *)
@@ -2667,7 +2668,7 @@ mov L0x7ff7bfefed94 cx;
 (* mov    0x14e(%rax),%cx                          #! EA = L0x7ff7bfefed96; Value = 0x0000000000000000; PC = 0x1000083ad *)
 mov cx L0x7ff7bfefed96;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000083b4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000083b9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000083bc *)
@@ -2681,7 +2682,7 @@ mov L0x7ff7bfefed96 cx;
 (* mov    0x150(%rax),%cx                          #! EA = L0x7ff7bfefed98; Value = 0x0000000000000000; PC = 0x1000083cf *)
 mov cx L0x7ff7bfefed98;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000083d6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000083db *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000083de *)
@@ -2695,7 +2696,7 @@ mov L0x7ff7bfefed98 cx;
 (* mov    0x152(%rax),%cx                          #! EA = L0x7ff7bfefed9a; Value = 0x0000000000000000; PC = 0x1000083f1 *)
 mov cx L0x7ff7bfefed9a;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000083f8 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000083fd *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008400 *)
@@ -2709,7 +2710,7 @@ mov L0x7ff7bfefed9a cx;
 (* mov    0x154(%rax),%cx                          #! EA = L0x7ff7bfefed9c; Value = 0x0000000000000000; PC = 0x100008413 *)
 mov cx L0x7ff7bfefed9c;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000841a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000841f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008422 *)
@@ -2723,7 +2724,7 @@ mov L0x7ff7bfefed9c cx;
 (* mov    0x156(%rax),%cx                          #! EA = L0x7ff7bfefed9e; Value = 0x0000000000000000; PC = 0x100008435 *)
 mov cx L0x7ff7bfefed9e;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000843c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008441 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008444 *)
@@ -2737,7 +2738,7 @@ mov L0x7ff7bfefed9e cx;
 (* mov    0x158(%rax),%cx                          #! EA = L0x7ff7bfefeda0; Value = 0x0000000000000000; PC = 0x100008457 *)
 mov cx L0x7ff7bfefeda0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000845e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008463 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008466 *)
@@ -2751,7 +2752,7 @@ mov L0x7ff7bfefeda0 cx;
 (* mov    0x15a(%rax),%cx                          #! EA = L0x7ff7bfefeda2; Value = 0x0000000000000000; PC = 0x100008479 *)
 mov cx L0x7ff7bfefeda2;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008480 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008485 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008488 *)
@@ -2765,7 +2766,7 @@ mov L0x7ff7bfefeda2 cx;
 (* mov    0x15c(%rax),%cx                          #! EA = L0x7ff7bfefeda4; Value = 0x0000000000000000; PC = 0x10000849b *)
 mov cx L0x7ff7bfefeda4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000084a2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000084a7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000084aa *)
@@ -2779,7 +2780,7 @@ mov L0x7ff7bfefeda4 cx;
 (* mov    0x15e(%rax),%cx                          #! EA = L0x7ff7bfefeda6; Value = 0x0000000000000000; PC = 0x1000084bd *)
 mov cx L0x7ff7bfefeda6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000084c4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000084c9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000084cc *)
@@ -2793,7 +2794,7 @@ mov L0x7ff7bfefeda6 cx;
 (* mov    0x160(%rax),%cx                          #! EA = L0x7ff7bfefeda8; Value = 0x0000000000000000; PC = 0x1000084df *)
 mov cx L0x7ff7bfefeda8;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000084e6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000084eb *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000084ee *)
@@ -2807,7 +2808,7 @@ mov L0x7ff7bfefeda8 cx;
 (* mov    0x162(%rax),%cx                          #! EA = L0x7ff7bfefedaa; Value = 0x0000000000000000; PC = 0x100008501 *)
 mov cx L0x7ff7bfefedaa;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008508 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000850d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008510 *)
@@ -2821,7 +2822,7 @@ mov L0x7ff7bfefedaa cx;
 (* mov    0x164(%rax),%cx                          #! EA = L0x7ff7bfefedac; Value = 0x0000000000000000; PC = 0x100008523 *)
 mov cx L0x7ff7bfefedac;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000852a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000852f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008532 *)
@@ -2835,7 +2836,7 @@ mov L0x7ff7bfefedac cx;
 (* mov    0x166(%rax),%cx                          #! EA = L0x7ff7bfefedae; Value = 0x0000000000000000; PC = 0x100008545 *)
 mov cx L0x7ff7bfefedae;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000854c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008551 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008554 *)
@@ -2849,7 +2850,7 @@ mov L0x7ff7bfefedae cx;
 (* mov    0x168(%rax),%cx                          #! EA = L0x7ff7bfefedb0; Value = 0x0000000000000000; PC = 0x100008567 *)
 mov cx L0x7ff7bfefedb0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000856e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008573 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008576 *)
@@ -2863,7 +2864,7 @@ mov L0x7ff7bfefedb0 cx;
 (* mov    0x16a(%rax),%cx                          #! EA = L0x7ff7bfefedb2; Value = 0x0000000000000000; PC = 0x100008589 *)
 mov cx L0x7ff7bfefedb2;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008590 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008595 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008598 *)
@@ -2877,7 +2878,7 @@ mov L0x7ff7bfefedb2 cx;
 (* mov    0x16c(%rax),%cx                          #! EA = L0x7ff7bfefedb4; Value = 0x0000000000000000; PC = 0x1000085ab *)
 mov cx L0x7ff7bfefedb4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000085b2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000085b7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000085ba *)
@@ -2891,7 +2892,7 @@ mov L0x7ff7bfefedb4 cx;
 (* mov    0x16e(%rax),%cx                          #! EA = L0x7ff7bfefedb6; Value = 0x0000000000000000; PC = 0x1000085cd *)
 mov cx L0x7ff7bfefedb6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000085d4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000085d9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000085dc *)
@@ -2905,7 +2906,7 @@ mov L0x7ff7bfefedb6 cx;
 (* mov    0x170(%rax),%cx                          #! EA = L0x7ff7bfefedb8; Value = 0x0000000000000000; PC = 0x1000085ef *)
 mov cx L0x7ff7bfefedb8;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000085f6 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000085fb *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000085fe *)
@@ -2919,7 +2920,7 @@ mov L0x7ff7bfefedb8 cx;
 (* mov    0x172(%rax),%cx                          #! EA = L0x7ff7bfefedba; Value = 0xf0a8000000000000; PC = 0x100008611 *)
 mov cx L0x7ff7bfefedba;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008618 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000861d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008620 *)
@@ -2933,7 +2934,7 @@ mov L0x7ff7bfefedba cx;
 (* mov    0x174(%rax),%cx                          #! EA = L0x7ff7bfefedbc; Value = 0xbfeff0a800000000; PC = 0x100008633 *)
 mov cx L0x7ff7bfefedbc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000863a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000863f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008642 *)
@@ -2947,7 +2948,7 @@ mov L0x7ff7bfefedbc cx;
 (* mov    0x176(%rax),%cx                          #! EA = L0x7ff7bfefedbe; Value = 0x7ff7bfeff0a80000; PC = 0x100008655 *)
 mov cx L0x7ff7bfefedbe;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000865c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008661 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008664 *)
@@ -2961,7 +2962,7 @@ mov L0x7ff7bfefedbe cx;
 (* mov    0x178(%rax),%cx                          #! EA = L0x7ff7bfefedc0; Value = 0x00007ff7bfeff0a8; PC = 0x100008677 *)
 mov cx L0x7ff7bfefedc0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000867e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008683 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008686 *)
@@ -2975,7 +2976,7 @@ mov L0x7ff7bfefedc0 cx;
 (* mov    0x17a(%rax),%cx                          #! EA = L0x7ff7bfefedc2; Value = 0x000000007ff7bfef; PC = 0x100008699 *)
 mov cx L0x7ff7bfefedc2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000086a0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000086a5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000086a8 *)
@@ -2989,7 +2990,7 @@ mov L0x7ff7bfefedc2 cx;
 (* mov    0x17c(%rax),%cx                          #! EA = L0x7ff7bfefedc4; Value = 0x0000000000007ff7; PC = 0x1000086bb *)
 mov cx L0x7ff7bfefedc4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000086c2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000086c7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000086ca *)
@@ -3003,7 +3004,7 @@ mov L0x7ff7bfefedc4 cx;
 (* mov    0x17e(%rax),%cx                          #! EA = L0x7ff7bfefedc6; Value = 0x0000000000000000; PC = 0x1000086dd *)
 mov cx L0x7ff7bfefedc6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000086e4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000086e9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000086ec *)
@@ -3017,7 +3018,7 @@ mov L0x7ff7bfefedc6 cx;
 (* mov    0x180(%rax),%cx                          #! EA = L0x7ff7bfefedc8; Value = 0x0000000000000000; PC = 0x1000086ff *)
 mov cx L0x7ff7bfefedc8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008706 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000870b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000870e *)
@@ -3031,7 +3032,7 @@ mov L0x7ff7bfefedc8 cx;
 (* mov    0x182(%rax),%cx                          #! EA = L0x7ff7bfefedca; Value = 0x0000000000000000; PC = 0x100008721 *)
 mov cx L0x7ff7bfefedca;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008728 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000872d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008730 *)
@@ -3045,7 +3046,7 @@ mov L0x7ff7bfefedca cx;
 (* mov    0x184(%rax),%cx                          #! EA = L0x7ff7bfefedcc; Value = 0x0000000000000000; PC = 0x100008743 *)
 mov cx L0x7ff7bfefedcc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000874a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000874f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008752 *)
@@ -3059,7 +3060,7 @@ mov L0x7ff7bfefedcc cx;
 (* mov    0x186(%rax),%cx                          #! EA = L0x7ff7bfefedce; Value = 0x0000000000000000; PC = 0x100008765 *)
 mov cx L0x7ff7bfefedce;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000876c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008771 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008774 *)
@@ -3073,7 +3074,7 @@ mov L0x7ff7bfefedce cx;
 (* mov    0x188(%rax),%cx                          #! EA = L0x7ff7bfefedd0; Value = 0x0000000000000000; PC = 0x100008787 *)
 mov cx L0x7ff7bfefedd0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000878e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008793 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008796 *)
@@ -3087,7 +3088,7 @@ mov L0x7ff7bfefedd0 cx;
 (* mov    0x18a(%rax),%cx                          #! EA = L0x7ff7bfefedd2; Value = 0xa418000000000000; PC = 0x1000087a9 *)
 mov cx L0x7ff7bfefedd2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000087b0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000087b5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000087b8 *)
@@ -3101,7 +3102,7 @@ mov L0x7ff7bfefedd2 cx;
 (* mov    0x18c(%rax),%cx                          #! EA = L0x7ff7bfefedd4; Value = 0x45bda41800000000; PC = 0x1000087cb *)
 mov cx L0x7ff7bfefedd4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000087d2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000087d7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000087da *)
@@ -3115,7 +3116,7 @@ mov L0x7ff7bfefedd4 cx;
 (* mov    0x18e(%rax),%cx                          #! EA = L0x7ff7bfefedd6; Value = 0x7ff845bda4180000; PC = 0x1000087ed *)
 mov cx L0x7ff7bfefedd6;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000087f4 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000087f9 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000087fc *)
@@ -3129,7 +3130,7 @@ mov L0x7ff7bfefedd6 cx;
 (* mov    0x190(%rax),%cx                          #! EA = L0x7ff7bfefedd8; Value = 0x00007ff845bda418; PC = 0x10000880f *)
 mov cx L0x7ff7bfefedd8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008816 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000881b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000881e *)
@@ -3143,7 +3144,7 @@ mov L0x7ff7bfefedd8 cx;
 (* mov    0x192(%rax),%cx                          #! EA = L0x7ff7bfefedda; Value = 0x903000007ff845bd; PC = 0x100008831 *)
 mov cx L0x7ff7bfefedda;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008838 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000883d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008840 *)
@@ -3157,7 +3158,7 @@ mov L0x7ff7bfefedda cx;
 (* mov    0x194(%rax),%cx                          #! EA = L0x7ff7bfefeddc; Value = 0x0005903000007ff8; PC = 0x100008853 *)
 mov cx L0x7ff7bfefeddc;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000885a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000885f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008862 *)
@@ -3171,7 +3172,7 @@ mov L0x7ff7bfefeddc cx;
 (* mov    0x196(%rax),%cx                          #! EA = L0x7ff7bfefedde; Value = 0x0001000590300000; PC = 0x100008875 *)
 mov cx L0x7ff7bfefedde;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000887c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008881 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008884 *)
@@ -3185,7 +3186,7 @@ mov L0x7ff7bfefedde cx;
 (* mov    0x198(%rax),%cx                          #! EA = L0x7ff7bfefede0; Value = 0x0000000100059030; PC = 0x100008897 *)
 mov cx L0x7ff7bfefede0;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000889e *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000088a3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000088a6 *)
@@ -3199,7 +3200,7 @@ mov L0x7ff7bfefede0 cx;
 (* mov    0x19a(%rax),%cx                          #! EA = L0x7ff7bfefede2; Value = 0x0000000000010005; PC = 0x1000088b9 *)
 mov cx L0x7ff7bfefede2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000088c0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000088c5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000088c8 *)
@@ -3213,7 +3214,7 @@ mov L0x7ff7bfefede2 cx;
 (* mov    0x19c(%rax),%cx                          #! EA = L0x7ff7bfefede4; Value = 0x0000000000000001; PC = 0x1000088db *)
 mov cx L0x7ff7bfefede4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000088e2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000088e7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000088ea *)
@@ -3227,7 +3228,7 @@ mov L0x7ff7bfefede4 cx;
 (* mov    0x19e(%rax),%cx                          #! EA = L0x7ff7bfefede6; Value = 0x0000000000000000; PC = 0x1000088fd *)
 mov cx L0x7ff7bfefede6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008904 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008909 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000890c *)
@@ -3241,7 +3242,7 @@ mov L0x7ff7bfefede6 cx;
 (* mov    0x1a0(%rax),%cx                          #! EA = L0x7ff7bfefede8; Value = 0x0000000000000000; PC = 0x10000891f *)
 mov cx L0x7ff7bfefede8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008926 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000892b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x10000892e *)
@@ -3255,7 +3256,7 @@ mov L0x7ff7bfefede8 cx;
 (* mov    0x1a2(%rax),%cx                          #! EA = L0x7ff7bfefedea; Value = 0x0000000000000000; PC = 0x100008941 *)
 mov cx L0x7ff7bfefedea;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008948 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000894d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008950 *)
@@ -3269,7 +3270,7 @@ mov L0x7ff7bfefedea cx;
 (* mov    0x1a4(%rax),%cx                          #! EA = L0x7ff7bfefedec; Value = 0x0000000000000000; PC = 0x100008963 *)
 mov cx L0x7ff7bfefedec;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000896a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x10000896f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008972 *)
@@ -3283,7 +3284,7 @@ mov L0x7ff7bfefedec cx;
 (* mov    0x1a6(%rax),%cx                          #! EA = L0x7ff7bfefedee; Value = 0x0000000000000000; PC = 0x100008985 *)
 mov cx L0x7ff7bfefedee;
 (* add    $0xf2ff,%cx                              #! PC = 0x10000898c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008991 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008994 *)
@@ -3297,7 +3298,7 @@ mov L0x7ff7bfefedee cx;
 (* mov    0x1a8(%rax),%cx                          #! EA = L0x7ff7bfefedf0; Value = 0x0000000000000000; PC = 0x1000089a7 *)
 mov cx L0x7ff7bfefedf0;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000089ae *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000089b3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000089b6 *)
@@ -3311,7 +3312,7 @@ mov L0x7ff7bfefedf0 cx;
 (* mov    0x1aa(%rax),%cx                          #! EA = L0x7ff7bfefedf2; Value = 0x0000000000000000; PC = 0x1000089c9 *)
 mov cx L0x7ff7bfefedf2;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000089d0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000089d5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000089d8 *)
@@ -3325,7 +3326,7 @@ mov L0x7ff7bfefedf2 cx;
 (* mov    0x1ac(%rax),%cx                          #! EA = L0x7ff7bfefedf4; Value = 0x0000000000000000; PC = 0x1000089eb *)
 mov cx L0x7ff7bfefedf4;
 (* add    $0xf2ff,%cx                              #! PC = 0x1000089f2 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x1000089f7 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x1000089fa *)
@@ -3339,7 +3340,7 @@ mov L0x7ff7bfefedf4 cx;
 (* mov    0x1ae(%rax),%cx                          #! EA = L0x7ff7bfefedf6; Value = 0x0000000000000000; PC = 0x100008a0d *)
 mov cx L0x7ff7bfefedf6;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008a14 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008a19 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008a1c *)
@@ -3353,7 +3354,7 @@ mov L0x7ff7bfefedf6 cx;
 (* mov    0x1b0(%rax),%cx                          #! EA = L0x7ff7bfefedf8; Value = 0x0000000000000000; PC = 0x100008a2f *)
 mov cx L0x7ff7bfefedf8;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008a36 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008a3b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008a3e *)
@@ -3367,7 +3368,7 @@ mov L0x7ff7bfefedf8 cx;
 (* mov    0x1b2(%rax),%cx                          #! EA = L0x7ff7bfefedfa; Value = 0x0000000000000000; PC = 0x100008a51 *)
 mov cx L0x7ff7bfefedfa;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008a58 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008a5d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008a60 *)
@@ -3381,7 +3382,7 @@ mov L0x7ff7bfefedfa cx;
 (* mov    0x1b4(%rax),%cx                          #! EA = L0x7ff7bfefedfc; Value = 0x0000000000000000; PC = 0x100008a73 *)
 mov cx L0x7ff7bfefedfc;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008a7a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008a7f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008a82 *)
@@ -3395,7 +3396,7 @@ mov L0x7ff7bfefedfc cx;
 (* mov    0x1b6(%rax),%cx                          #! EA = L0x7ff7bfefedfe; Value = 0x0000000000000000; PC = 0x100008a95 *)
 mov cx L0x7ff7bfefedfe;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008a9c *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008aa1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008aa4 *)
@@ -3409,7 +3410,7 @@ mov L0x7ff7bfefedfe cx;
 (* mov    0x1b8(%rax),%cx                          #! EA = L0x7ff7bfefee00; Value = 0x0000000000000000; PC = 0x100008ab7 *)
 mov cx L0x7ff7bfefee00;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008abe *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008ac3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ac6 *)
@@ -3423,7 +3424,7 @@ mov L0x7ff7bfefee00 cx;
 (* mov    0x1ba(%rax),%cx                          #! EA = L0x7ff7bfefee02; Value = 0xf0e0000000000000; PC = 0x100008ad9 *)
 mov cx L0x7ff7bfefee02;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008ae0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008ae5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ae8 *)
@@ -3437,7 +3438,7 @@ mov L0x7ff7bfefee02 cx;
 (* mov    0x1bc(%rax),%cx                          #! EA = L0x7ff7bfefee04; Value = 0xbfeff0e000000000; PC = 0x100008afb *)
 mov cx L0x7ff7bfefee04;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008b02 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008b07 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008b0a *)
@@ -3451,7 +3452,7 @@ mov L0x7ff7bfefee04 cx;
 (* mov    0x1be(%rax),%cx                          #! EA = L0x7ff7bfefee06; Value = 0x7ff7bfeff0e00000; PC = 0x100008b1d *)
 mov cx L0x7ff7bfefee06;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008b24 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008b29 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008b2c *)
@@ -3465,7 +3466,7 @@ mov L0x7ff7bfefee06 cx;
 (* mov    0x1c0(%rax),%cx                          #! EA = L0x7ff7bfefee08; Value = 0x00007ff7bfeff0e0; PC = 0x100008b3f *)
 mov cx L0x7ff7bfefee08;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008b46 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008b4b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008b4e *)
@@ -3479,7 +3480,7 @@ mov L0x7ff7bfefee08 cx;
 (* mov    0x1c2(%rax),%cx                          #! EA = L0x7ff7bfefee0a; Value = 0x000000007ff7bfef; PC = 0x100008b61 *)
 mov cx L0x7ff7bfefee0a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008b68 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008b6d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008b70 *)
@@ -3493,7 +3494,7 @@ mov L0x7ff7bfefee0a cx;
 (* mov    0x1c4(%rax),%cx                          #! EA = L0x7ff7bfefee0c; Value = 0x0000000000007ff7; PC = 0x100008b83 *)
 mov cx L0x7ff7bfefee0c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008b8a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008b8f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008b92 *)
@@ -3507,7 +3508,7 @@ mov L0x7ff7bfefee0c cx;
 (* mov    0x1c6(%rax),%cx                          #! EA = L0x7ff7bfefee0e; Value = 0x0000000000000000; PC = 0x100008ba5 *)
 mov cx L0x7ff7bfefee0e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008bac *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008bb1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008bb4 *)
@@ -3521,7 +3522,7 @@ mov L0x7ff7bfefee0e cx;
 (* mov    0x1c8(%rax),%cx                          #! EA = L0x7ff7bfefee10; Value = 0x0000000000000000; PC = 0x100008bc7 *)
 mov cx L0x7ff7bfefee10;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008bce *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008bd3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008bd6 *)
@@ -3535,7 +3536,7 @@ mov L0x7ff7bfefee10 cx;
 (* mov    0x1ca(%rax),%cx                          #! EA = L0x7ff7bfefee12; Value = 0x0000000000000000; PC = 0x100008be9 *)
 mov cx L0x7ff7bfefee12;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008bf0 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008bf5 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008bf8 *)
@@ -3549,7 +3550,7 @@ mov L0x7ff7bfefee12 cx;
 (* mov    0x1cc(%rax),%cx                          #! EA = L0x7ff7bfefee14; Value = 0x0000000000000000; PC = 0x100008c0b *)
 mov cx L0x7ff7bfefee14;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008c12 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008c17 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008c1a *)
@@ -3563,7 +3564,7 @@ mov L0x7ff7bfefee14 cx;
 (* mov    0x1ce(%rax),%cx                          #! EA = L0x7ff7bfefee16; Value = 0x0000000000000000; PC = 0x100008c2d *)
 mov cx L0x7ff7bfefee16;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008c34 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008c39 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008c3c *)
@@ -3577,7 +3578,7 @@ mov L0x7ff7bfefee16 cx;
 (* mov    0x1d0(%rax),%cx                          #! EA = L0x7ff7bfefee18; Value = 0x0000000000000000; PC = 0x100008c4f *)
 mov cx L0x7ff7bfefee18;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008c56 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008c5b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008c5e *)
@@ -3591,7 +3592,7 @@ mov L0x7ff7bfefee18 cx;
 (* mov    0x1d2(%rax),%cx                          #! EA = L0x7ff7bfefee1a; Value = 0x0000000000000000; PC = 0x100008c71 *)
 mov cx L0x7ff7bfefee1a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008c78 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008c7d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008c80 *)
@@ -3605,7 +3606,7 @@ mov L0x7ff7bfefee1a cx;
 (* mov    0x1d4(%rax),%cx                          #! EA = L0x7ff7bfefee1c; Value = 0x0000000000000000; PC = 0x100008c93 *)
 mov cx L0x7ff7bfefee1c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008c9a *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008c9f *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ca2 *)
@@ -3619,7 +3620,7 @@ mov L0x7ff7bfefee1c cx;
 (* mov    0x1d6(%rax),%cx                          #! EA = L0x7ff7bfefee1e; Value = 0x0000000000000000; PC = 0x100008cb5 *)
 mov cx L0x7ff7bfefee1e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008cbc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008cc1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008cc4 *)
@@ -3633,7 +3634,7 @@ mov L0x7ff7bfefee1e cx;
 (* mov    0x1d8(%rax),%cx                          #! EA = L0x7ff7bfefee20; Value = 0x0000000000000000; PC = 0x100008cd7 *)
 mov cx L0x7ff7bfefee20;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008cde *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008ce3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ce6 *)
@@ -3647,7 +3648,7 @@ mov L0x7ff7bfefee20 cx;
 (* mov    0x1da(%rax),%cx                          #! EA = L0x7ff7bfefee22; Value = 0xf370000000000000; PC = 0x100008cf9 *)
 mov cx L0x7ff7bfefee22;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008d00 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008d05 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008d08 *)
@@ -3661,7 +3662,7 @@ mov L0x7ff7bfefee22 cx;
 (* mov    0x1dc(%rax),%cx                          #! EA = L0x7ff7bfefee24; Value = 0xbfeff37000000000; PC = 0x100008d1b *)
 mov cx L0x7ff7bfefee24;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008d22 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008d27 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008d2a *)
@@ -3675,7 +3676,7 @@ mov L0x7ff7bfefee24 cx;
 (* mov    0x1de(%rax),%cx                          #! EA = L0x7ff7bfefee26; Value = 0x7ff7bfeff3700000; PC = 0x100008d3d *)
 mov cx L0x7ff7bfefee26;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008d44 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008d49 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008d4c *)
@@ -3689,7 +3690,7 @@ mov L0x7ff7bfefee26 cx;
 (* mov    0x1e0(%rax),%cx                          #! EA = L0x7ff7bfefee28; Value = 0x00007ff7bfeff370; PC = 0x100008d5f *)
 mov cx L0x7ff7bfefee28;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008d66 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008d6b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008d6e *)
@@ -3703,7 +3704,7 @@ mov L0x7ff7bfefee28 cx;
 (* mov    0x1e2(%rax),%cx                          #! EA = L0x7ff7bfefee2a; Value = 0xf1f000007ff7bfef; PC = 0x100008d81 *)
 mov cx L0x7ff7bfefee2a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008d88 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008d8d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008d90 *)
@@ -3717,7 +3718,7 @@ mov L0x7ff7bfefee2a cx;
 (* mov    0x1e4(%rax),%cx                          #! EA = L0x7ff7bfefee2c; Value = 0xbfeff1f000007ff7; PC = 0x100008da3 *)
 mov cx L0x7ff7bfefee2c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008daa *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008daf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008db2 *)
@@ -3731,7 +3732,7 @@ mov L0x7ff7bfefee2c cx;
 (* mov    0x1e6(%rax),%cx                          #! EA = L0x7ff7bfefee2e; Value = 0x7ff7bfeff1f00000; PC = 0x100008dc5 *)
 mov cx L0x7ff7bfefee2e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008dcc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008dd1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008dd4 *)
@@ -3745,7 +3746,7 @@ mov L0x7ff7bfefee2e cx;
 (* mov    0x1e8(%rax),%cx                          #! EA = L0x7ff7bfefee30; Value = 0x00007ff7bfeff1f0; PC = 0x100008de7 *)
 mov cx L0x7ff7bfefee30;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008dee *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008df3 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008df6 *)
@@ -3759,7 +3760,7 @@ mov L0x7ff7bfefee30 cx;
 (* mov    0x1ea(%rax),%cx                          #! EA = L0x7ff7bfefee32; Value = 0xf16000007ff7bfef; PC = 0x100008e09 *)
 mov cx L0x7ff7bfefee32;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008e10 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008e15 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008e18 *)
@@ -3773,7 +3774,7 @@ mov L0x7ff7bfefee32 cx;
 (* mov    0x1ec(%rax),%cx                          #! EA = L0x7ff7bfefee34; Value = 0xbfeff16000007ff7; PC = 0x100008e2b *)
 mov cx L0x7ff7bfefee34;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008e32 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008e37 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008e3a *)
@@ -3787,7 +3788,7 @@ mov L0x7ff7bfefee34 cx;
 (* mov    0x1ee(%rax),%cx                          #! EA = L0x7ff7bfefee36; Value = 0x7ff7bfeff1600000; PC = 0x100008e4d *)
 mov cx L0x7ff7bfefee36;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008e54 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008e59 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008e5c *)
@@ -3801,7 +3802,7 @@ mov L0x7ff7bfefee36 cx;
 (* mov    0x1f0(%rax),%cx                          #! EA = L0x7ff7bfefee38; Value = 0x00007ff7bfeff160; PC = 0x100008e6f *)
 mov cx L0x7ff7bfefee38;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008e76 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008e7b *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008e7e *)
@@ -3815,7 +3816,7 @@ mov L0x7ff7bfefee38 cx;
 (* mov    0x1f2(%rax),%cx                          #! EA = L0x7ff7bfefee3a; Value = 0xd18a00007ff7bfef; PC = 0x100008e91 *)
 mov cx L0x7ff7bfefee3a;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008e98 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008e9d *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ea0 *)
@@ -3829,7 +3830,7 @@ mov L0x7ff7bfefee3a cx;
 (* mov    0x1f4(%rax),%cx                          #! EA = L0x7ff7bfefee3c; Value = 0x05c9d18a00007ff7; PC = 0x100008eb3 *)
 mov cx L0x7ff7bfefee3c;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008eba *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008ebf *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ec2 *)
@@ -3843,7 +3844,7 @@ mov L0x7ff7bfefee3c cx;
 (* mov    0x1f6(%rax),%cx                          #! EA = L0x7ff7bfefee3e; Value = 0x7ff805c9d18a0000; PC = 0x100008ed5 *)
 mov cx L0x7ff7bfefee3e;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008edc *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008ee1 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008ee4 *)
@@ -3857,7 +3858,7 @@ mov L0x7ff7bfefee3e cx;
 (* mov    0x1f8(%rax),%cx                          #! EA = L0x7ff7bfefee40; Value = 0x00007ff805c9d18a; PC = 0x100008ef7 *)
 mov cx L0x7ff7bfefee40;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008efe *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008f03 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008f06 *)
@@ -3871,7 +3872,7 @@ mov L0x7ff7bfefee40 cx;
 (* mov    0x1fa(%rax),%cx                          #! EA = L0x7ff7bfefee42; Value = 0x3e1200007ff805c9; PC = 0x100008f19 *)
 mov cx L0x7ff7bfefee42;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008f20 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008f25 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008f28 *)
@@ -3885,7 +3886,7 @@ mov L0x7ff7bfefee42 cx;
 (* mov    0x1fc(%rax),%cx                          #! EA = L0x7ff7bfefee44; Value = 0x00003e1200007ff8; PC = 0x100008f3b *)
 mov cx L0x7ff7bfefee44;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008f42 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008f47 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008f4a *)
@@ -3899,7 +3900,7 @@ mov L0x7ff7bfefee44 cx;
 (* mov    0x1fe(%rax),%cx                          #! EA = L0x7ff7bfefee46; Value = 0x000100003e120000; PC = 0x100008f5d *)
 mov cx L0x7ff7bfefee46;
 (* add    $0xf2ff,%cx                              #! PC = 0x100008f64 *)
-add cx cx 0xf2ff@sint16;
+add cx cx (-3329)@sint16;
 (* mov    %cx,%dx                                  #! PC = 0x100008f69 *)
 mov dx cx;
 (* sar    $0xf,%dx                                 #! PC = 0x100008f6c *)
