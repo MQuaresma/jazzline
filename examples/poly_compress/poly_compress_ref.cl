@@ -4186,10 +4186,23 @@ shl edx edx 0x4;
 add edx edx 0x681@uint32;
 (* imul   $0x13afb,%edx,%edx                       #! PC = 0x100004c15 *)
 mul edx edx 0x13afb@uint32;
+
+ghost L0x7ff7bfefec48_u32@uint32:
+      L0x7ff7bfefec48_u32 = L0x7ff7bfefec48 && L0x7ff7bfefec48_u32 = uext L0x7ff7bfefec48 16;
+
+# Partial spec (missing >> 4)
+assert true && eqmod edx ((L0x7ff7bfefec48_u32*(2**4)@32+1665@32)*80635@32) (2**32)@32;
+assume eqmod edx ((L0x7ff7bfefec48_u32*(2**4)+1665)*80635) (2**32) && true;
+
 (* shr    $0x1c,%edx                               #! PC = 0x100004c1b *)
 shr edx edx 0x1c;
 (* and    $0xf,%edx                                #! PC = 0x100004c1e *)
 and edx@uint32 edx 0xf@uint32;
+
+# TODO: How to prove full compression with no >> or / or negative exponents in range (or algebraic) predicates
+assert true && 0@32 <= edx /\ edx < 16@32;  # /\ eqmod edx ((L0x7ff7bfefec48_u32*(2**4)@32+1665@32)*80635@32) * 903@32 (2**32)@32;
+# assume eqmod edx L0x7ff7bfefec48... 2**4 && true;
+
 (* inc    %rcx                                     #! PC = 0x100004c21 *)
 add rcx rcx 1@uint64;
 (* mov    (%rax,%rcx,2),%si                        #! EA = L0x7ff7bfefec4a; Value = 0x0000000000000000; PC = 0x100004c24 *)
@@ -4202,17 +4215,33 @@ shl esi esi 0x4;
 add esi esi 0x681@uint32;
 (* imul   $0x13afb,%esi,%esi                       #! PC = 0x100004c34 *)
 mul esi esi 0x13afb@uint32;
+
+ghost L0x7ff7bfefec4a_u32@uint32:
+      L0x7ff7bfefec4a_u32 = L0x7ff7bfefec4a && L0x7ff7bfefec4a_u32 = uext L0x7ff7bfefec4a 16;
+
+assert true && eqmod esi ((L0x7ff7bfefec4a_u32*(2**4)@32+1665@32)*80635@32) (2**32)@32;
+assume eqmod esi ((L0x7ff7bfefec4a_u32*(2**4)+1665)*80635) (2**32) && true;
+
 (* shr    $0x1c,%esi                               #! PC = 0x100004c3a *)
 shr esi esi 0x1c;
 (* and    $0xf,%esi                                #! PC = 0x100004c3d *)
 and esi@uint32 esi 0xf@uint32;
+
+assert true && 0@32 <= esi /\ esi < 16@32;
+# assume eqmod edx L0x7ff7bfefec48... 2**4 && true;
+
 (* shl    $0x4,%esi                                #! PC = 0x100004c40 *)
 shl esi esi 0x4;
+
 (* or     %esi,%edx                                #! PC = 0x100004c43 *)
 or edx@uint32 edx esi;
+
 (* mov    %dl,(%rdi)                               #! EA = L0x7ff7bfefeed0; PC = 0x100004c45 *)
 cast uint8 dl edx;
 mov b_0 dl;
+
+# assert eqmod b_0@uint8  +  2**8 && true;
+
 (* inc    %rcx                                     #! PC = 0x100004c47 *)
 add rcx rcx 1@uint64;
 (* mov    (%rax,%rcx,2),%dx                        #! EA = L0x7ff7bfefec4c; Value = 0x0000000000000000; PC = 0x100004c4a *)
